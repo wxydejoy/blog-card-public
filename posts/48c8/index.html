@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    
+    
+        <link rel="mask-icon" href="/icon/apple-touch-icon-180x180.png">
+    
+
+
+    <!-- meta -->
+
+
+<title>SPI接口及其应用 精简版 | 快乐星球</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Welcome</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        SPI接口及其应用 精简版
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/08/" class="post-meta__date button">2021-08-04</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%F0%9F%93%83-Exam/" class="button">📃 Exam</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spi%E9%80%9A%E4%BF%A1%E6%8E%A5%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text">spi通信接口</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">文章目录</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spi%E9%80%9A%E4%BF%A1%E6%8E%A5%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text">spi通信接口</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header">
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 &lt;span id=&#34;expire-date&#34;&gt;&lt;/span&gt; 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2021-09-10"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+</div>
+    <div class="post__content">
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>SPI(Serial Peripheral Interface)，即串行外设接口。SPI最早由Motolora半导体部门提出，最初出现在M68系列单片机上用于连接片外的EEPROM、ADC和DAC等外设。</p>
+<p>SPI是一种伪共享的全双工/半双工的同步串行通讯接口，<strong>仅支持单主多从的系统结构</strong>。<strong>伪共享</strong>的总线结构是受到并行总线的影响，要求主机必须为每一个从机提供一个片选信号(CS)，当某个从机的片选信号被主机置为有效电平时，主机和被选中的从机之间实现全双工/半双工的同步串行通讯。同步串行通讯，意味着SPI接口具有专用的同步时钟信号。</p>
+<p>全双工，意味着SPI接口拥有独立的“主机写-从机读”和“主机读-从机写”串行数据传输线。半双工只需要一根串行数据线双向传输数据。</p>
+<p>SPI接口经历多次改进，目前不仅支持单个串行数据信号，也支持2位和4位宽度的串行数据信号，在同样的时钟频率条件下串行数据线越多数据吞吐量越大。</p>
+<p>QSPI(Quad SPI)接口的数据信号达4个，假设同步时钟信号的频率为32MHz，QSPI实际的位时钟频率达128MHz。高速的QSPI接口已经用于嵌入式系统内的大容量FlashROM、伪静态RAM等存储器扩展，借助于MCU片上Cache单元甚至可以直接从QSPI接口的FlashROM中执行(XIP)程序。显然，SPI接口是嵌入式系统内十分重要的一种扩展接口，与I2C接口一样，SPI也是绝大多数MCU标配的片上功能单元。</p>
+<p>本章将了解SPI接口的信号、时序和协议规范，以及MCU片上SPI功能单元的主机模式和从机模式，并以SPI接口的显示器和协处理器、QSPI接口的FlashROM等为例讨论SPI接口的结构组成、接口电路和软件编程控制。</p>
+<h2 id="spi通信接口"><a href="#spi通信接口" class="headerlink" title="spi通信接口"></a>spi通信接口</h2><p>SPI通讯接口采用主从模式的结构，仅支持一个主机和一个或多个从机。标准的SPI通讯接口是4线的，包括同步时钟信号SCK、主输出从输入信号MOSI、主输入从输出信号MISO、<br>片选信号NSS(Slave Select)。一对SPI通讯接口的主机和从机的内部结构如图6.1所示。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/180940%20spi_master_slave_structure_4wires.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/180940%20spi_master_slave_structure_4wires.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_master_slave_structure_4wires"></p>
+<p>图6.1  SPI通讯接口的主机和从机内部结构</p>
+<p>这里再次看到移位寄存器，他是SPI通讯接口的核心部组件。根据现代MCU的存储器映射规则，SPI通讯接口的接收和发送数据缓冲器都是MCU内部存储单元。</p>
+<p>当SPI通讯接口软件将待发送的数据写入发送数据缓冲器并启动数据发送过程(片选信号NSS被主机置为有效电平)，该数据将被自动装载到移位寄存器，<strong>并以最高位(MSB)先发送</strong>的规则随着同步时钟SCK顺序地将数据逐位从MOSI发出，同时从机SPI接口将随着同步时钟SCK逐位地将数据位移入移位寄存器。</p>
+<p>当主机需要从从机读取数据时，从机首先将待发送的数据写入发送数据缓冲器，当主机将片选信号NSS置为有效电平时自动将数据加载到从机的移位寄存器，随着同步时钟信号SCK仍遵循<strong>MSB先发送的规则</strong>将数据顺序地逐位从MISO发出，同时主机SPI接口将随着同步时钟SCK逐位地将数据移入移位寄存器，所有数据位移入完毕后，主机移位寄存器的数据自动被加载到接收数据缓冲器。</p>
+<p>这两个方向的移位过程是可以同时进行，而且不会有接收和发送数据位重叠，两个移位寄存器被两个独立的串行数据线首尾串联成环形，譬如一个字节(8位)数据从主机移入从机的同时从机上的一个字节数据也正好移入主机。</p>
+<p>很显然，标准的SPI通讯接口支持全双工数据传输，即主机向从机写入数据的同时可以读取从机上的数据。</p>
+<p>事实上，为了提高数据传输效率，绝大多数现代SPI通讯接口的接收和发送数据缓冲器都采用FIFO(先进先出)结构、接收和发送完毕的中断机制。</p>
+<p>有些SPI通讯接口的应用场景无需全双工的数据传输，譬如只需要半双工或单工，我们可以简化接口以减少信号线。图6.2给出全双工的和半双工的SPI通讯接口的对比。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181121%20spi_4wires_vs_3wires.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181121%20spi_4wires_vs_3wires.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_4wires_vs_3wires"></p>
+<p>图6.2  全双工的和半双工的SPI通讯接口</p>
+<p>很多资料中提到4线的和3线的SPI接口正是上图所示的两种情况，4线的是标准SPI通讯接口，3线的是半双工的SPI通讯接口。</p>
+<p>在半双工的数据传输模式，主机的MOSI和从机的MISO相连，而且主从双方的这个接口信号都是双向的。为了防止信号名称的混淆，在上图中的主机侧仍使用NSS、SCK、MOSI和MISO等4个名称，<br>而从机侧则使用SDI(从机数据输入信号)代替MOSI，SDO(从机数据输出信号或数据输入信号)代替MISO。其中，半双工模式，从机的SDO信号是双向的，主机的MOSI信号也是双向的。</p>
+<p>半双工的SPI通讯接口节约一个接口信号连线，但并不是所有的SPI接口都支持半双工的模式。单工的SPI接口也可以节约一个接口信号，根据数据传输的方向需要确定去掉MOSI或MISO。譬如显示器是一种典型的输出外设，显示器的SPI接口可以采用单工的，仅需要NSS、SCK和MOSI三个信号即可。</p>
+<p>前面讨论的都是一主一从的SPI通讯接口，多从机时的SPI接口是什么样的结构呢？如图6.3所示。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181302%20spi_2kinds_topology.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181302%20spi_2kinds_topology.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_2kinds_topology"></p>
+<p>图6.3  一主多从的SPI通讯接口</p>
+<p>上图中给出两种拓扑结构的一主多从的SPI通讯接口。图中(a)是常规的拓扑结构，SCK、MOSI和MISO等三个信号是SPI通讯接口的共享总线信号，所有的主机和从机使用这些共享总线连接在一起，但是每一个从机必须独占一个片选信号NSS，随着从机个数的增加，主机将开销更多的I/O引脚用作片选信号。</p>
+<p>很显然，图中(b)的菊花链拓扑结构中所需要主机的I/O引脚始终是4个，不受从机个数影响。对比两种拓扑，虽然菊花链结构节约I/O引脚 但数据传输需要经过更多次移位，即消耗更多个同步时钟周期，意味着更低的数据通讯速率。</p>
+<p>此外，两种拓扑结构的接口软件区别较大，菊花链结构的某个从机与主机之间传输数据所耗费的时钟个数必须根据从机个数和顺序号来确定。</p>
+<p>后面所用的SPI通讯接口都默认为常规的拓扑，除非特别说明。与I2C通讯接口使用的惟一从机地址的寻址方法完全不同，任一SPI从机是否被选中与SPI主机通讯，仅由其片选信号NSS的状态所决定。</p>
+<p>通常，SPI主机需要访问某个从机时，只需要将该从机的片选信号NSS置为有效电平，同时其他从机的片选信号都被置为无效电平，仅有一个从机被选中与主机通讯。</p>
+<p>这种通过惟一的片选信号选中某个从机的方法与传统的三总线(数据总线、地址总线和控制总线)的片选信号选中某个外设的方法几乎完全一致，传统的三总线是并行总线，现在仅适合MCU或MPU片上组件之间互联，主CPU通过控制地址译码器将某个组件的片选信号置为有效电平，此时主CPU与被选中的组件之间独占完整总线进行数据传输，期间其他组件(即未被选中的组件)处于空闲状态。当某个SPI从机的片选信号被主机置为有效电平时，SPI主机与被选中的从机之间独占SPI接口总线进行数据传输，其他未被选中的SPI从机处于空闲状态，忽略SPI总线的输入信号(SCK和MOSI)并释放输出信号(MISO)。</p>
+<p>从SPI通讯接口的选中和非选中的访问方法看，任何时候仅有被选中的SPI从机与主机之间一对一通讯，因此SPI通讯接口的时序比I2C简单很多。如图6.4所示，<br>SPI通讯接口仅以8位(字节)及其整数倍的二进制位<strong>对齐</strong>的移位操作，没有I2C通讯接口的START和STOP等特殊时序。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181640%20spi_if_timing.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181640%20spi_if_timing.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_if_timing"></p>
+<p>图6.4  SPI通讯接口的时序</p>
+<p>上图中，<strong>SPI通讯接口的同步时钟信号SCK在总线空闲时的状态是低电平</strong>，并在SCK的<strong>第偶数次跳变</strong>沿对MOSI和MISO信号采样。事实上，标准的SPI接口规范中，总线空闲时SCK信号的状态CPOL(Clock POLarity)、数据线的采样时刻CPHA(Clock PHAse)、位序MSBFIRST(先发送MSB)和SCK信号频率等都是可配置的。</p>
+<p>这些配置也都是SPI软件接口的基本参数，详见第6.2节。关于CPOL和CPHA两个参数之间的关系如图6.5所示。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181654%20spi_if_timing_4modes.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181654%20spi_if_timing_4modes.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_if_timing_4modes"></p>
+<p>图6.5  SPI通讯接口时序的4种配置</p>
+<p>根据CPOL和CPHA两个参数，SPI通讯接口时序共有4种不同的配置模式。</p>
+<p>MODE0</p>
+<p>SPI总线空闲时SCK保持低电平，当NSS信号有效期间，SCK信号的第奇数次跳变沿采样MOSI和MISO信号，即SCK的上升沿时刻采样数据线。MODE2，SPI总线空闲时SCK保持高电平，当NSS信号有效期间，SCK信号的第奇数次跳变沿采样MOSI和MISO信号，即SCK的下降沿时刻采样数据线。根据上图所示，MODE1和MODE3的两种配置无须赘述。</p>
+<p>必须注意，数据线被采样的时刻必须确保数据线状态是稳定的，即不允许信号驱动端改变数据线状态，SPI通讯接口的每一种时序配置的数据线切换时刻也是确定的，对于MODE0和MODE3的配置，允许SCK位低电平时改变MOSI和MISO的状态。</p>
+<p>同步时钟信号SCK的频率是SPI通讯接口的波特率(Baudrate)，即二进制位的传输频率(或传输一个二进制位所消耗的时间)。当我们在配置SPI通讯接口的参数时，必须考虑SPI从机的能力，包括SCK信号支持的/允许的最大频率、模式、位序等。换个角度来看待这些可配置参数，他们都是为了适应SPI从机的目的，尤其是SPI从机是不可配置或不可编程的情况。</p>
+<p>本质上，SPI通讯接口仅仅是一种同步串行数据移位操作的物理层接口，可配置接口参数的高灵活性和开源性使得SPI接口拥有很多种变化版本(Variant)。譬如，当前被广泛使用于FlashROM(主要是NOR结构闪存)接口的2位(Dual)/4位(Quad)宽度的串行数据线版本分别称作DSPI和QSPI，接口时序的读写操作示例如图6.6所示。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181948%20spi_2bits_4bits_if_dspi_qspi.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181948%20spi_2bits_4bits_if_dspi_qspi.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_2bits_4bits_if_dspi_qspi"></p>
+<p>图6.6  DSPI和QSPI通讯接口的读写时序</p>
+<p>上图中的SPI通讯接口配置参数采用MODE0。可以看出，为兼容标准4线SPI通讯接口，传输命令期间仍使用标准4线SPI接口时序，其后的地址和数据传输采用2位或4位宽度的串行数据线发送数据。<br>很显然，DSPI和QSPI的波特率分别是标准SPI通讯接口波特率的2倍和4倍。</p>
+<p>上图(c)是先写命令和地址信息然后再顺序地连续读取若干地址单元的数据的时序，该时序的写入和读出操作之间有4个SCK周期的Dummy(占位)，允许SPI从机在这个期间加载数据到发送缓冲区。DSPI和QSPI通讯接口的主机和从机信号如图6.7所示。</p>
+<p><img src="https://image.wxydejoy.top/img/202108/05/181934%20spi_if_dspi_qspi.jpg" class="lazy" data-srcset="https://image.wxydejoy.top/img/202108/05/181934%20spi_if_dspi_qspi.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="spi_if_dspi_qspi"></p>
+<p>图6.7  DSPI和QSPI通讯接口的主从信号</p>
+<p>DSPI和QSPI通讯接口及其应用详见 [2]_ 页面的介绍。</p>
+<p>前面已初步了解半双工SPI接口(3线)、全双工的标准SPI接口(4线)、DSPI(4线)、QSPI(6线)、SD(6线)及其衍生的SDIO等通讯接口，这些接口常用于嵌入式系统主控制器与内部组件之间的总线接口，与I2C相比SPI接口的时序更简单、更容易实现、允许更高的波特率。</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>wxy
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://wxydejoy.top/posts/48c8/">https://wxydejoy.top/posts/48c8/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>文章写于2021-09-10</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/posts/909c/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            马原知识点
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/posts/29a3/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            I2C接口及其应用 精简版
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+     
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2021&nbsp;-&nbsp;2021 <a href="/">快乐星球</a>
+        </p>
+    
+    
+        
+            <p><img src="https://cdn.jsdelivr.net/gh/wxydejoy/image@master/img/202107/15/181743%20%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png"style="margin-inline:5px"><a style="margin-inline:5px" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011871">浙公网安备 33010602011871号</a> <a style="margin-inline:5px" target="_blank" href="http://beian.miit.gov.cn/">浙ICP备2021022005号</a></p>
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('true'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
