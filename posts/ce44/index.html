@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    
+    
+        <link rel="mask-icon" href="/icon/apple-touch-icon-180x180.png">
+    
+
+
+    <!-- meta -->
+
+
+<title>使用又拍云加速后的HTTPS访问和DNS设置 | 快乐星球</title>
+
+
+    <meta name="keywords" content="💻 Hexo">
+
+
+
+
+    <!-- OpenGraph -->
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Welcome</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        使用又拍云加速后的HTTPS访问和DNS设置
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/07/" class="post-meta__date button">2021-07-16</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%F0%9F%92%BB-Code/" class="button">💻 Code</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-number">1.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gitpage%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">Gitpage设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Page%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">Page设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CNAME%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">CNAME文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DNS%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">DNS解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%88%E6%8B%8D%E4%BA%91CDN%E5%8A%A0%E9%80%9F"><span class="toc-number">4.</span> <span class="toc-text">又拍云CDN加速</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A3%B8%E5%9F%9F%E5%90%8D%E7%9A%84CDN%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.</span> <span class="toc-text">裸域名的CDN配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#www%E5%9F%9F%E5%90%8D%E7%9A%84CDN%E9%85%8D%E7%BD%AE"><span class="toc-number">4.2.</span> <span class="toc-text">www域名的CDN配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE"><span class="toc-number">4.3.</span> <span class="toc-text">建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7"><span class="toc-number">5.</span> <span class="toc-text">SSL证书申请</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%88%E6%8B%8D%E4%BA%91%E7%9A%84HTTPS%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE"><span class="toc-number">6.</span> <span class="toc-text">又拍云的HTTPS访问设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C"><span class="toc-number">7.</span> <span class="toc-text">检验</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">文章目录</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-number">1.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gitpage%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">Gitpage设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Page%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">Page设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CNAME%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">CNAME文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DNS%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">DNS解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%88%E6%8B%8D%E4%BA%91CDN%E5%8A%A0%E9%80%9F"><span class="toc-number">4.</span> <span class="toc-text">又拍云CDN加速</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A3%B8%E5%9F%9F%E5%90%8D%E7%9A%84CDN%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.</span> <span class="toc-text">裸域名的CDN配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#www%E5%9F%9F%E5%90%8D%E7%9A%84CDN%E9%85%8D%E7%BD%AE"><span class="toc-number">4.2.</span> <span class="toc-text">www域名的CDN配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE"><span class="toc-number">4.3.</span> <span class="toc-text">建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSL%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7"><span class="toc-number">5.</span> <span class="toc-text">SSL证书申请</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%88%E6%8B%8D%E4%BA%91%E7%9A%84HTTPS%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE"><span class="toc-number">6.</span> <span class="toc-text">又拍云的HTTPS访问设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C"><span class="toc-number">7.</span> <span class="toc-text">检验</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header">
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 &lt;span id=&#34;expire-date&#34;&gt;&lt;/span&gt; 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2021-10-04"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+</div>
+    <div class="post__content">
+        <p>%%% tip home %%%-<br>https折腾好久，就是搞不定，最后是自己配置有问题，所以来写个教程</p>
+<p>域名以我自己的为例   wxydejoy.top</p>
+<p>注：本教程适用于有一定折腾基础的朋友，主要是裸域名的访问，有建议可以评论。</p>
+<p>%%% endtip %%%-</p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>记得cmd<code>ipconfig /flushdns</code></p>
+<p>记得cmd<code>ipconfig /flushdns</code></p>
+<p>记得cmd<code>ipconfig /flushdns</code></p>
+<p>记得cmd<code>ipconfig /flushdns</code></p>
+<p><img src="https://image.wxydejoy.top/img/202107/17/151638%20image-20210717151638206.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/151638%20image-20210717151638206.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210717151638206"></p>
+<p>怎么样，不错吧</p>
+<h2 id="Gitpage设置"><a href="#Gitpage设置" class="headerlink" title="Gitpage设置"></a>Gitpage设置</h2><p>其实之前有的就不用修改，只是确认一下</p>
+<h3 id="Page设置"><a href="#Page设置" class="headerlink" title="Page设置"></a>Page设置</h3><p>这个其实是用来检测你的其他设置有没有问题</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/154638%20image-20210716154638627.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/154638%20image-20210716154638627.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716154638627"></p>
+<h3 id="CNAME文件"><a href="#CNAME文件" class="headerlink" title="CNAME文件"></a>CNAME文件</h3><p><img src="https://image.wxydejoy.top/img/202107/16/154723%20image-20210716154723824.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/154723%20image-20210716154723824.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716154723824"></p>
+<h2 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h2><p>这里答案不唯一，多种方案都行，推荐设置，此处感谢   <a target="_blank" rel="noopener" href="https://www.lbihua.cn/">@哔(bì)哗(huá)</a>   大佬的帮助</p>
+<p>尽量照抄。</p>
+<p>原理(不一定对，但能用)</p>
+<p><img src="https://image.wxydejoy.top/img/202107/17/152400%20image-20210717152400417.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/152400%20image-20210717152400417.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210717152400417"></p>
+<p>DNS设置</p>
+<p><img src="https://image.wxydejoy.top/img/202107/17/152106%20image-20210717152106816.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/152106%20image-20210717152106816.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210717152106816"></p>
+<h2 id="又拍云CDN加速"><a href="#又拍云CDN加速" class="headerlink" title="又拍云CDN加速"></a>又拍云CDN加速</h2><p>CDN怎么开启这里不讲了，只讲关键配置</p>
+<p>服务名称随意</p>
+<h3 id="裸域名的CDN配置"><a href="#裸域名的CDN配置" class="headerlink" title="裸域名的CDN配置"></a>裸域名的CDN配置</h3><p><img src="https://image.wxydejoy.top/img/202107/17/152900%20image-20210717152900009.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/152900%20image-20210717152900009.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210717152900009"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160009%20image-20210716160009643.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160009%20image-20210716160009643.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160009643"></p>
+<h3 id="www域名的CDN配置"><a href="#www域名的CDN配置" class="headerlink" title="www域名的CDN配置"></a>www域名的CDN配置</h3><p><img src="https://image.wxydejoy.top/img/202107/17/152723%20image-20210717152723200.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/152723%20image-20210717152723200.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210717152723200"></p>
+<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>不得不说我现在typora配合picgo和又拍云写教程很香，之前GitHub图床上传超慢，现在秒上传</p>
+<p>可以开个存储仓库用来做图床，很香。</p>
+<p>另外设置好cdn加速之后，可以打开静态资源加速，很不错。</p>
+<p><img src="https://image.wxydejoy.top/img/202107/17/153450%20image-20210717153450908.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/17/153450%20image-20210717153450908.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg=="></p>
+<h2 id="SSL证书申请"><a href="#SSL证书申请" class="headerlink" title="SSL证书申请"></a>SSL证书申请</h2><p>这一步最为关键，我这里是阿里的ssl免费证书，哪家都可以，建议在自己购买域名的地方申请，可以一键设置dns解析，方便快捷。</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160307%20image-20210716160307695.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160307%20image-20210716160307695.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160307695"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160327%20image-20210716160327327.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160327%20image-20210716160327327.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160327327"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160428%20image-20210716160428888.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160428%20image-20210716160428888.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160428888"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160500%20image-20210716160500535.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160500%20image-20210716160500535.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160500535"></p>
+<p>到这里就可以点击验证，当然如果是其他地方申请的参照各个服务商的设置。</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160627%20image-20210716160627317.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160627%20image-20210716160627317.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160627317"></p>
+<p><strong>域名验证成功，域名验证记录在证书签发后再删除，否则会因没有解析记录导致证书签发失败。</strong></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160659%20image-20210716160659108.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160659%20image-20210716160659108.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160659108"></p>
+<p>这里可以看到证书对<a target="_blank" rel="noopener" href="http://www.wxydejoy.top和wxydejoy.top是都可用的,接下来会提到./">www.wxydejoy.top和wxydejoy.top是都可用的，接下来会提到。</a></p>
+<p>签发后等一下可以删掉</p>
+<p>别忘了在申请证书那地方下载证书</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160837%20image-20210716160837571.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160837%20image-20210716160837571.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160837571"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160901%20image-20210716160901825.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160901%20image-20210716160901825.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160901825"></p>
+<h2 id="又拍云的HTTPS访问设置"><a href="#又拍云的HTTPS访问设置" class="headerlink" title="又拍云的HTTPS访问设置"></a>又拍云的HTTPS访问设置</h2><p>然后到又拍云</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160935%20image-20210716160935173.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160935%20image-20210716160935173.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160935173"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/160956%20image-20210716160956300.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/160956%20image-20210716160956300.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716160956300"></p>
+<p>填入刚才下好的证书（文本格式），全部复制就好，<strong>全部复制</strong>！！！</p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/161025%20image-20210716161025428.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/161025%20image-20210716161025428.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716161025428"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/161124%20image-20210716161124717.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/161124%20image-20210716161124717.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716161124717"></p>
+<p><img src="https://image.wxydejoy.top/img/202107/16/161143%20image-20210716161143344.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/16/161143%20image-20210716161143344.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210716161143344"></p>
+<p>%%% tip home %%%-<br><strong>一定要记得两个域名(www和裸域名)都要打开强制https</strong>，不然www是打不开的</p>
+<p>%%% endtip %%%-</p>
+<p>到这里就结束了</p>
+<p>记得把签发验证的dns解析删掉，不删也问题不大</p>
+<h2 id="检验"><a href="#检验" class="headerlink" title="检验"></a>检验</h2><p>建议用手机开流量访问测试，电脑延迟还是蛮久的，或者重启(有路由器的重启路由器，尤其是闪讯)</p>
+<p>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code>记得cmd<code>ipconfig /flushdns</code></p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>wxy
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://wxydejoy.top/posts/ce44/">https://wxydejoy.top/posts/ce44/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>文章写于2021-10-04</p></div> 
+    <div class="post-entry__tags"><a href="/tags/%F0%9F%92%BB-Hexo/" class="post-tags__link button"># 💻 Hexo</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/posts/c18a/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            C语言指针
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/posts/8a3d/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            考研规划
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+     
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2021&nbsp;-&nbsp;2021 <a href="/">快乐星球</a>
+        </p>
+    
+    
+        
+            <p><img src="https://cdn.jsdelivr.net/gh/wxydejoy/image@master/img/202107/15/181743%20%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png"style="margin-inline:5px"><a style="margin-inline:5px" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011871">浙公网安备 33010602011871号</a> <a style="margin-inline:5px" target="_blank" href="http://beian.miit.gov.cn/">浙ICP备2021022005号</a></p>
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('true'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
