@@ -193,11 +193,11 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@glorious/demo@0.9.0/dist/gdemo.min.css">
             <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
             <script src="//cdn.jsdelivr.net/npm/@glorious/demo@0.9.0/dist/gdemo.min.js"></script>
-            <div id='demo-teriminal' style='height: 400px'></div>
+            <div id='demo-teriminal' style='height: 600px'></div>
             <script>
         new GDemo('#demo-teriminal')
-          .openApp('terminal', {minHeight: '400px', windowTitle: '关于我', promptString: '👉'})
-    .command(`𐬿　　人生就像一场戏，因为有缘才相聚。`, {onCompleteDelay: 800}).command(`𐬿　　相扶到老不容易，是否更该去珍惜。`, {onCompleteDelay: 800}).command(`𐬿　　为了小事发脾气，回头想想又何必。`, {onCompleteDelay: 800}).command(`𐬿　　别人生气我不气，气出病来无人替。`, {onCompleteDelay: 800}).command(`𐬿　　我若气死谁如意，况且伤神又费力。`, {onCompleteDelay: 800}).command(`𐬿　　邻居亲朋不要比，儿孙琐事由他去。`, {onCompleteDelay: 800}).command(`𐬿　　吃苦享乐在一起，神仙羡慕好伴侣。`, {onCompleteDelay: 800}).command(`哪人<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　山东济宁（浩克山东欢迎您）`, {onCompleteDelay: 800}).command(`住哪<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　浙江杭州（读本科）`, {onCompleteDelay: 800}).command(`专业<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　机械工程<span class="token operator">-</span>智能制造`, {onCompleteDelay: 800}).command(`网站<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　兴趣、记录、倾诉`, {onCompleteDelay: 800}).command(`兴趣<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　数码`, {onCompleteDelay: 800}).command(`喜欢<span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　罗小黑（不知道请百度）`, {onCompleteDelay: 800}).command(`<span class="token constant">QQ</span><span class="token operator">?</span>`, {onCompleteDelay: 800}).command(`𐬿　　　　　　<span class="token number">1798923421</span>`, {onCompleteDelay: 800}).command(`更多<span class="token operator">?</span>`, {onCompleteDelay: 800})
+          .openApp('terminal', {minHeight: '600px', windowTitle: '关于我', promptString: '👉'})
+    .command(`𐬿　　人生就像一场戏，因为有缘才相聚。`, {onCompleteDelay: 900}).command(`𐬿　　相扶到老不容易，是否更该去珍惜。`, {onCompleteDelay: 900}).command(`𐬿　　为了小事发脾气，回头想想又何必。`, {onCompleteDelay: 900}).command(`𐬿　　别人生气我不气，气出病来无人替。`, {onCompleteDelay: 900}).command(`𐬿　　我若气死谁如意，况且伤神又费力。`, {onCompleteDelay: 900}).command(`𐬿　　邻居亲朋不要比，儿孙琐事由他去。`, {onCompleteDelay: 900}).command(`𐬿　　吃苦享乐在一起，神仙羡慕好伴侣。`, {onCompleteDelay: 900}).command(`哪人<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　山东济宁（浩克山东欢迎您）`, {onCompleteDelay: 900}).command(`住哪<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　浙江杭州（读本科）`, {onCompleteDelay: 900}).command(`专业<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　机械工程<span class="token operator">-</span>智能制造`, {onCompleteDelay: 900}).command(`网站<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　兴趣、记录、倾诉`, {onCompleteDelay: 900}).command(`兴趣<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　数码`, {onCompleteDelay: 900}).command(`喜欢<span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　罗小黑（不知道请百度）`, {onCompleteDelay: 900}).command(`<span class="token constant">QQ</span><span class="token operator">?</span>`, {onCompleteDelay: 900}).command(`𐬿　　　　　　<span class="token number">1798923421</span>`, {onCompleteDelay: 900}).command(`更多<span class="token operator">?</span>`, {onCompleteDelay: 900})
         .respond(`唉怪！白慌，傍黑告诉你！
 （济宁方言）`)
         .end();
@@ -206,7 +206,42 @@
 <br />
 <br />
 <br />
+<br />
 
+
+
+<div id="bber"></div>
+    <style>
+      .timeline ul {margin:0;}
+      .timeline ul li {background:#3b3d42;list-style-type:none;position:relative;width:3px;margin-left:0;padding:0.8em 0 2em;}
+      .timeline ul li::after {transform: rotate(45deg);content:'';background-color: #3b3d42;display: block;position: absolute;top: 10px;left: -5px;width: 0.8em;height: 0.8em;outline: 15px solid #fff;}
+      .timeline ul li div {position:relative;top:-13px;left:3em;width:600px;padding:0px 0px 0px;}
+      .timeline ul li p.datatime{color: #fafafa;font-size: 0.75em;font-style: italic;background-color: #3b3d42;display: inline-block;padding:0.25em 1em 0.2em 1em;}
+      .timeline ul li p.datacont{white-space: pre-wrap;margin:0.65em 0 0.3em;}
+      .timeline ul li p.datacont img{display:block;max-height:340px !important;}
+      .timeline ul li p.datacont img[src*="emotion"]{display:inline-block;width:auto;}
+      .timeline ul li p.datafrom{color: #aaa;font-size: 0.75em !important;font-style: italic;}
+      .timeline ul li p{margin:0;font-size:16px;letter-spacing:1px;color: #3b3d42;}
+      button{border-radius:0;}
+      .dark-theme .timeline ul li div p{color:#fafafa;}
+      .dark-theme .timeline ul li div p svg{fill:#fafafa;}
+      .dark-theme .timeline ul li p.datafrom{color: #aaa;}
+      .dark-theme .timeline ul li{background:#3b3d42;}
+      .dark-theme .timeline ul li::after{outline: 15px solid #292a2d;}
+      @media (max-width:860px) {
+          .timeline ul li{margin-left:0;}
+          .timeline ul li div{width:calc(100vw - 75px);left:30px;}
+      }
+    </style>
+  <script src="https://imgcache.qq.com/qcloud/cloudbase-js-sdk/1.4.0/cloudbase.full.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script>
+  <script>
+    const app = cloudbase.init({
+      env: "twikoo-3gls4obna5a0fbeb", //这里是你的环境id
+      region: "ap-shanghai"
+    })
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/bber@0.0.6/bber.js"></script>
 
     </div>
     
