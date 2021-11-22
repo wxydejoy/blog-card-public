@@ -183,7 +183,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-11-21"),
+            var update = Date.parse("2021-11-22"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -214,7 +214,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add .    </span><br><span class="line">git commit  -m &#x27; ty &#x27;</span><br><span class="line">npm version patch </span><br><span class="line">git push </span><br></pre></td></tr></table></figure>
 
 <p>内容其实很简单，就是简单的git命令</p>
-<h3 id="批量查找替换"><a href="#批量查找替换" class="headerlink" title="批量查找替换"></a>批量查找替换</h3><p>~~~求人不如求己，cyfan没看见就自己写，百度了一下 <code>sed</code> 命令 挺好的~~~<br>这里是利用shell脚本的查找替换功能比如将<code>3.txt</code>中的 <code>cdn.jsdelivr.net/gh/wxydejoy/image</code> 替换成 <code>unpkg.zhimg.com/wxydeimage@1.0.23</code> 其中有转义符号</p>
+<h3 id="批量查找替换"><a href="#批量查找替换" class="headerlink" title="批量查找替换"></a>批量查找替换</h3><p>~~~求人不如求己，cyfan没看见就自己写，百度了一下 <code>sed</code> 命令 挺好的~~~<br>这里是利用shell脚本的查找替换功能比如将<code>3.txt</code>中的 <code>unpkg.zhimg.com/wxydeimage@1.0.43</code> 替换成 <code>unpkg.zhimg.com/wxydeimage@1.0.23</code> 其中有转义符号</p>
 <p><code>sed -i &#39;s/cdn.jsdelivr.net\/gh\/wxydejoy\/image/unpkg.zhimg.com\/wxydeimage@1.0.23/g&#39; 3.txt </code></p>
 <p>加上文件遍历，就变成了这个样子。这个脚本放在博客根目录即可</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">folder=<span class="string">&quot;./test&quot;</span></span></span><br><span class="line"></span><br><span class="line">function readfile ()</span><br><span class="line">&#123;</span><br><span class="line"><span class="meta">#</span><span class="bash">这里`为esc下面的按键符号</span></span><br><span class="line">  for file in `ls $1`</span><br><span class="line">  do</span><br><span class="line"><span class="meta">#</span><span class="bash">这里的-d表示是一个directory，即目录/子文件夹</span></span><br><span class="line">    if [ -d $1&quot;/&quot;$file ]</span><br><span class="line">    then</span><br><span class="line"><span class="meta">#</span><span class="bash">如果子文件夹则递归</span></span><br><span class="line">      readfile $1&quot;/&quot;$file</span><br><span class="line">    else</span><br><span class="line"><span class="meta">#</span><span class="bash">否则就能够读取该文件的地址</span></span><br><span class="line">      echo $1&quot;/&quot;$file</span><br><span class="line"><span class="meta">#</span><span class="bash">读取该文件的文件名，basename是提取文件名的关键字</span></span><br><span class="line">   sed -i &#x27;s/cdn.jsdelivr.net\/gh\/wxydejoy\/image/unpkg.zhimg.com\/wxydeimage@1.0.23/g&#x27; $folder/$file</span><br><span class="line">   fi</span><br><span class="line">  done</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash">函数定义结束，这里用来运行函数</span></span><br><span class="line">folder=&quot;./source/_post&quot;</span><br><span class="line">readfile $folder                 </span><br></pre></td></tr></table></figure>
@@ -223,7 +223,7 @@
 <p>写着写着电脑黑屏了，吓死，幸亏是vscode自动保存了，有惊无险</p>
 <h2 id="完全自动化"><a href="#完全自动化" class="headerlink" title="完全自动化"></a>完全自动化</h2><p>我的目标是只要在提交之前运行一次脚本，无需手动修改版本号</p>
 <p>==敬请期待==</p>
-<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>今天看到npm的图床是想换来着，但是跑了一下速度，还是又拍云香，npm就用来论坛发帖吧，不过这个方案比较适合没有又拍云的同学。</p>
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>今天看到npm的图床是想换来着，但是跑了一下速度，还是又拍云香，npm就用来论坛发帖吧，不过这个方案比较适合没有又拍云的同学。�</p>
 
     </div>
     
@@ -245,7 +245,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-11-21</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-11-22</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%92%BB-Hexo/" class="post-tags__link button"># 💻 Hexo</a></div> 
 </article>
 
