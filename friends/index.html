@@ -420,7 +420,17 @@
     </script>
 </div>
     <div class="post__content">
-        <h2 id="我的友链"><a href="#我的友链" class="headerlink" title="我的友链"></a>我的友链</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">快乐星球</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://undf.top</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://wxydejoy.top/img/icon/android-chrome-96x96.png</span></span><br><span class="line">  <span class="comment">#descr: 什么是快乐星球!!!</span></span><br><span class="line">  <span class="attr">siteshot:</span> <span class="string">https://wxydejoy.top/img/siteshot.png</span></span><br></pre></td></tr></table></figure>
+        <h2 id="我的友链"><a href="#我的友链" class="headerlink" title="我的友链"></a>我的友链</h2><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@glorious/demo@0.9.0/dist/gdemo.min.css">
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+            <script src="//cdn.jsdelivr.net/npm/@glorious/demo@0.9.0/dist/gdemo.min.js"></script>
+            <div id='demo-teriminal' style='height: 300px'></div>
+            <script>
+        new GDemo('#demo-teriminal')
+          .openApp('terminal', {minHeight: '300px', windowTitle: '关于我', promptString: '👉'})
+    .command(`<span class="token operator">-</span> name<span class="token operator">:</span> <span class="token constant">WXY</span>`, {onCompleteDelay: 300}).command(`url<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>undf<span class="token punctuation">.</span>top`, {onCompleteDelay: 300}).command(`avatar<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>c<span class="token punctuation">.</span>undf<span class="token punctuation">.</span>top<span class="token operator">/</span>img<span class="token operator">/</span>icon<span class="token operator">/</span>android<span class="token operator">-</span>chrome<span class="token operator">-</span><span class="token number">96</span>x96<span class="token punctuation">.</span>png`, {onCompleteDelay: 300}).command(``, {onCompleteDelay: 300})
+        .respond(`none`)
+        .end();
+    </script>
 
     </div>
     
