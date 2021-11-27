@@ -153,7 +153,7 @@
                 <div class='post-entry content-card'>
                     <div class="post-entry__header">
     
-        <div class="post-thumbnail lazy" data-bg="https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202105/30/222322%20image-20210530220321831.png"></div>
+        <div class="post-thumbnail" style="background-image: url('https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202105/30/222322%20image-20210530220321831.png');"></div>
     
 </div>
 <div class="post-entry__content">
@@ -180,7 +180,7 @@
                 <div class='post-entry content-card'>
                     <div class="post-entry__header">
     
-        <div class="post-thumbnail lazy" data-bg="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/IMG_20210514_093308.4wvl1peslj40.jpg"></div>
+        <div class="post-thumbnail" style="background-image: url('https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/IMG_20210514_093308.4wvl1peslj40.jpg');"></div>
     
 </div>
 <div class="post-entry__content">
@@ -253,7 +253,7 @@
                 <div class='post-entry content-card'>
                     <div class="post-entry__header">
     
-        <div class="post-thumbnail lazy" data-bg="https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202106/26/181114%20image-20210626181114541.png"></div>
+        <div class="post-thumbnail" style="background-image: url('https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202106/26/181114%20image-20210626181114541.png');"></div>
     
 </div>
 <div class="post-entry__content">
@@ -408,15 +408,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -449,7 +441,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('true'),
+        let lazyloadT = Boolean('false'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {

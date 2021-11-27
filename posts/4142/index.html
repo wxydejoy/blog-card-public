@@ -227,7 +227,7 @@
 <hr>
 <h2 id="链接及图片"><a href="#链接及图片" class="headerlink" title="链接及图片"></a>链接及图片</h2><p>链接和图片可以为文章润色不少，通过 <a href="%E5%9C%B0%E5%9D%80">描述</a> 既可以添加链接，而在其前面添加一个 ! 号即为添加图片， 具体为:</p>
 <p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
-<p><img src="http://oss.blurme.idik.net/artemis/image/logo.png" class="lazy" data-srcset="http://oss.blurme.idik.net/artemis/image/logo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="Kio Logo"></p>
+<p><img src="http://oss.blurme.idik.net/artemis/image/logo.png" alt="Kio Logo"></p>
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
 <thead>
 <tr>
@@ -358,15 +358,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -399,7 +391,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('true'),
+        let lazyloadT = Boolean('false'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
