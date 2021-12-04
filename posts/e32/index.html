@@ -183,7 +183,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-12-03"),
+            var update = Date.parse("2021-12-04"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -199,7 +199,7 @@
         <p>我是一个偶尔胡思乱想的人，偶尔有一些好点子还是很不错的。</p>
 <h2 id="胡思乱想"><a href="#胡思乱想" class="headerlink" title="胡思乱想"></a>胡思乱想</h2><p>感情是很宝贵的东西，但也是很廉价的东西–庆余年</p>
 <p>除了吃喝拉撒这种生物本能，世上没有什么天经地义的事情，那些都是古往今来圣贤哲学家构建出来的。–徐涛</p>
-<p><img src="https://image.wxydejoy.top/img/%E6%90%9E%E7%AC%912021-08-04-11-11-13.png" alt="搞笑2021-08-04-11-11-13"><br>形而上学，不行下学<br>中国的部分软弱男明星可能是国外的阴谋</p>
+<p><img src="https://image.wxydejoy.top/img/%E6%90%9E%E7%AC%912021-08-04-11-11-13.png" class="lazy" data-srcset="https://image.wxydejoy.top/img/%E6%90%9E%E7%AC%912021-08-04-11-11-13.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="搞笑2021-08-04-11-11-13"><br>形而上学，不行下学<br>中国的部分软弱男明星可能是国外的阴谋</p>
 <h2 id="填坑"><a href="#填坑" class="headerlink" title="填坑"></a>填坑</h2><p>%% checkbox fluent search 软件介绍%%<br>%% checkbox 学学js%% </p>
 <p>%% checkbox 正则表达式%% </p>
 <h2 id="想写的文章"><a href="#想写的文章" class="headerlink" title="想写的文章"></a>想写的文章</h2><p>80分万岁</p>
@@ -224,7 +224,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-12-03</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-12-04</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
@@ -303,7 +303,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -346,7 +354,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
