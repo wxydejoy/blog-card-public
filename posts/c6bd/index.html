@@ -179,7 +179,7 @@
 <article class="post post__with-toc content-card">
     <div class="post__header">
     
-        <div class="post-thumbnail" style="background-image: url('https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png');"></div>
+        <div class="post-thumbnail lazy" data-bg="https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png"></div>
     
 
     <div class="post__expire" id="post-expired-notify">
@@ -189,7 +189,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-12-03"),
+            var update = Date.parse("2021-12-04"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -211,7 +211,7 @@
 <p>有建议请评论区留言，欢迎！！</p>
 <p>7.27更新：关闭移动端并根据屏幕大小判断是否引入并开启</p>
 <p>%%% endtip %%%-</p>
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p><img src="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" alt="动画2142"></p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p><img src="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="动画2142"></p>
 <h2 id="引入js"><a href="#引入js" class="headerlink" title="引入js"></a>引入js</h2><p>只针对butterfly主题，其他主题请自己根据情况调整</p>
 <p>icebg.js代码在最下面</p>
 <p>在<code>_config.butterfly.yml</code>中<code>inject</code>的<code>bottom:</code>插入代码</p>
@@ -253,7 +253,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-12-03</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-12-04</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%92%BB-Hexo/" class="post-tags__link button"># 💻 Hexo</a></div> 
 </article>
 
@@ -332,7 +332,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -375,7 +383,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {

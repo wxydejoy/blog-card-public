@@ -185,7 +185,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-12-03"),
+            var update = Date.parse("2021-12-04"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -223,10 +223,10 @@
 <p>你喜欢简约风格吗？您想在屏幕上获得尽可能多的信息吗？Fluent Search 助您一臂之力。您可以根据需要轻松缩放搜索窗口并更改其外观。</p>
 <h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>简单性是 Fluent Search 非常重要的方面。</p>
 <p>在提供丰富的搜索结果的同时尽量保持简单是 Fluent Search 的一个持续挑战。</p>
-<h1 id="我的介绍"><a href="#我的介绍" class="headerlink" title="我的介绍"></a>我的介绍</h1><h2 id="最小外观"><a href="#最小外观" class="headerlink" title="最小外观"></a>最小外观</h2><p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184152%20image-20210712184145199.png" alt="image-20210712184145199"></p>
-<p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184216%20image-20210712184216429.png" alt="image-20210712184216429"></p>
+<h1 id="我的介绍"><a href="#我的介绍" class="headerlink" title="我的介绍"></a>我的介绍</h1><h2 id="最小外观"><a href="#最小外观" class="headerlink" title="最小外观"></a>最小外观</h2><p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184152%20image-20210712184145199.png" class="lazy" data-srcset="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184152%20image-20210712184145199.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210712184145199"></p>
+<p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184216%20image-20210712184216429.png" class="lazy" data-srcset="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184216%20image-20210712184216429.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210712184216429"></p>
 <p>外观是那种磨砂透明玻璃的感觉，非常不错。</p>
-<h2 id="设置界面"><a href="#设置界面" class="headerlink" title="设置界面"></a>设置界面</h2><p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184616%20image-20210712184616462.png" alt="image-20210712184616462"></p>
+<h2 id="设置界面"><a href="#设置界面" class="headerlink" title="设置界面"></a>设置界面</h2><p><img src="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184616%20image-20210712184616462.png" class="lazy" data-srcset="https://unpkg.zhimg.com/wxydeimage@1.0.43@master/img/202107/12/184616%20image-20210712184616462.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="image-20210712184616462"></p>
 <p>写不动了，再说吧<br>�</p>
 
     </div>
@@ -249,7 +249,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-12-03</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-12-04</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%96%A5%EF%B8%8F-Software/" class="post-tags__link button"># 🖥️ Software</a></div> 
 </article>
 
@@ -328,7 +328,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -371,7 +379,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {

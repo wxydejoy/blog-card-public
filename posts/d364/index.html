@@ -185,7 +185,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-12-03"),
+            var update = Date.parse("2021-12-04"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -198,7 +198,7 @@
     </script>
 </div>
     <div class="post__content">
-        <h2 id="部分功能展示"><a href="#部分功能展示" class="headerlink" title="部分功能展示"></a>部分功能展示</h2><p><img src="https://image.wxydejoy.top/image/2021/11/03/644af7e6069ac6578b4ef28210bbd952.gif"></p>
+        <h2 id="部分功能展示"><a href="#部分功能展示" class="headerlink" title="部分功能展示"></a>部分功能展示</h2><p><img src="https://image.wxydejoy.top/image/2021/11/03/644af7e6069ac6578b4ef28210bbd952.gif" class="lazy" data-srcset="https://image.wxydejoy.top/image/2021/11/03/644af7e6069ac6578b4ef28210bbd952.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg=="></p>
 <p>这是视觉识别课程做的一个小软件</p>
 <p>主要功能：通过opencv模块识别物体中心坐标，计算物体姿态角度，计算叶子面积和形心，支持文件上传识别以及摄像头采集。</p>
 <p>目前已开源，GitHub仓库<a target="_blank" rel="noopener" href="https://github.com/wxydejoy/visual_identity_">here</a></p>
@@ -223,7 +223,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-12-03</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-12-04</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%93%84-Python/" class="post-tags__link button"># 📄 Python</a><a href="/tags/%E2%8C%A8%EF%B8%8F-Qt/" class="post-tags__link button"># ⌨️ Qt</a><a href="/tags/%F0%9F%93%84-Opencv/" class="post-tags__link button"># 📄 Opencv</a></div> 
 </article>
 
@@ -302,7 +302,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -345,7 +353,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
