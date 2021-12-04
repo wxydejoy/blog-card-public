@@ -177,7 +177,7 @@
 <article class="post post__with-toc content-card">
     <div class="post__header">
     
-        <div class="post-thumbnail" style="background-image: url('https://image.wxydejoy.top/img/202107/18/230818%20image-20210718230818920.png');"></div>
+        <div class="post-thumbnail lazy" data-bg="https://image.wxydejoy.top/img/202107/18/230818%20image-20210718230818920.png"></div>
     
 
     <div class="post__expire" id="post-expired-notify">
@@ -187,7 +187,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2021-12-03"),
+            var update = Date.parse("2021-12-04"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -233,7 +233,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章写于2021-12-03</p></div> 
+    <div class="post-footer__meta"><p>文章写于2021-12-04</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
@@ -312,7 +312,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -355,7 +363,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
