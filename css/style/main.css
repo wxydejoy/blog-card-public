@@ -578,6 +578,8 @@ overflows table td {
   max-width: 1080px;
 }
 .links-list .links-content {
+  align-items: stretch;
+  -webkit-align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,8 +588,6 @@ overflows table td {
   margin: -8px;
   border-radius: 5px;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   line-height: 1.3;
 }
 .links-list .links-content .links-card {
@@ -638,8 +638,8 @@ overflows table td {
   align-self: center;
 }
 .links-list .links-content .links-left .avatar {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   margin: 16px 8px 4px 8px;
   margin-top: calc(-1.25 * 16px - 32px);
   border-radius: 100%;
