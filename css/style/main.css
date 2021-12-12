@@ -966,6 +966,12 @@ overflows table td {
 .cover .cover__intro {
   color: #999;
 }
+.cover .shichi {
+  color: #999;
+}
+.cover .jinrishici-sentence {
+  color: #999;
+}
 .footer {
   display: block;
   -webkit-box-align: center;
