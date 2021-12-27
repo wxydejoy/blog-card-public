@@ -293,7 +293,7 @@ code {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 14px;
-  background-color: var(--bg-code);
+  background-color: #d5eaff;
   border-radius: 3px;
 }
 a:active,
@@ -462,6 +462,7 @@ overflows table td {
   background-color: initial;
   color: #0366d6;
   text-decoration: none;
+  border-radous: 6px;
 }
 .post-entry__content a:hover,
 .post__content a:hover {
