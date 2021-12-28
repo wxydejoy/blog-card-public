@@ -870,6 +870,29 @@ overflows table td {
   background-origin: padding-box;
   background-attachment: scroll;
 }
+.post-entry__header2,
+.post__header2 {
+  margin: calc(var(--space) * -1) !important;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.post-entry__header2:empty,
+.post__header2:empty {
+  display: none;
+}
+.post-entry__header2 .post-thumbnail,
+.post__header2 .post-thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 40%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-origin: padding-box;
+  background-attachment: scroll;
+}
 .post__content {
   padding-top: 0.1px;
 }
