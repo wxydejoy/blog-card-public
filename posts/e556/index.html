@@ -45,29 +45,28 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="初机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。 本文的主题是平面三轴机械臂。 启首先来学习一下单轴的，如下图： （系统画图画的） 将物理问题转化为数学问题，建立坐标系：  杆长取r很容易就能得到端点坐标为rcosα,rscinα 是不是很简单，那接下来看两个杆。 中如图所">
+    <meta name="description" content="初机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。 本文的主题是平面三轴机械臂。  启首先来学习一下单轴的，如下图： （系统画图画的） 将物理问题转化为数学问题，建立坐标系：  杆长取r很容易就能得到端点坐标为rcosα,rscinα 是不是很简单，那接下来看两个杆。 中如图">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三根杆">
 <meta property="og:url" content="https://c.undf.top/posts/e556/index.html">
 <meta property="og:site_name" content="WXY">
-<meta property="og:description" content="初机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。 本文的主题是平面三轴机械臂。 启首先来学习一下单轴的，如下图： （系统画图画的） 将物理问题转化为数学问题，建立坐标系：  杆长取r很容易就能得到端点坐标为rcosα,rscinα 是不是很简单，那接下来看两个杆。 中如图所">
+<meta property="og:description" content="初机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。 本文的主题是平面三轴机械臂。  启首先来学习一下单轴的，如下图： （系统画图画的） 将物理问题转化为数学问题，建立坐标系：  杆长取r很容易就能得到端点坐标为rcosα,rscinα 是不是很简单，那接下来看两个杆。 中如图">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.wxydejoy.top/index/2021-12-21-17-53-30.gif">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-38-07.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-41-42.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-46-00.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-51-13.png">
-<meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-06.png">
-<meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-14.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-51-13.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-12-05-57.png">
 <meta property="og:image" content="https://image.wxydejoy.top/index/2021-12-21-17-53-30.gif">
 <meta property="article:published_time" content="2022-01-03T21:20:55.000Z">
-<meta property="article:modified_time" content="2022-01-03T05:21:57.561Z">
+<meta property="article:modified_time" content="2022-01-03T06:01:10.417Z">
 <meta property="article:author" content="wxy">
 <meta property="article:tag" content="⚙️Machine">
 <meta property="article:tag" content="🦾平面三杆">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-38-07.png">
+<meta name="twitter:image" content="https://image.wxydejoy.top/index/2021-12-21-17-53-30.gif">
 
 
     
@@ -224,6 +223,7 @@
     <div class="post__content">
         <h2 id="初"><a href="#初" class="headerlink" title="初"></a>初</h2><p>机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。</p>
 <p>本文的主题是平面三轴机械臂。</p>
+<p><img src="https://image.wxydejoy.top/index/2021-12-21-17-53-30.gif" class="lazy" data-srcset="https://image.wxydejoy.top/index/2021-12-21-17-53-30.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="TU"></p>
 <h2 id="启"><a href="#启" class="headerlink" title="启"></a>启</h2><p>首先来学习一下单轴的，如下图：</p>
 <p><img src="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-38-07.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-38-07.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2022-01-03-10-38-07"><br>（系统画图画的）</p>
 <p>将物理问题转化为数学问题，建立坐标系：</p>
@@ -242,9 +242,7 @@
 <p>上述思路皆为正运动学（正运动学可以大致理解为已知三根杆的长度和角度，求端点坐标）。<br>既然有正运动学，就会有逆运动学（逆运动学可以理解为已知三杆长度和端点坐标，求相关角度）。<br>而在实际运用中，逆运动学往往更多，比如抓取物体。</p>
 </blockquote>
 <h2 id="潮"><a href="#潮" class="headerlink" title="潮"></a>潮</h2><p>咱们还是从简单的开始</p>
-<p>杆长<code>r</code>，端点坐标为<code>x,y</code>，很容易就能得到α角度<code>arccos(r/x),arcsin(r/y)</code>，这里需要注意的是不要想当然，一定要严谨，因为<code>xy</code>有正负，所以不能根据<code>arctan</code>算角度。附上arcsin和arcos和arctan的图像帮助理解。</p>
-<p><img src="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-06.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-06.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2022-01-03-11-14-06"></p>
-<p><img src="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-14.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-11-14-14.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2022-01-03-11-14-14"></p>
+<p>杆长<code>r</code>，端点坐标为<code>x,y</code>，很容易就能得到α角度<code>arccos(r/x),arcsin(r/y)</code></p>
 <p>接下来看两杆</p>
 <p><img src="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-51-13.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/%E4%B8%89%E8%87%AA%E7%94%B1%E5%BA%A6/2022-01-03-10-51-13.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2022-01-03-10-51-13"></p>
 <p>依旧看这幅图，很容易就能想到余弦定理求角度，这没问题，但你可能会遇到一个问题，如图</p>
@@ -265,7 +263,8 @@
 <p>在这三个过程中还要通过正运动学计算并绘制爪子<br>另外，计算机的坐标原点和xy轴都在左上角，并不是中心点，需要进行坐标系变换，这里不再详细讲述。</p>
 <p>源码仓库<a target="_blank" rel="noopener" href="https://github.com/wxydejoy/DrawPath/">GitHub - wxydejoy/DrawPath: 三杆 机械臂</a></p>
 <p>这里就不对代码进行介绍了，内容很多，核心部分以及思路已经在上述内容中讲过，欢迎指正。</p>
-<h2 id="终"><a href="#终" class="headerlink" title="终"></a>终</h2><p>平面三杆已经有点复杂了，那如果是空间三杆呢？如何计算？</p>
+<h2 id="终"><a href="#终" class="headerlink" title="终"></a>终</h2><p>思路其实不是很难，难的是其中的细节，敲错一点或者有理解不清楚的结果就会完全不一样。</p>
+<p>平面三杆已经有点复杂了，那如果是空间三杆呢？如何计算？</p>
 <h2 id="引"><a href="#引" class="headerlink" title="引"></a>引</h2><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E6%89%8B%E8%87%82">機械手臂 - 维基百科，自由的百科全书</a></p>
 
     </div>
