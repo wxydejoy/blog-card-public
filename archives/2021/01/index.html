@@ -35,7 +35,7 @@
     <!-- meta -->
 
 
-<title>标签：💻CIDR | WXY</title>
+<title>归档：2021/1 | WXY</title>
 
 
 
@@ -46,7 +46,7 @@
     <meta name="description" content="快乐星球">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WXY">
-<meta property="og:url" content="https://c.undf.top/tags/%F0%9F%92%BBCIDR/index.html">
+<meta property="og:url" content="https://c.undf.top/archives/2021/01/index.html">
 <meta property="og:site_name" content="WXY">
 <meta property="og:description" content="快乐星球">
 <meta property="og:locale" content="zh_CN">
@@ -74,8 +74,7 @@
         <link rel="stylesheet" href="https://c.undf.top/cdn/pace/pace.min.css"> 
     
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="WXY" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 6.0.0"></head>
 
     <body>
         <div id="app">
@@ -96,6 +95,8 @@
                     <a href="/search/" class="navbar-menu button">搜索</a>
                 
                     <a href="/movies/" class="navbar-menu button">影单</a>
+                
+                    <a href="/about/" class="navbar-menu button">关于</a>
                 
                     <a href="/friends/" class="navbar-menu button">友链</a>
                 
@@ -125,6 +126,8 @@
                 
                     <a href="/movies/" class="dropdown-menu button">影单</a>
                 
+                    <a href="/about/" class="dropdown-menu button">关于</a>
+                
                     <a href="/friends/" class="dropdown-menu button">友链</a>
                 
                     <a href="/toys/" class="dropdown-menu button">玩具</a>
@@ -138,7 +141,7 @@
     <div class="cover">
         <div class="cover__logo">
             
-                <img no-lazy alt="author Image" class="cover__avatar" src="https://image.wxydejoy.top/image/_config/2022-01-28-13-35-03.jpg">
+                <h1>Here Is Wxy</h1>
             
         </div>
         
@@ -151,21 +154,31 @@
     </div>
 
             
-
+<main class='main'>
     
-        <main class="main">
-            
+		
     <div class="post-list">
         
             
                 <div class='post-entry content-card'>
                     
 
-    <div class="post-entry__header2">
-    
-            <a href="/posts/iir0g4/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-03-09-40-27.png');"></div></a>
+    <div class="post-entry__header"></div>
+    <div class="post-entry__content">
+        <h2 class="post-entry__title">
+            三根杆
+        </h2>
         
-</div>
+    </div>
+    <div class="post-entry__meta">
+        <a href="/archives/2021/01/" class="post-meta__date button">文章写于2021-01-03</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%F0%9F%92%BBCode/" class="button">💻Code</a>
+
+ 
+    </div>
+    <div class="post-entry__tags"><a href="/tags/%E2%9A%99%EF%B8%8FMachine/" class="post-tags__link button">⚙️Machine</a><a href="/tags/%F0%9F%A6%BE%E5%B9%B3%E9%9D%A2%E4%B8%89%E6%9D%86/" class="post-tags__link button">🦾平面三杆</a></div> 
+    <a href="/posts/e556/" class="post-entry__link">三根杆</a>
 
 
 
@@ -176,11 +189,8 @@
     
 
 
-        </main>
-    
-
-
-
+	
+</main>
 
             <footer class="footer">
      
@@ -215,7 +225,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -247,6 +265,41 @@
     
  
 
+
+    
+<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
+
+    
+<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('true'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
  
 
  
