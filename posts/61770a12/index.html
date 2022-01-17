@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    
+    
+        <link rel="mask-icon" href="/icon/apple-touch-icon-180x180.png">
+    
+
+
+    <!-- meta -->
+
+
+<title>毕业论文撰写日记 | WXY</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="题目确定机床拨叉零件铝合金压铸模具设计及机加工工装夹具设计    任务：  重新绘制该零件图，按需要适当调整技术要求。 压铸模设计；简化零件结构，去除不便于压铸成型的结构（这部分结构让后续机加工方式成型），并对后续需要机加工的结构放加工余量，绘制此时的压铸胚体零件图。 在UG软件中进行三维建模，并通过UG的moldwizard模具设计模块进行分型，完成其压铸模设计，在flow3d中完成压铸流动CA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="毕业论文撰写日记">
+<meta property="og:url" content="https://c.undf.top/posts/61770a12/index.html">
+<meta property="og:site_name" content="WXY">
+<meta property="og:description" content="题目确定机床拨叉零件铝合金压铸模具设计及机加工工装夹具设计    任务：  重新绘制该零件图，按需要适当调整技术要求。 压铸模设计；简化零件结构，去除不便于压铸成型的结构（这部分结构让后续机加工方式成型），并对后续需要机加工的结构放加工余量，绘制此时的压铸胚体零件图。 在UG软件中进行三维建模，并通过UG的moldwizard模具设计模块进行分型，完成其压铸模设计，在flow3d中完成压铸流动CA">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.wxydejoy.top/image/毕业论文/2022-01-17-19-51-37.png">
+<meta property="article:published_time" content="2021-11-16T21:20:55.000Z">
+<meta property="article:modified_time" content="2022-01-17T13:29:07.617Z">
+<meta property="article:author" content="wxy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://image.wxydejoy.top/image/毕业论文/2022-01-17-19-51-37.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/atom-one-light.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+    
+        <script src="https://c.undf.top/cdn/pace/pace.min.js"></script> 
+    
+        <link rel="stylesheet" href="https://c.undf.top/cdn/pace/pace.min.css"> 
+    
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Hi</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/search/" class="navbar-menu button">搜索</a>
+                
+                    <a href="/movies/" class="navbar-menu button">影单</a>
+                
+                    <a href="/about/" class="navbar-menu button">关于</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/toys/" class="navbar-menu button">玩具</a>
+                
+            </div>
+        
+        
+        
+    <!-- <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a> -->
+
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/search/" class="dropdown-menu button">搜索</a>
+                
+                    <a href="/movies/" class="dropdown-menu button">影单</a>
+                
+                    <a href="/about/" class="dropdown-menu button">关于</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/toys/" class="dropdown-menu button">玩具</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+    
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E7%A1%AE%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">题目确定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BB%B4%E5%BB%BA%E6%A8%A1"><span class="toc-number">2.</span> <span class="toc-text">三维建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E5%9B%BE%E7%BA%B8"><span class="toc-number">3.</span> <span class="toc-text">二维图纸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E6%96%87%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91"><span class="toc-number">4.</span> <span class="toc-text">外文论文翻译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0"><span class="toc-number">5.</span> <span class="toc-text">文献综述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A"><span class="toc-number">6.</span> <span class="toc-text">开题报告</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E9%93%B8%E6%A8%A1%E5%85%B7%E8%AE%BE%E8%AE%A1"><span class="toc-number">7.</span> <span class="toc-text">压铸模具设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%88%86%E6%A8%A1"><span class="toc-number">7.1.</span> <span class="toc-text">第一次分模</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E5%8A%A8%E5%88%86%E6%9E%90"><span class="toc-number">8.</span> <span class="toc-text">流动分析</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">文章目录</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E7%A1%AE%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">题目确定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BB%B4%E5%BB%BA%E6%A8%A1"><span class="toc-number">2.</span> <span class="toc-text">三维建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E5%9B%BE%E7%BA%B8"><span class="toc-number">3.</span> <span class="toc-text">二维图纸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E6%96%87%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91"><span class="toc-number">4.</span> <span class="toc-text">外文论文翻译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0"><span class="toc-number">5.</span> <span class="toc-text">文献综述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A"><span class="toc-number">6.</span> <span class="toc-text">开题报告</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E9%93%B8%E6%A8%A1%E5%85%B7%E8%AE%BE%E8%AE%A1"><span class="toc-number">7.</span> <span class="toc-text">压铸模具设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%88%86%E6%A8%A1"><span class="toc-number">7.1.</span> <span class="toc-text">第一次分模</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E5%8A%A8%E5%88%86%E6%9E%90"><span class="toc-number">8.</span> <span class="toc-text">流动分析</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header">
+    
+            <a href="/posts/61770a12/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/image/毕业论文/2022-01-17-19-51-37.png');"></div></a>
+        
+
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 &lt;span id=&#34;expire-date&#34;&gt;&lt;/span&gt; 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2022-01-17"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+</div>
+    <div class="post__content">
+        <h2 id="题目确定"><a href="#题目确定" class="headerlink" title="题目确定"></a>题目确定</h2><p>机床拨叉零件铝合金压铸模具设计及机加工工装夹具设计</p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-48-47.jpg" alt="2021-12-27-12-48-47"></p>
+<iframe id="modelFrame" src="https://ts.undf.top/3d/bysj.html" width="100%" height=500px style = "border-radius: 10px;" frameborder="0"></iframe>
+
+<p>任务：</p>
+<ol>
+<li>重新绘制该零件图，按需要适当调整技术要求。</li>
+<li>压铸模设计；简化零件结构，去除不便于压铸成型的结构（这部分结构让后续机加工方式成型），并对后续需要机加工的结构放加工余量，绘制此时的压铸胚体零件图。</li>
+<li>在UG软件中进行三维建模，并通过UG的moldwizard模具设计模块进行分型，完成其压铸模设计，在flow3d中完成压铸流动CAE分析。</li>
+<li>分析讨论由压铸完成的精密毛坯件的后续加工工艺，明确其加工工序；对需要机加工的部分结构，选择典型结构设计机加工夹具，并在三维软件中完成该夹具设计。</li>
+<li>零件图出图和装配图出图，完成毕业设计论文。</li>
+</ol>
+<h2 id="三维建模"><a href="#三维建模" class="headerlink" title="三维建模"></a>三维建模</h2><details ><summary>闲话</summary><div class="fold-content"><p>2021.11.16  安装好了两个软件</p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-49-55.png" alt="2021-12-27-12-49-55"></p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-50-29.png" alt="2021-12-27-12-50-29"></p>
+<p>一开始没断网安装UG折腾了半天。</p>
+<p>什么时候能用上正版软件</p>
+<p>什么时候能用上国产软件</p>
+<p>什么时候能用上国产正版软件</p>
+<p>caxa 既然可以 那么这些也一定可以 只是时间问题 加油！！！</p>
+<p>今天就用UG简简单单建个模型。</p>
+<p>没有想象中的简单，UG不熟悉</p>
+<p>现在是11.17 继续</p>
+<p>12.27 之前的图片都挂了，不小心被我删了。</p>
+</div></details>
+
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-52-40.png" alt="2021-12-27-12-52-40"></p>
+<p>感觉边缘还是有些问题，回头问问导师。</p>
+<h2 id="二维图纸"><a href="#二维图纸" class="headerlink" title="二维图纸"></a>二维图纸</h2><p>UG导出  改天再画细节  –11.17</p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-54-37.png" alt="2021-12-27-12-54-37"></p>
+<details ><summary>2021.11.21闲话</summary><div class="fold-content"><p>今天身生病了，就在寝室搞搞毕业设计吧！</p>
+<p>画图纸</p>
+<p>补充一点点细节完工</p>
+<p>又有点冷了，收拾一下，睡觉了。</p>
+<p>2021.11.21</p>
+</div></details>
+
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-55-08.png" alt="2021-12-27-12-55-08"></p>
+<h2 id="外文论文翻译"><a href="#外文论文翻译" class="headerlink" title="外文论文翻译"></a>外文论文翻译</h2><p>要求 2W 打印字符</p>
+<details ><summary>闲话</summary><div class="fold-content"><p>今天费劲巴拉的找了两篇字符在3w左右的文章，通过office先自动翻译，然后再自己阅读进行详细的修改。</p>
+<p>咋感觉给自己找了个坑</p>
+<p>但是考虑到后面还要在文章中引用，就这两篇吧。</p>
+<p>问题不大。</p>
+<p>2021.11.22</p>
+</div></details>
+
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-56-13.png" alt="2021-12-27-12-56-13"></p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-27-12-56-46.png" alt="2021-12-27-12-56-46"></p>
+<h2 id="文献综述"><a href="#文献综述" class="headerlink" title="文献综述"></a>文献综述</h2><details ><summary>闲话</summary><div class="fold-content"><p>折腾文档格式还是蛮麻烦的<br>弄个模板，后面的都复制一下</p>
+</div></details>
+
+<h2 id="开题报告"><a href="#开题报告" class="headerlink" title="开题报告"></a>开题报告</h2><h2 id="压铸模具设计"><a href="#压铸模具设计" class="headerlink" title="压铸模具设计"></a>压铸模具设计</h2><details ><summary>思路</summary><div class="fold-content"><p>12.28<br>对分型面大概有了概念，也有了大概思路</p>
+<p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2021-12-28-18-29-29.png" alt="2021-12-28-18-29-29"></p>
+<p>绿色为动模，红色为大致分型面，具体在哪里肯定还要再想想，然后这个零件是成对制造的，肯定要再收拾一下</p>
+</div></details>
+<h3 id="第一次分模"><a href="#第一次分模" class="headerlink" title="第一次分模"></a>第一次分模</h3><p><img src="https://image.wxydejoy.top/image/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/2022-01-01-11-18-10.png" alt="2022-01-01-11-18-10"></p>
+<h2 id="流动分析"><a href="#流动分析" class="headerlink" title="流动分析"></a>流动分析</h2>
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>wxy
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://c.undf.top/posts/61770a12/">https://c.undf.top/posts/61770a12/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>文章更新于2022-01-17</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/posts/8730864/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            从零开始个人主页
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/posts/85b39a47/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            图书馆奇遇记
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+     
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+            <p><img src="https://c.undf.top/cdn/%E5%A4%87%E6%A1%88.png" /><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011871">浙公网安备33010602011937号</a></p><p><a target="_blank" href="http://beian.miit.gov.cn/">浙ICP备2021022005号</a> </p>
+        
+    
+    
+        
+        <p class="footer-copyright">
+            2021&nbsp;<a target="_blank" href="mailto:1798923421@qq.com"> 📧 </a>&nbsp;2022
+             <!-- <a href="/">WXY</a> -->
+        </p>
+    
+    
+    <p><a href="https://hexo.io" target="_blank">Hexo</a> | <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?5737bfc954e9ae8ece59f5df2faa6540';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
