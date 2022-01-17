@@ -229,15 +229,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -269,41 +261,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  

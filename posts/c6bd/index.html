@@ -54,7 +54,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png">
 <meta property="article:published_time" content="2021-07-21T15:20:55.000Z">
-<meta property="article:modified_time" content="2022-01-11T10:29:20.430Z">
+<meta property="article:modified_time" content="2022-01-17T07:04:32.083Z">
 <meta property="article:author" content="wxy">
 <meta property="article:tag" content="💻Hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -194,7 +194,7 @@
 <article class="post post__with-toc content-card">
     <div class="post__header">
     
-        <a href="/posts/c6bd/"><div class="post-thumbnail lazy" href="/posts/c6bd/" data-bg="https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png"></div></a>
+            <a href="/posts/c6bd/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png');"></div></a>
         
 
     <div class="post__expire" id="post-expired-notify">
@@ -204,7 +204,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2022-01-11"),
+            var update = Date.parse("2022-01-17"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -226,7 +226,7 @@
 <p>有建议请评论区留言，欢迎！！</p>
 <p>7.27更新：关闭移动端并根据屏幕大小判断是否引入并开启</p>
 <p>%%% endtip %%%-</p>
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p><img src="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" class="lazy" data-srcset="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="动画2142"></p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p><img src="https://image.wxydejoy.top/img/202107/21/142359%20%E5%8A%A8%E7%94%BB2142.gif" alt="动画2142"></p>
 <h2 id="引入js"><a href="#引入js" class="headerlink" title="引入js"></a>引入js</h2><p>只针对butterfly主题，其他主题请自己根据情况调整</p>
 <p>icebg.js代码在最下面</p>
 <p>在<code>_config.butterfly.yml</code>中<code>inject</code>的<code>bottom:</code>插入代码</p>
@@ -268,7 +268,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章更新于2022-01-11</p></div> 
+    <div class="post-footer__meta"><p>文章更新于2022-01-17</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%92%BBHexo/" class="post-tags__link button">💻Hexo</a></div> 
 </article>
 
@@ -349,15 +349,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -389,41 +381,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  

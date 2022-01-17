@@ -166,7 +166,7 @@
 
     <div class="post-entry__header2">
     
-        <a href="/posts/3f4daa0d/"><div class="post-thumbnail lazy" href="/posts/3f4daa0d/" data-bg="https://image.wxydejoy.top/image/upyun/2021-12-31-20-01-01.png"></div></a>
+            <a href="/posts/3f4daa0d/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/image/upyun/2021-12-31-20-01-01.png');"></div></a>
         
 </div>
 
@@ -218,15 +218,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -258,41 +250,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  

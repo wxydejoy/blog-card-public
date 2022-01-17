@@ -56,8 +56,8 @@
 <meta property="og:image" content="https://image.wxydejoy.top/image/homepage/2021-12-27-18-55-37.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/homepage/2021-12-27-18-56-34.png">
 <meta property="og:image" content="https://image.wxydejoy.top/image/homepage/2021-12-28-09-27-29.png">
-<meta property="article:published_time" content="2021-12-27T15:10:18.000Z">
-<meta property="article:modified_time" content="2022-01-11T10:29:20.430Z">
+<meta property="article:published_time" content="2021-11-27T15:10:18.000Z">
+<meta property="article:modified_time" content="2022-01-17T07:04:32.083Z">
 <meta property="article:author" content="wxy">
 <meta property="article:tag" content="😎Page">
 <meta name="twitter:card" content="summary_large_image">
@@ -161,7 +161,7 @@
             从零开始个人主页
         </h1>
         <div class="post-title__meta">
-            <a href="/archives/2021/12/" class="post-meta__date button">文章写于2021-12-27</a>
+            <a href="/archives/2021/11/" class="post-meta__date button">文章写于2021-11-27</a>
             
     <span class="separate-dot"></span><a href="/categories/%F0%9F%92%BBCode/" class="button">💻Code</a>
 
@@ -203,7 +203,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2022-01-11"),
+            var update = Date.parse("2022-01-17"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -218,13 +218,13 @@
     <div class="post__content">
         <h2 id="初"><a href="#初" class="headerlink" title="初"></a>初</h2><p>目前我的<a target="_blank" rel="noopener" href="https://undf.top/">个人主页</a>是在threejs开源项目的基础上自己修改而成，但主页文件过于庞大（加载缓慢），且在部分平台无法完全展示，而且恰逢寒假，时间充足，所以准备一边学习HTML+CSS+JS，一边写个人主页，有目的的学习会让人更有动力。</p>
 <h2 id="启"><a href="#启" class="headerlink" title="启"></a>启</h2><p>其实我前段时间就写了，但是写出来的很烂，能用但不好用。</p>
-<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-23-22.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/homepage/2021-12-27-18-23-22.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-27-18-23-22"></p>
+<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-23-22.png" alt="2021-12-27-18-23-22"></p>
 <p>而且也嵌入了threejs，非常庞大，所以这次从头开始，做一个极其简洁的主页。</p>
 <h2 id="预"><a href="#预" class="headerlink" title="预"></a>预</h2><p>初步计划图示如下</p>
 <p>手机端</p>
-<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-55-37.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/homepage/2021-12-27-18-55-37.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-27-18-55-37"></p>
+<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-55-37.png" alt="2021-12-27-18-55-37"></p>
 <p>电脑端</p>
-<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-56-34.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/homepage/2021-12-27-18-56-34.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-27-18-56-34"></p>
+<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-27-18-56-34.png" alt="2021-12-27-18-56-34"></p>
 <p>感觉有点空空荡荡的，到时候背景搞得花一点。</p>
 <h2 id="中"><a href="#中" class="headerlink" title="中"></a>中</h2><p>设置所有内容居中</p>
 <p>设置文字颜色，大小</p>
@@ -236,7 +236,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> urlhash=<span class="built_in">window</span>.location.hash;</span><br><span class="line">        <span class="keyword">if</span>(!urlhash.match(<span class="string">&quot;fromapp&quot;</span>))&#123;</span><br><span class="line">            <span class="keyword">if</span>((navigator.userAgent.match(<span class="regexp">/(iPhone|iPod|Android|ios|iPad)/i</span>)))&#123;</span><br><span class="line">                <span class="built_in">window</span>.location=<span class="string">&#x27;/mobile/index.html&#x27;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span>(err)&#123;&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="终"><a href="#终" class="headerlink" title="终"></a>终</h2><p>如图</p>
-<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-28-09-27-29.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/homepage/2021-12-28-09-27-29.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-28-09-27-29"></p>
+<p><img src="https://image.wxydejoy.top/image/homepage/2021-12-28-09-27-29.png" alt="2021-12-28-09-27-29"></p>
 <p>不得不说，前端还是蛮难的，主要是内容非常多。</p>
 <p>这次就这样简简单单告一段落，回头再加东西。</p>
 
@@ -260,7 +260,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章更新于2022-01-11</p></div> 
+    <div class="post-footer__meta"><p>文章更新于2022-01-17</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%98%8EPage/" class="post-tags__link button">😎Page</a></div> 
 </article>
 
@@ -268,7 +268,7 @@
     <div class="nav">
         <div class="nav__prev">
             
-                <a href="/posts/iir0g4/" class="nav__link">
+                <a href="/posts/e90952d5/" class="nav__link">
                     <div>
                         <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
                     </div>
@@ -277,7 +277,7 @@
                             Previous Post
                         </div>
                         <div class="nav__title">
-                            三种常用表达式
+                            Threejs 导入模型
                         </div>
                     </div>
                 </a>
@@ -285,13 +285,13 @@
         </div>
         <div class="nav__next">
             
-                <a href="/posts/2902643e/" class="nav__link">
+                <a href="/posts/61770a12/" class="nav__link">
                     <div>
                         <div class="nav__label">
                             Next Post
                         </div>
                         <div class="nav__title">
-                            Typora Cracker
+                            毕业论文撰写日记
                         </div>
                     </div>
                     <div>
@@ -341,15 +341,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -381,41 +373,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  

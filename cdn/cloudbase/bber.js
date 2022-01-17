@@ -89,7 +89,7 @@ function urlToLink(str) {
   //处理图片链接，添加 a 标签共添加灯箱效果
   var re_forpic =/\bhttps?:[^:<>"]*\/([^:<>"]*)(\.(jpeg)|(png)|(jpg)|(webp))/g;
   str =str.replace(re_forpic,function (imgurl) {
-    return '<a href="' + imgurl + '"><img src="' + imgurl + '" class="lazy" data-srcset="' + imgurl + '" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" /></a>';
+    return '<a href="' + imgurl + '"><img src="' + imgurl + '" /></a>';
   });
   //处理普通链接，添加 a 标签供跳转
   var re =/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;

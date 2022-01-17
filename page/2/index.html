@@ -187,7 +187,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/744f/"><div class="post-thumbnail lazy" href="/posts/744f/" data-bg="https://image.wxydejoy.top/img/xiaomi2021-08-06-16-58-24.png"></div></a>
+            <a href="/posts/744f/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/img/xiaomi2021-08-06-16-58-24.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -219,7 +219,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/a583/"><div class="post-thumbnail lazy" href="/posts/a583/" data-bg="https://image.wxydejoy.top/AHK脚本/2021-12-21-18-08-50.png"></div></a>
+            <a href="/posts/a583/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/AHK脚本/2021-12-21-18-08-50.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -251,7 +251,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/bc41/"><div class="post-thumbnail lazy" href="/posts/bc41/" data-bg="https://image.wxydejoy.top/image/看板罗小黑/2021-12-28-21-00-04.png"></div></a>
+            <a href="/posts/bc41/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/image/看板罗小黑/2021-12-28-21-00-04.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -279,7 +279,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/c6bd/"><div class="post-thumbnail lazy" href="/posts/c6bd/" data-bg="https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png"></div></a>
+            <a href="/posts/c6bd/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/img/202107/21/143225%20image-20210721143225266.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -307,7 +307,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/40a1/"><div class="post-thumbnail lazy" href="/posts/40a1/" data-bg="https://image.wxydejoy.top/词云图/2021-12-21-18-09-06.png"></div></a>
+            <a href="/posts/40a1/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/词云图/2021-12-21-18-09-06.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -333,7 +333,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/ce44/"><div class="post-thumbnail lazy" href="/posts/ce44/" data-bg="https://image.wxydejoy.top/img/202107/16/154008%2020210716154007.png"></div></a>
+            <a href="/posts/ce44/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/img/202107/16/154008%2020210716154007.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -389,7 +389,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/2ef9/"><div class="post-thumbnail lazy" href="/posts/2ef9/" data-bg="https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202106/19/141718%20%E9%AB%98%E8%BE%BE.png"></div></a>
+            <a href="/posts/2ef9/"><div class="post-thumbnail"  style="background-image: url('https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202106/19/141718%20%E9%AB%98%E8%BE%BE.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -417,7 +417,7 @@
 
     <div class="post-entry__header">
     
-        <a href="/posts/2beb/"><div class="post-thumbnail lazy" href="/posts/2beb/" data-bg="https://unpkg.zhimg.com/wxydeimage@1.0.43/img202107/01/113539%2020210701113539.png"></div></a>
+            <a href="/posts/2beb/"><div class="post-thumbnail"  style="background-image: url('https://unpkg.zhimg.com/wxydeimage@1.0.43/img202107/01/113539%2020210701113539.png');"></div></a>
         
 </div>
     <div class="post-entry__content">
@@ -521,15 +521,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -561,41 +553,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  

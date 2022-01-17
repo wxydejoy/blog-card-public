@@ -53,8 +53,8 @@
 <meta property="og:description" content="启前段时间折腾存储空间，折腾一圈还是又拍云最香，免费。但是自己不小心把一个文件夹删了，想要找回，却没有回收站这个功能，很遗憾，它就这么没了。 所以想找个办法备份图床，另外在 Github 逛到了 upyun-sdk 所以就拿来写写。  将又拍云存储的数据下载到本地，并且上传到一个新的存储空间内。 为保证数据完整，禁止删除任意文件。 支持同步  中写这个脚本的最终目的不是省钱（图床一共也没几个钱），">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://image.wxydejoy.top/image/upyun/2021-12-31-20-01-01.png">
-<meta property="article:published_time" content="2022-01-11T10:29:20.430Z">
-<meta property="article:modified_time" content="2022-01-11T10:29:20.430Z">
+<meta property="article:published_time" content="2022-01-17T07:04:32.083Z">
+<meta property="article:modified_time" content="2022-01-17T07:04:32.083Z">
 <meta property="article:author" content="wxy">
 <meta property="article:tag" content="😄Upyun">
 <meta name="twitter:card" content="summary_large_image">
@@ -175,7 +175,7 @@
 <article class="post post__with-toc content-card">
     <div class="post__header">
     
-        <a href="/posts/3f4daa0d/"><div class="post-thumbnail lazy" href="/posts/3f4daa0d/" data-bg="https://image.wxydejoy.top/image/upyun/2021-12-31-20-01-01.png"></div></a>
+            <a href="/posts/3f4daa0d/"><div class="post-thumbnail"  style="background-image: url('https://image.wxydejoy.top/image/upyun/2021-12-31-20-01-01.png');"></div></a>
         
 
     <div class="post__expire" id="post-expired-notify">
@@ -185,7 +185,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2022-01-11"),
+            var update = Date.parse("2022-01-17"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -242,8 +242,8 @@
 <li><p>服务器<br> 宝塔：添加定时任务定时运行脚本即可，注意运行路径<br> 非宝塔：自行百度添加服务器定时任务</p>
 </li>
 <li><p>Windows<br> 打开系统搜索，搜<code>任务计划程序</code></p>
-<p> <img src="https://image.wxydejoy.top/image/upyun/2021-12-31-20-33-46.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/upyun/2021-12-31-20-33-46.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-31-20-33-46"></p>
-<p> <img src="https://image.wxydejoy.top/image/upyun/2021-12-31-20-35-41.png" class="lazy" data-srcset="https://image.wxydejoy.top/image/upyun/2021-12-31-20-35-41.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="2021-12-31-20-35-41"></p>
+<p> <img src="https://image.wxydejoy.top/image/upyun/2021-12-31-20-33-46.png" alt="2021-12-31-20-33-46"></p>
+<p> <img src="https://image.wxydejoy.top/image/upyun/2021-12-31-20-35-41.png" alt="2021-12-31-20-35-41"></p>
 <p> 点击创建基本任务，按照引导创建即可（友情提示：任务计划程序很好用，思路放开）</p>
 </li>
 </ol>
@@ -268,7 +268,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章更新于2022-01-11</p></div> 
+    <div class="post-footer__meta"><p>文章更新于2022-01-17</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%98%84Upyun/" class="post-tags__link button">😄Upyun</a></div> 
 </article>
 
@@ -349,15 +349,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://c.undf.top/cdn/lazyload/lazyload.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -389,41 +381,6 @@
     
  
 
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.css">
-
-    
-<script src="https://c.undf.top/cdn/fancybox/jquery.fancybox.min.js"></script>
-
-    <script>
-        let lazyloadT = Boolean('true'),
-            auto_fancybox = Boolean('true')
-        if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        } else {
-            $(".post__content").find("fancybox").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
-        }
-    </script>
  
 
  
