@@ -54,7 +54,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.zhimg.com/wxydeimage@1.0.43//img/jxsj/202106/19/141718%20%E9%AB%98%E8%BE%BE.png">
 <meta property="article:published_time" content="2021-06-19T20:04:05.000Z">
-<meta property="article:modified_time" content="2022-01-26T08:29:45.054Z">
+<meta property="article:modified_time" content="2022-01-28T05:16:17.542Z">
 <meta property="article:author" content="wxy">
 <meta property="article:tag" content="🗺️漫画">
 <meta name="twitter:card" content="summary_large_image">
@@ -204,7 +204,7 @@
     </div>
     <script>
         (() => {
-            var update = Date.parse("2022-01-26"),
+            var update = Date.parse("2022-01-28"),
                 date = new Date(),
                 now = date.getTime(),
                 expire = now - update,
@@ -254,7 +254,7 @@
         
     </div>
  
-    <div class="post-footer__meta"><p>文章更新于2022-01-26</p></div> 
+    <div class="post-footer__meta"><p>文章更新于2022-01-28</p></div> 
     <div class="post-entry__tags"><a href="/tags/%F0%9F%97%BA%EF%B8%8F%E6%BC%AB%E7%94%BB/" class="post-tags__link button">🗺️漫画</a></div> 
 </article>
 
@@ -297,6 +297,26 @@
     </div>
 
 
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>评论</h4>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="tcomment" class="twikoo_thread"></div>
+
+
+
+    </div>
 
 
 
@@ -376,6 +396,60 @@
  
 
  
+
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/twikoo@0.3.2/dist/twikoo.all.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                twikoo.init({
+                    envId: 'twikoo-3gls4obna5a0fbeb',
+                    el: '#tcomment'
+                });
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
 
 
 
