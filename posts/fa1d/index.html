@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    
+    
+        <link rel="mask-icon" href="/icon/apple-touch-icon-180x180.png">
+    
+
+
+    <!-- meta -->
+
+
+<title>建站的&#34;心路历程&#34; | WXY</title>
+
+
+    <meta name="keywords" content="test">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="在听讲座，有点无聊，所以把昨天的感想写一写 太难了，踩过的坑都忘记了，这。。。。。。。 初衷建设这个网站的目的是为了记录自己学习过程、学习笔记，以便在未来能够复习、反思、回味。 另外这还是一个可以释放压力，可以倾述的平台没人会看我叨叨的，甚至还可以看看自己收藏的电影 起因这学期做了一个项目[课程设计]，是视觉识别和机械臂的综合，所以就想存到GitHub上面，偶遇到了HEXO，第一个主题是Keep，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建站的&quot;心路历程&quot;">
+<meta property="og:url" content="https://c.undf.top/posts/fa1d/index.html">
+<meta property="og:site_name" content="WXY">
+<meta property="og:description" content="在听讲座，有点无聊，所以把昨天的感想写一写 太难了，踩过的坑都忘记了，这。。。。。。。 初衷建设这个网站的目的是为了记录自己学习过程、学习笔记，以便在未来能够复习、反思、回味。 另外这还是一个可以释放压力，可以倾述的平台没人会看我叨叨的，甚至还可以看看自己收藏的电影 起因这学期做了一个项目[课程设计]，是视觉识别和机械臂的综合，所以就想存到GitHub上面，偶遇到了HEXO，第一个主题是Keep，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-10T21:20:55.000Z">
+<meta property="article:modified_time" content="2022-02-06T04:33:19.470Z">
+<meta property="article:author" content="wxy">
+<meta property="article:tag" content="test">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/atom-one-light.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+    
+        <script src="https://c.undf.top/cdn/pace/pace.min.js"></script> 
+    
+        <link rel="stylesheet" href="https://c.undf.top/cdn/pace/pace.min.css"> 
+    
+
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="WXY" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Hi</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/search/" class="navbar-menu button">搜索</a>
+                
+                    <a href="/movies/" class="navbar-menu button">影单</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/toys/" class="navbar-menu button">玩具</a>
+                
+            </div>
+        
+        
+        
+    <!-- <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a> -->
+
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/search/" class="dropdown-menu button">搜索</a>
+                
+                    <a href="/movies/" class="dropdown-menu button">影单</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/toys/" class="dropdown-menu button">玩具</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+    <div class="post-title">
+        <h1 class="post-title__text">
+            建站的&#34;心路历程&#34;
+        </h1>
+        <div class="post-title__meta">
+            <a href="/archives/2021/06/" class="post-meta__date button">文章写于2021-06-10</a>
+            
+ 
+            
+    
+    
+
+
+ 
+
+ 
+        </div>
+    </div>  
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E8%A1%B7"><span class="toc-number">1.</span> <span class="toc-text">初衷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-number">2.</span> <span class="toc-text">起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E3%80%81%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E3%80%81%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">搭建、域名购买、域名解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="toc-number">4.</span> <span class="toc-text">主题选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9"><span class="toc-number">5.</span> <span class="toc-text">主题魔改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E3%80%81%E5%A4%87%E6%A1%88"><span class="toc-number">6.</span> <span class="toc-text">服务器搭建、备案</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">文章目录</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E8%A1%B7"><span class="toc-number">1.</span> <span class="toc-text">初衷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-number">2.</span> <span class="toc-text">起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E3%80%81%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E3%80%81%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">搭建、域名购买、域名解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="toc-number">4.</span> <span class="toc-text">主题选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9"><span class="toc-number">5.</span> <span class="toc-text">主题魔改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E3%80%81%E5%A4%87%E6%A1%88"><span class="toc-number">6.</span> <span class="toc-text">服务器搭建、备案</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header">
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 &lt;span id=&#34;expire-date&#34;&gt;&lt;/span&gt; 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2022-02-06"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+</div>
+    <div class="post__content">
+        <p>在听讲座，有点无聊，所以把昨天的感想写一写</p>
+<p>太难了，踩过的坑都忘记了，这。。。。。。。</p>
+<h2 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h2><p>建设这个网站的目的是为了记录自己学习过程、学习笔记，以便在未来能够复习、反思、回味。</p>
+<p>另外这还是一个可以释放压力，可以倾述的平台<del>没人会看我叨叨的</del>，甚至还可以看看自己收藏的电影</p>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>这学期做了一个项目[课程设计]，是视觉识别和机械臂的综合，所以就想存到GitHub上面，偶遇到了HEXO，第一个主题是Keep，也实现了自动部署，后面换了<a href="">Butterfly</a>也就是现在的主题，非常不错</p>
+<h2 id="搭建、域名购买、域名解析"><a href="#搭建、域名购买、域名解析" class="headerlink" title="搭建、域名购买、域名解析"></a>搭建、域名购买、域名解析</h2><p>搭建是参考的知乎找的教程，但还是踩了很多，这里不再赘述，推荐<a target="_blank" rel="noopener" href="https://akilar.top/">店长教程</a>。</p>
+<h2 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h2><p>主题选择有很多，萝卜青菜各有所爱，这里就不讲了</p>
+<h2 id="主题魔改"><a href="#主题魔改" class="headerlink" title="主题魔改"></a>主题魔改</h2><p>魔改必须推店长，yyds，教程直接去店里翻，不会做就去加群。</p>
+<p>讲一讲我自己的魔改吧，首先我是不喜欢侧边栏的，虽然我开了，但是只是为了能有个目录，方便翻阅。魔改内容还是蛮多的，想到什么就讲什么吧！</p>
+<p>butterfly主题内置的就不再赘述了(pwa快把我折磨死了)</p>
+<p>先讲动效吧！</p>
+<p>加载动画是我自己魔改的，应该不会放出源码<del>很简单的</del></p>
+<p>动效(就是那些会动的)，置顶轮播，分类，标签外挂(文章里面比较好玩的东西)这些都是店长或者冰老师的插件<a href="">点这</a></p>
+<p>什么时候有空把源码放上来，需要请评论，<del>没人会看的吧</del></p>
+<h2 id="服务器搭建、备案"><a href="#服务器搭建、备案" class="headerlink" title="服务器搭建、备案"></a>服务器搭建、备案</h2><p>在国内建站，肯定是要备案的，还得买服务器<del>一点都不合理</del>，没办法，买三个月备份，肝!<br>教程？教程是什么？</p>
+<p>百度一下，你就知道!</p>
+<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+<p>看教程要仔细，有些教程不全，那就去百度，或者干脆换一篇教程!耐心!仔细!认真![滑稽][菜狗]</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>wxy
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://c.undf.top/posts/fa1d/">https://c.undf.top/posts/fa1d/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>文章更新于2022-02-06</p></div> 
+    <div class="post-entry__tags"><a href="/tags/test/" class="post-tags__link button">test</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/posts/cd88/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            AKKO3068说明书
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/posts/e778/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            py tkinter 学习笔记
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>评论</h4>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="tcomment" class="twikoo_thread"></div>
+
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+     
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+            <p><img src="https://c.undf.top/cdn/%E5%A4%87%E6%A1%88.png" /><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011871">浙公网安备33010602011937号</a></p><p><a target="_blank" href="http://beian.miit.gov.cn/">浙ICP备2021022005号</a> </p>
+        
+    
+    
+        
+        <p class="footer-copyright">
+            2021&nbsp;<a target="_blank" href="mailto:1798923421@qq.com"> 📧 </a>&nbsp;2022
+             <!-- <a href="/">WXY</a> -->
+        </p>
+    
+    
+    <p><a href="https://hexo.io" target="_blank">Hexo</a> | <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?5737bfc954e9ae8ece59f5df2faa6540';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://c.undf.top/cdn/twikoo/twikoo.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                twikoo.init({
+                    envId: 'twikoo-3gls4obna5a0fbeb',
+                    el: '#tcomment'
+                });
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+
+
+    </body>
+</html>
