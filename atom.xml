@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>沐印小站</title>
+  <icon>https://c.undf.top/icon/android-chrome-144x144.png</icon>
+  <subtitle>沐印</subtitle>
+  <link href="https://c.undf.top/atom.xml" rel="self"/>
+  
+  <link href="https://c.undf.top/"/>
+  <updated>2022-08-15T12:49:55.236Z</updated>
+  <id>https://c.undf.top/</id>
+  
+  <author>
+    <name>wxy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python_study</title>
+    <link href="https://c.undf.top/posts/3ahvaci/"/>
+    <id>https://c.undf.top/posts/3ahvaci/</id>
+    <published>2022-08-01T01:56:24.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;虽然之前学过不少 python 的知识，但是还是没有系统的学习过一些基础知识，补一下。&lt;br&gt;参考书 &lt;a href=&quot;https://baike.baidu.com/item/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89/49977580?fr=aladdin&quot;&gt;Python</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cloudreve配置修复</title>
+    <link href="https://c.undf.top/posts/49u3l9/"/>
+    <id>https://c.undf.top/posts/49u3l9/</id>
+    <published>2022-07-18T06:14:27.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;最近通过 Cloudreve 搭建了实验室网盘系统，但是在使用时遇到一个 bug：无法上传大于 1MB 的文件，下面来讲讲修复之路。&lt;/p&gt;
+&lt;h2 id=&quot;启&quot;&gt;&lt;a href=&quot;#启&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++学习</title>
+    <link href="https://c.undf.top/posts/21r8od0/"/>
+    <id>https://c.undf.top/posts/21r8od0/</id>
+    <published>2022-07-04T12:09:03.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;因&quot;&gt;&lt;a href=&quot;#因&quot; class=&quot;headerlink&quot; title=&quot;因&quot;&gt;&lt;/a&gt;因&lt;/h2&gt;&lt;p&gt;目前 c++的学习主要是针对三个方向&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本语法&lt;/li&gt;
+&lt;li&gt;数据结构&lt;/li&gt;
+&lt;li&gt;QT(能用就行的地步)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;参考书:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C++ Primer Plus（第 6</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://c.undf.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习路线</title>
+    <link href="https://c.undf.top/posts/1s2b6vp/"/>
+    <id>https://c.undf.top/posts/1s2b6vp/</id>
+    <published>2022-06-27T05:55:13.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前两天收到了导师发的学习清单，准备正式开始梳理自己未来的学习路线，在这之前一直都很迷茫，下面的路线有很多交叉的地方，需要融会贯通。&lt;/p&gt;
+&lt;p&gt;现在初步只是思维导图，后续我将根据自己的情况进行补充计划。&lt;/p&gt;
+&lt;p&gt;目前主要学习科目：机器人导论 Freertos&lt;/p&gt;
+&lt;h2 id=&quot;当前的重点&quot;&gt;&lt;a href=&quot;#当前的重点&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>StepperMotor</title>
+    <link href="https://c.undf.top/posts/1325oa2/"/>
+    <id>https://c.undf.top/posts/1325oa2/</id>
+    <published>2022-06-21T07:36:43.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&amp;#x3D;&amp;#x3D;文章内容大部分来源于网络，仅做摘抄笔记。&amp;#x3D;&amp;#x3D;&lt;/p&gt;
+&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ESP32</title>
+    <link href="https://c.undf.top/posts/3foj6j8/"/>
+    <id>https://c.undf.top/posts/3foj6j8/</id>
+    <published>2022-06-10T04:23:15.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;芯片涨价、支持国产、物联网、方便好用、支持低代码&lt;/p&gt;
+&lt;p&gt;这些都是选择ESP32的原因之一&lt;/p&gt;
+&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="💻嵌入式" scheme="https://c.undf.top/tags/%F0%9F%92%BB%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验室局域网建设</title>
+    <link href="https://c.undf.top/posts/1qkkb5f/"/>
+    <id>https://c.undf.top/posts/1qkkb5f/</id>
+    <published>2022-05-28T10:31:53.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;考研结束，成绩不错，又因为是本校考生，所以前段时间已经开启了研0生活。恰逢几位同门师兄毕业，同时自己也想要为实验室做点事情，所以想要建立实验室的局域网，同时通过局域网建立知识库，代码存储库等可以协助实验室工作的东西。&lt;/p&gt;
+&lt;h2 id=&quot;Todo&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>STM32&amp;Cubeide</title>
+    <link href="https://c.undf.top/posts/2fsd2a9/"/>
+    <id>https://c.undf.top/posts/2fsd2a9/</id>
+    <published>2022-04-09T13:16:45.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://image.wxydejoy.top/image/STM32&amp;Cubeide/2022-04-09-21-39-36.jpg&quot; class=&quot;lazy&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2021年终总结</title>
+    <link href="https://c.undf.top/posts/2h3skbi/"/>
+    <id>https://c.undf.top/posts/2h3skbi/</id>
+    <published>2022-03-27T03:06:46.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;因&quot;&gt;&lt;a href=&quot;#因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Texttool</title>
+    <link href="https://c.undf.top/posts/1v242pf/"/>
+    <id>https://c.undf.top/posts/1v242pf/</id>
+    <published>2022-02-20T14:31:17.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;To practice my English skill, I will use English to finish my idea.&lt;br&gt;Because of my study, I have to finish it later, but trust me, I will finish it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>机械工程专业复试复习</title>
+    <link href="https://c.undf.top/posts/jugpa0/"/>
+    <id>https://c.undf.top/posts/jugpa0/</id>
+    <published>2022-02-09T06:32:45.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一些重点&quot;&gt;&lt;a href=&quot;#一些重点&quot; class=&quot;headerlink&quot; title=&quot;一些重点&quot;&gt;&lt;/a&gt;一些重点&lt;/h2&gt;&lt;p&gt;材料选用的一般原则 1.材料的力学性能: 根据零件的工作条件、损坏(或失效)形式 , 选择满足力学性能的材料。 2.材料的工艺性能:对零件加工生产有直接的影响,甚至是决定性的。</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="⚙️机械工程" scheme="https://c.undf.top/tags/%E2%9A%99%EF%B8%8F%E6%9C%BA%E6%A2%B0%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欲善其事 先利其器</title>
+    <link href="https://c.undf.top/posts/aqu6r6/"/>
+    <id>https://c.undf.top/posts/aqu6r6/</id>
+    <published>2022-01-29T11:46:10.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;好软推荐（记录）&lt;/p&gt;
+&lt;p&gt;大部分 Windows 软件来自&lt;a href=&quot;https://www.52pojie.cn/&quot;&gt;吾爱破解论坛&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;压缩包较大，需要请留言。侵删！&lt;/p&gt;
+&lt;p&gt;前方大量图片来袭!!!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="📦software" scheme="https://c.undf.top/tags/%F0%9F%93%A6software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三根杆</title>
+    <link href="https://c.undf.top/posts/e556/"/>
+    <id>https://c.undf.top/posts/e556/</id>
+    <published>2022-01-03T13:20:55.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;机械手臂（英语：robotic arm）是具有模仿人类手臂功能并可完成各种作业的自动控制设备，这种机器人系统有多关节连结并节允许在平面或三度空间进行运动或使用线性位移移动。&lt;/p&gt;
+&lt;p&gt;本文的主题是平面三轴机械臂。&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="⚙️Machine" scheme="https://c.undf.top/tags/%E2%9A%99%EF%B8%8FMachine/"/>
+    
+    <category term="🦾平面三杆" scheme="https://c.undf.top/tags/%F0%9F%A6%BE%E5%B9%B3%E9%9D%A2%E4%B8%89%E6%9D%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三种常用表达式</title>
+    <link href="https://c.undf.top/posts/iir0g4/"/>
+    <id>https://c.undf.top/posts/iir0g4/</id>
+    <published>2022-01-03T01:24:04.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Regex&quot;&gt;&lt;a href=&quot;#Regex&quot; class=&quot;headerlink&quot; title=&quot;Regex&quot;&gt;&lt;/a&gt;Regex&lt;/h2&gt;&lt;p&gt;正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z</summary>
+        
+      
+    
+    
+    
+    
+    <category term="💻Regex" scheme="https://c.undf.top/tags/%F0%9F%92%BBRegex/"/>
+    
+    <category term="💻Corn" scheme="https://c.undf.top/tags/%F0%9F%92%BBCorn/"/>
+    
+    <category term="💻CIDR" scheme="https://c.undf.top/tags/%F0%9F%92%BBCIDR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>upyun</title>
+    <link href="https://c.undf.top/posts/3f4daa0d/"/>
+    <id>https://c.undf.top/posts/3f4daa0d/</id>
+    <published>2021-12-31T11:12:21.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;启&quot;&gt;&lt;a href=&quot;#启&quot; class=&quot;headerlink&quot; title=&quot;启&quot;&gt;&lt;/a&gt;启&lt;/h2&gt;&lt;p&gt;前段时间折腾存储空间，折腾一圈还是又拍云最香，&lt;strong&gt;免费&lt;/strong&gt;。但是自己不小心把一个文件夹删了，想要找回，却没有回收站这个功能，很遗憾，它就这么没了。&lt;/p&gt;
+&lt;p&gt;所以想找个办法备份图床，另外在 Github 逛到了 upyun-sdk</summary>
+        
+      
+    
+    
+    
+    
+    <category term="😄Upyun" scheme="https://c.undf.top/tags/%F0%9F%98%84Upyun/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HEXO &amp; Fontmin</title>
+    <link href="https://c.undf.top/posts/79e22e25/"/>
+    <id>https://c.undf.top/posts/79e22e25/</id>
+    <published>2021-12-30T04:12:21.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;想要自定义字体吗？&lt;br&gt;字体太大？&lt;br&gt;担心字体拖慢加载速度？&lt;br&gt;快来使用 gulp-fontmin！&lt;br&gt;字体缩小 5 倍不是梦！&lt;/p&gt;
+&lt;p&gt;字体一直一来都是静态博客中比较大的文件，尤其是特殊的字体能达到 10Mb</summary>
+        
+      
+    
+    
+    
+    
+    <category term="🌼HEXO" scheme="https://c.undf.top/tags/%F0%9F%8C%BCHEXO/"/>
+    
+    <category term="✏️Font" scheme="https://c.undf.top/tags/%E2%9C%8F%EF%B8%8FFont/"/>
+    
+    <category term="📑Compose" scheme="https://c.undf.top/tags/%F0%9F%93%91Compose/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Threejs 导入模型</title>
+    <link href="https://c.undf.top/posts/e90952d5/"/>
+    <id>https://c.undf.top/posts/e90952d5/</id>
+    <published>2021-11-27T12:00:05.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+    <summary type="html">通过Threejs展示自己的模型</summary>
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="📦Threejs" scheme="https://c.undf.top/tags/%F0%9F%93%A6Threejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从零开始个人主页</title>
+    <link href="https://c.undf.top/posts/8730864/"/>
+    <id>https://c.undf.top/posts/8730864/</id>
+    <published>2021-11-27T07:10:18.000Z</published>
+    <updated>2022-08-15T12:49:55.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;目前我的&lt;a href=&quot;https://undf.top/&quot;&gt;个人主页&lt;/a&gt;是在 threejs 开源项目的基础上自己修改而成，但主页文件过于庞大（加载缓慢），且在部分平台无法完全展示，而且恰逢寒假，时间充足，所以准备一边学习</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="😎Page" scheme="https://c.undf.top/tags/%F0%9F%98%8EPage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图书馆奇遇记</title>
+    <link href="https://c.undf.top/posts/85b39a47/"/>
+    <id>https://c.undf.top/posts/85b39a47/</id>
+    <published>2021-11-13T12:04:05.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天来聊聊在图书馆遇到的各种&lt;code&gt;自由&lt;/code&gt;职业者。&lt;/p&gt;
+&lt;h2 id=&quot;WIFI起名员（点赞）&quot;&gt;&lt;a href=&quot;#WIFI起名员（点赞）&quot; class=&quot;headerlink&quot; title=&quot;WIFI起名员（点赞）&quot;&gt;&lt;/a&gt;WIFI起名员（点赞）&lt;/h2&gt;&lt;p&gt;主要特点：Wi-Fi名字起的非常不错&lt;/p&gt;
+&lt;p&gt;比如：&lt;code&gt;连热点看大学生&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="🔖Life" scheme="https://c.undf.top/categories/%F0%9F%94%96Life/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NPM 图床探究</title>
+    <link href="https://c.undf.top/posts/50ee91a2/"/>
+    <id>https://c.undf.top/posts/50ee91a2/</id>
+    <published>2021-11-07T07:20:55.000Z</published>
+    <updated>2022-08-15T12:49:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;最近在吾爱发帖，苦于福利区不能贴图，要用自己的图床，然后我用了又拍云，一个帖子，一天，3 元。&lt;/p&gt;
+&lt;p&gt;这个价格有点贵了 hhh，所以想要找个稳定的图床，本来用 jsd + GitHub 但是论坛屏蔽掉了 jsd</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="💻Hexo" scheme="https://c.undf.top/tags/%F0%9F%92%BBHexo/"/>
+    
+  </entry>
+  
+</feed>
