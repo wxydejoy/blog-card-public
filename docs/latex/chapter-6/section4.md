@@ -3,7 +3,7 @@
 使用`\caption`命令为浮动图片或者浮动表格创建的标题主要包含四部分：①标题头部、②自动编号、③编号分隔符、以及④标题名称，如下图所示。其中，对标题名称的设置比较简单，下面分别就标题前三部分的调整方式展开介绍。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_6.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_6.png" width="450" />
 </p>
 
 <center><b>图6.1.2</b> 图片标题的四个部分示意图</center>
@@ -33,7 +33,7 @@
 编译后的图表标题如图6.4.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/exm_6_4_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/exm_6_4_1.png" width="450" />
 </p>
 
 <center><b>图6.4.1</b> 编译后的插图效果</center>
@@ -78,7 +78,7 @@ Here are three inserted figures...
 编译后的图表标题如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_7.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_7.png" width="450" />
 </p>
 
 <center><b>图6.4.2</b> 编译后的插图效果</center>
@@ -121,7 +121,7 @@ Here are three inserted figures...
 编译后的图表标题如图6.4.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_8.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_8.png" width="450" />
 </p>
 
 <center><b>图6.4.3</b> 编译后的插图效果</center>
@@ -167,7 +167,7 @@ Here are three inserted figures...
 编译后的图表标题如图6.4.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/exm_6_4_4.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/exm_6_4_4.png" width="450" />
 </p>
 
 <center><b>图6.4.4</b> 编译后的插图效果</center>

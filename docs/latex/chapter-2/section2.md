@@ -42,7 +42,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_1.png" width="800" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_1.png" width="800" />
 </p>
 
 <center><b>图2-3</b> 编译后的文档</center>
@@ -91,7 +91,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_3.png" width="800" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_3.png" width="800" />
 </p>
 
 <center><b>图2-4</b> 编译后的文档</center>

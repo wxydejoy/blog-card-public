@@ -43,7 +43,7 @@ This is a simple example for the CambridgeUS theme.
 编译上述代码，得到幻灯片如图9.4.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_1.png" width="450" />
 </p>
 
 <center><b>图9.4.1</b> 编译后的幻灯片效果</center>
@@ -82,7 +82,7 @@ This is a simple example for the CambridgeUS theme with dolphin (color theme).
 编译上述代码，得到幻灯片如图9.4.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_2.png" width="450" />
 </p>
 
 <center><b>图9.4.3</b> 编译后的幻灯片效果</center>
@@ -112,7 +112,7 @@ This is a simple example for using \alert{serif} font theme.
 编译上述代码，得到幻灯片如图9.4.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_3.png" width="450" />
 </p>
 
 <center><b>图9.4.4</b> 编译后的幻灯片效果</center>
@@ -139,7 +139,7 @@ This is a simple example for using \alert{palatino} font.
 编译上述代码，得到幻灯片如图9.4.5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_4.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_4.png" width="450" />
 </p>
 
 <center><b>图9.4.5</b> 编译后的幻灯片效果</center>
@@ -181,7 +181,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.4.6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_innertheme_circles.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_innertheme_circles.png" width="450" />
 </p>
 
 <center><b>图9.4.6</b> 编译后的幻灯片效果</center>
@@ -217,7 +217,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.4.7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_innertheme_inmargin.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_innertheme_inmargin.png" width="450" />
 </p>
 
 <center><b>图9.4.7</b> 编译后的幻灯片效果</center>
@@ -264,7 +264,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.4.6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_4_0.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_4_0.png" width="450" />
 </p>
 
 <center><b>图9.4.6</b> 编译后的幻灯片效果</center>
@@ -307,7 +307,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.4.7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_sec2_6.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_6.png" width="450" />
 </p>
 
 <center><b>图9.4.7</b> 编译后的幻灯片效果</center>
@@ -351,8 +351,8 @@ Please check out the following parent function list.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example_sec2_7_0.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example_sec2_7_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_7_0.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_7_1.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -398,8 +398,8 @@ Please check out the following parent function list.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example_sec2_8_0.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example_sec2_8_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_8_0.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example_sec2_8_1.png" width="450"></td>
 </tr>
 </table>
 </p>

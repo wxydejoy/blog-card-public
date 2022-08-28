@@ -29,7 +29,7 @@
 编译后的效果如图3-3-1所示：
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_3_1.png" width="500" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_3_1.png" width="500" />
 </p>
 
 <center><b>图3-3-1</b> 编译后效果</center>
@@ -103,7 +103,7 @@
     编译后的效果如图3-3-2所示：
 
     <p align="center">
-    <img align="middle" src="latex/chapter-3/graphics/example3_3_2.png" width="500" />
+    <img align="middle" src="docs/latex/chapter-3/graphics/example3_3_2.png" width="500" />
     </p>
 
     <center><b>图3-3-2</b> 编译后效果</center>

@@ -19,7 +19,7 @@
 > Overleaf是一个初创的科技企业，它的主要业务是构建现代化协作创作工具，即LaTeX在线系统，致力于让科学研究变得更加便捷与高效。目前，Overleaf已合并另一款著名的LaTeX在线系统ShareLaTeX，在全球范围内拥有超过600万用户，这些用户大多是来自于高校和研究机构的研究人员、老师以及学生，只要打开网址overleaf.com，用户无需在本地计算机配置LaTeX环境就可创建LaTeX文档制作项目。关于Overleaf的介绍可参考[https://www.overleaf.com/about](https://www.overleaf.com/about)。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/overleaf_webpage.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/overleaf_webpage.png" width="900" />
 </p>
 
 <center><b>图1-3-1</b> Overleaf首页，图片来源于Overleaf官网。</center>
@@ -44,7 +44,7 @@
 - 提供大量的帮助文档。Overleaf提供齐全的帮助文档，文档内容涵盖LaTeX快速入门、基础操作到编辑数学公式等，且具有很强的实操性。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/overleaf_example.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/overleaf_example.png" width="900" />
 </p>
 
 <center><b>图1-3-2</b> Overleaf编辑器界面，主要由源代码区域与文档预览区域组成。</center>

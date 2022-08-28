@@ -41,7 +41,7 @@
 编译上述代码，得到表格如图5-4-1所示。
  
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_4_1.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_4_1.png" width="350" />
 </p>
 
 <center><b>图5-4-1</b> 编译后的文档内容</center>
@@ -77,7 +77,7 @@
 编译上述代码，得到表格如图5-4-2所示。
  
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_4_2.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_4_2.png" width="350" />
 </p>
 
 <center><b>图5-4-2</b> 编译后的文档内容</center>
@@ -119,7 +119,7 @@
 编译上述代码，得到表格如图5-4-3所示。
  
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_4_3.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_4_3.png" width="350" />
 </p>
 
 <center><b>图5-4-3</b> 编译后的文档内容</center>
@@ -156,7 +156,7 @@
 编译上述代码，得到表格如图5-4-4所示。
  
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_4_4.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_4_4.png" width="350" />
 </p>
 
 <center><b>图5-4-4</b> 编译后的文档内容</center>

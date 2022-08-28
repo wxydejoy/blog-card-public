@@ -43,7 +43,7 @@ This is an example block.
 编译上述代码，得到幻灯片如图9.3.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample05.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample05.png" width="450">
 </p>
 
 <center><b>图9.3.1</b> 编译后的幻灯片效果</center>
@@ -97,7 +97,7 @@ This is an example.
 编译上述代码，得到幻灯片如图9.3.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample04.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample04.png" width="450">
 </p>
 
 <center><b>图9.3.2</b> 编译后的幻灯片效果</center>
@@ -144,7 +144,7 @@ Beamer也支持通过绘制外框的方式为幻灯片的元素（如，文本�
 编译上述代码，得到幻灯片如图9.3.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample06new.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample06new.png" width="450">
 </p>
 
 <center><b>图9.3.3</b> 编译后的幻灯片效果</center>
@@ -173,7 +173,7 @@ Beamer也支持通过绘制外框的方式为幻灯片的元素（如，文本�
 编译上述代码，得到幻灯片如图9.3.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample07.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample07.png" width="450">
 </p>
 
 <center><b>图9.3.4</b> 编译后的幻灯片效果</center>
@@ -227,7 +227,7 @@ Beamer也支持通过绘制外框的方式为幻灯片的元素（如，文本�
 编译上述代码，得到幻灯片如图9.3.5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample08.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample08.png" width="450">
 </p>
 
 <center><b>图9.3.5</b> 编译后的幻灯片效果</center>
@@ -279,7 +279,7 @@ Beamer也支持通过绘制外框的方式为幻灯片的元素（如，文本�
 编译上述代码，得到幻灯片如图9.3.6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/NEWexample09.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/NEWexample09.png" width="450">
 </p>
 
 <center><b>图9.3.6</b> 编译后的幻灯片效果</center>
@@ -344,12 +344,12 @@ Beamer也支持通过绘制外框的方式为幻灯片的元素（如，文本�
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample11_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample11_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample11_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample11_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample11_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample11_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample11_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample11_4.png" width="450"></td>
 </tr>
 </table>
 </p>

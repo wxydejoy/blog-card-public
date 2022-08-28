@@ -22,7 +22,7 @@
 编译后效果如图2-6-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/zh_example1.png" width="600" />
+<img align="middle" src="docs/latex/chapter-2/graphics/zh_example1.png" width="600" />
 </p>
 
 <center><b>图2-6-1</b> 编译后的文档</center>
@@ -44,7 +44,7 @@
 编译后效果如图2-6-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/zh_example2.png" width="580" />
+<img align="middle" src="docs/latex/chapter-2/graphics/zh_example2.png" width="580" />
 </p>
 
 <center><b>图2-6-2</b> 编译后的文档</center>
@@ -72,7 +72,7 @@
 编译后效果如图2-6-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/zh_example3.png" width="600" />
+<img align="middle" src="docs/latex/chapter-2/graphics/zh_example3.png" width="600" />
 </p>
 
 <center><b>图2-6-3</b> 编译后的文档</center>
@@ -98,7 +98,7 @@
 编译后效果如图2-6-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/zh_example4.png" width="600" />
+<img align="middle" src="docs/latex/chapter-2/graphics/zh_example4.png" width="600" />
 </p>
 
 <center><b>图2-6-4</b> 编译后的文档</center>
@@ -126,7 +126,7 @@
 编译后效果如图2-6-5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/zh_example5.png" width="600" />
+<img align="middle" src="docs/latex/chapter-2/graphics/zh_example5.png" width="600" />
 </p>
 
 <center><b>图2-6-5</b> 编译后的文档</center>

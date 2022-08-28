@@ -43,7 +43,7 @@ Knuth: Computers and Typesetting,
 编译上述代码，得到文档如图8.3.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_3_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_3_1.png" width="450" />
 </p>
 
 <center><b>图8.3.1</b> 编译后的文档</center>
@@ -72,7 +72,7 @@ Wesley, Massachusetts, 2nd ed.
 编译上述代码，得到文档如图8.3.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_3_2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_3_2.png" width="450" />
 </p>
 
 <center><b>图8.3.2</b> 编译后的文档</center>
@@ -141,7 +141,7 @@ Some examples for showing how to use \texttt{thebibliography} environment:
 编译上述代码，得到文档如图8.3.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_3_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_3_3.png" width="450" />
 </p>
 
 <center><b>图8.3.3</b> 编译后的文档</center>

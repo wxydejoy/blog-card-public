@@ -49,7 +49,7 @@ Figure \ref{fig:fig1} contains sub-figure \ref{subfig:subfig1}, sub-figure \ref{
 编译后的图片如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_9.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_9.png" width="450" />
 </p>
 
 <center><b>图6.1.2</b> 编译后的插图效果</center>
@@ -147,7 +147,7 @@ The horizontal space among Sub-figures in figure \ref{fig:fig2} is controlled by
 编译后的图片如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_10NEW.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_10NEW.png" width="450" />
 </p>
 
 <center><b>图6.1.2</b> 编译后的插图效果</center>
@@ -194,7 +194,7 @@ The horizontal space among Sub-figures in figure \ref{fig:fig2} is controlled by
 编译后的图片如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_11.png" width="300" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_11.png" width="300" />
 </p>
 
 <center><b>图6.1.2</b> 编译后的插图效果</center>

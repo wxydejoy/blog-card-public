@@ -30,8 +30,8 @@ Hello, LaTeXers! This is our first LaTeX document.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-2/graphics/example2_4_1_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-2/graphics/example2_4_1_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example2_4_1_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example2_4_1_2.png" width="300"></td>
 </tr>
 </table>
 </p>
@@ -60,7 +60,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-4-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_4_21.png" width="300" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_4_21.png" width="300" />
 </p>
 
 <center><b>图2-4-2</b> 编译后的文档</center>
@@ -94,7 +94,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-4-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_4_31.png" width="300" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_4_31.png" width="300" />
 </p>
 
 <center><b>图2-4-3</b> 编译后的文档</center>

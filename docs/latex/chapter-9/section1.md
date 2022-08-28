@@ -32,7 +32,7 @@ Beamer是一款灵活的幻灯片制作工具，我们可以在LaTeX中将它作
 编译上述代码，得到幻灯片如图9.1.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example1.png" width="450" />
 </p>
 
 <center><b>图9.1.1</b> 编译后的幻灯片效果</center>
@@ -71,7 +71,7 @@ Beamer是一款灵活的幻灯片制作工具，我们可以在LaTeX中将它作
 编译上述代码，得到幻灯片如图9.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example2.png" width="450" />
 </p>
 
 <center><b>图9.1.2</b> 编译后的幻灯片效果</center>
@@ -117,7 +117,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.1.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example3.png" width="450" />
 </p>
 
 <center><b>图9.1.3</b> 编译后的幻灯片效果</center>
@@ -182,7 +182,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.1.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example4.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example4.png" width="450" />
 </p>
 
 <center><b>图9.1.4</b> 编译后的幻灯片效果</center>
@@ -217,8 +217,8 @@ The body of the frame.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example5_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example5_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example5_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example5_2.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -280,12 +280,12 @@ This is subsection c2. This is subsection c2.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example10NEW_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example10NEW_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example10NEW_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example10NEW_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example10NEW_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example10NEW_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example10NEW_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example10NEW_4.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -337,11 +337,11 @@ This is subsection b2. This is subsection b2.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample13_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample13_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample13_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample13_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample13_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample13_3.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -402,16 +402,16 @@ This is subsection c2. This is subsection c2.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_4.png" width="450"></td>
 </tr>
     <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_5.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample12_6.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_5.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample12_6.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -459,11 +459,11 @@ This is subsection c2. This is subsection c2.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example11_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example11_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example11_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example11_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example11_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example11_3.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -508,7 +508,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.1.10所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_multicol.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_multicol.png" width="450" />
 </p>
 
 <center><b>图9.1.10</b> 编译后的幻灯片效果</center>
@@ -561,7 +561,7 @@ Please check out the following parent function list.
 编译上述代码，得到幻灯片如图9.1.11所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example_columns.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/example_columns.png" width="450" />
 </p>
 
 <center><b>图9.1.11</b> 编译后的幻灯片效果</center>

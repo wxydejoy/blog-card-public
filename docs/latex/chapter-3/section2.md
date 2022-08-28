@@ -20,7 +20,7 @@
 编译后效果如图3-2-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_2_1.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_2_1.png" width="300" />
 </p>
 
 <center><b>图3-2-1</b> 编译后效果</center>
@@ -69,7 +69,7 @@
 编译后效果如图3-2-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_2_2.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_2_2.png" width="300" />
 </p>
 
 <center><b>图3-2-2</b> 编译后效果</center>
@@ -97,7 +97,7 @@
 编译后效果如图3-2-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_2_3.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_2_3.png" width="300" />
 </p>
 
 <center><b>图3-2-3</b> 编译后效果</center>
@@ -124,7 +124,7 @@
 编译后效果如图3-2-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_2_4.png" width="500" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_2_4.png" width="500" />
 </p>
 
 <center><b>图3-2-4</b> 编译后效果</center>

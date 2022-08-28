@@ -41,7 +41,7 @@
 编译上述代码，得到的幻灯片如图9.8.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_1new.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_1new.png" width="450">
 </p>
 
 <center><b>图9.8.1</b> 编译后的幻灯片效果</center>
@@ -104,7 +104,7 @@
 编译上述代码，得到的幻灯片如图9.8.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_2new.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_2new.png" width="450">
 </p>
 
 <center><b>图9.8.2</b> 编译后的幻灯片效果</center>
@@ -152,7 +152,7 @@
 编译上述代码，得到的幻灯片如图9.8.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_3.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_3.png" width="450">
 </p>
 
 <center><b>图9.8.3</b> 编译后的幻灯片效果</center>
@@ -200,8 +200,8 @@
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_4_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_4_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_4_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_4_2.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -243,7 +243,7 @@
 编译上述代码，得到的幻灯片如图9.8.5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_5.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_5.png" width="450">
 </p>
 
 <center><b>图9.8.5</b> 编译后的幻灯片效果</center>
@@ -347,8 +347,8 @@
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_6new_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_6new_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_6new_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_6new_2.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -388,7 +388,7 @@ Here is a description for the picture. Here is a description for the picture. He
 编译上述代码，得到的幻灯片如图9.8.7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_7.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_7.png" width="450">
 </p>
 
 <center><b>图9.8.7</b> 编译后的幻灯片效果</center>
@@ -432,7 +432,7 @@ Here is a description for the picture. Here is a description for the picture. He
 编译上述代码，得到的幻灯片如图9.8.8所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_8.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_8.png" width="450">
 </p>
 
 <center><b>图9.8.8</b> 编译后的幻灯片效果</center>
@@ -481,12 +481,12 @@ Here is a description for the picture. Here is a description for the picture. He
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_9_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_9_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_9_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_9_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_9_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/eg6_9_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_9_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/eg6_9_4.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -526,7 +526,7 @@ Here is a description for the picture. Here is a description for the picture. He
 编译上述代码，得到的幻灯片如图9.8.10所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_10.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_10.png" width="450">
 </p>
 
 <center><b>图9.8.10</b> 编译后的幻灯片效果</center>
@@ -566,7 +566,7 @@ Here is a description for the picture. Here is a description for the picture. He
 编译上述代码，得到的幻灯片如图9.8.11所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg6_11.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/eg6_11.png" width="450">
 </p>
 
 <center><b>图9.8.11</b> 编译后的幻灯片效果</center>
@@ -599,11 +599,11 @@ Here is a description for the picture. Here is a description for the picture. He
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample4_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample4_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample4_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample4_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample4_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample4_3.png" width="450"></td>
 </tr>
 </table>
 </p>

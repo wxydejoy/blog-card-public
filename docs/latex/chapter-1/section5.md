@@ -8,7 +8,7 @@
 GitHub是一个面向开源项目及私有项目的云端托管平台，官方网址为[http://github.com/](http://github.com/)，旨在为开发者储存、管理代码以及控制代码的更新，只支持Git作为唯一的版本库格式进行托管。GitHub走进人们的视野有十几年了，它于2008年4月10日正式上线，除Git代码仓库托管与基本的网页管理界面外，还提供在线文件编辑器、版本控制、协作报表等功能。截至2021年底，GitHub在全球范围内拥有的注册用户已超过7000万，托管项目总量更是超过1亿，是很多开发者远程协作的重要工具。2018年6月，GitHub被微软以75亿美元的价格收购。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/github_webpage.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/github_webpage.png" width="900" />
 </p>
 
 <center><b>图1-5-1</b> GitHub首页，图片来源于GitHub官方网站。</center>
@@ -16,7 +16,7 @@ GitHub是一个面向开源项目及私有项目的云端托管平台，官方�
 GitHub的开源、共享、协作理念正影响着开发社区生态，入驻GitHub社区进行技术开源的国内外企业众多，其中不乏微软、谷歌等国外技术巨头以及国内科技企业的身影。实际上，GitHub开源社区的项目类型及展现形式也异常丰富，既有大量的应用型项目，也有很多研究探索型项目。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/github_organization_ranking.png" width="400" />
+<img align="middle" src="docs/latex/chapter-1/graphics/github_organization_ranking.png" width="400" />
 </p>
 
 <center><b>图1-5-2</b> 入驻GitHub的机构组织排名，其中，排名参照GitHub标星数量，图片来源于https://gitstar-ranking.com/</center>
@@ -24,7 +24,7 @@ GitHub的开源、共享、协作理念正影响着开发社区生态，入驻Gi
 为便于开发者追踪整个开源社区的开发动态，GitHub根据计算机程序语言类型提供了趋势分析，这个功能称为GitHub trending，它会定期更新趋势榜、帮助开发者追踪当下较为流行的GitHub仓库，同时也会推送一些优质的开发者。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/github_trending_tex.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/github_trending_tex.png" width="900" />
 </p>
 <center><b>图1-5-3</b> LaTeX相关的GitHub趋势榜，图片来源于GitHub trending：https://github.com/trending/tex</center>
 

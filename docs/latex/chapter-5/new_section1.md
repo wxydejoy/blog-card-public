@@ -31,7 +31,7 @@ g & h & i \\
 编译上述代码，可以得到类似的结果：
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/eg5_1.png" width="100">
+<img align="middle" src="docs/latex/chapter-5/graphics/eg5_1.png" width="100">
 </p>
 
 <center><b>图5-1-1</b> 编译后的幻灯片效果</center>
@@ -78,7 +78,7 @@ g & h & i \\
 编译上述代码，得到表格如图5-1-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_1_1.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_1_1.png" width="350" />
 </p>
 
 <center><b>图5-1-2</b> 编译后的文档内容</center>
@@ -134,7 +134,7 @@ Table~\ref{table1} shows the example of ABC.
 编译上述代码，得到表格如 图5-1-3 所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_1_3.png" width="350">
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_1_3.png" width="350">
 </p>
 
 <center><b>图5-1-3</b> 编译后的幻灯片效果</center>
@@ -191,7 +191,7 @@ Table~\ref{table1} shows the Example of ABC.
 编译上述代码，得到表格如图5-1-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_1_4.png" width="450" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_1_4.png" width="450" />
 </p>
 
 <center><b>图5-1-4</b> 编译后的文档内容</center>

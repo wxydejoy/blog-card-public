@@ -52,7 +52,7 @@
 编译上述代码，得到表格如图5-2-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_1.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_1.png" width="350" />
 </p>
 
 <center><b>图5-2-1</b> 编译后的文档内容</center>
@@ -104,7 +104,7 @@
 编译上述代码，得到表格如图5-2-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_2.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_2.png" width="350" />
 </p>
 
 <center><b>图5-2-2</b> 编译后的文档内容</center>
@@ -156,7 +156,7 @@
 编译上述代码，得到表格如图5-2-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_3.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_3.png" width="350" />
 </p>
 
 <center><b>图5-2-3</b> 编译后的文档内容</center>
@@ -206,7 +206,7 @@ Table~\ref{table1} shows the Example of ABC.
 编译上述代码，得到表格如图5-2-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_4.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_4.png" width="350" />
 </p>
 
 <center><b>图5-2-4</b> 编译后的文档内容</center>
@@ -214,7 +214,7 @@ Table~\ref{table1} shows the Example of ABC.
 当然，有时也需要在第一个单元格插入两条斜线来声明表格内容，同样可以使用\usepackage{diagbox}宏包来插入。当插入两个斜线时， \diagbox[设置dir参数]{A}{B}{C}，使用NW、NE、SW和SE的效果分别如图5-2-5所示：
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_5.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_5.png" width="350" />
 </p>
 
 <center><b>图5-2-5</b> 编译后的文档内容</center>
@@ -254,7 +254,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_6.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_6.png" width="350" />
 </p>
 
 <center><b>图5-2-6</b> 编译后的文档内容</center>
@@ -307,7 +307,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_7.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_7.png" width="350" />
 </p>
 
 <center><b>图5-2-7</b> 编译后的文档内容</center>
@@ -347,7 +347,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-8所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_8.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_8.png" width="350" />
 </p>
 
 <center><b>图5-2-8</b> 编译后的文档内容</center>
@@ -386,7 +386,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-9所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_9.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_9.png" width="350" />
 </p>
 
 <center><b>图5-2-9</b> 编译后的文档内容</center>
@@ -418,7 +418,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-10所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_10.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_10.png" width="350" />
 </p>
 
 <center><b>图5-2-10</b> 编译后的文档内容</center>
@@ -457,7 +457,7 @@ Table~\ref{table1} shows the the Example of ABC.
 编译上述代码，得到表格如图5-2-11所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-5/graphics/newexm5_2_11.png" width="350" />
+<img align="middle" src="docs/latex/chapter-5/graphics/newexm5_2_11.png" width="350" />
 </p>
 
 <center><b>图5-2-11</b> 编译后的文档内容</center>

@@ -30,7 +30,7 @@
 编译效果如图10.3.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_3_1.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_3_1.png" width="750" />
 </p>
 
 <center><b>图10.3.1</b> 编译后效果</center>
@@ -94,7 +94,7 @@
 编译效果如图10.3.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_3_2.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_3_2.png" width="750" />
 </p>
 
 <center><b>图10.3.2</b> 编译后效果</center>
@@ -130,7 +130,7 @@ This is a Beamer poster example
 编译效果如图10.3.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_3_3.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_3_3.png" width="750" />
 </p>
 
 <center><b>图10.3.3</b> 编译后效果</center>
@@ -235,7 +235,7 @@ This is a Beamer poster example
 ```
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_3_4.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_3_4.png" width="750" />
 </p>
 
 <center><b>图10.3.4</b> 编译后效果</center>

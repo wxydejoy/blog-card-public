@@ -37,7 +37,7 @@ Rotate the figure by 90 degrees.
 编译后的插图效果如图6.1.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_2.png" width="350" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_2.png" width="350" />
 </p>
 
 <center><b>图6.1.1</b> 编译后的插图效果</center>
@@ -65,7 +65,7 @@ Figure \ref{fig:1} shows a beautiful butterfly.
 编译后的插图效果如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_1.png" width="350" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_1.png" width="350" />
 </p>
 
 <center><b>图6.1.2</b> 编译后的插图效果</center>

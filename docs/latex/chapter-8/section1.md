@@ -31,7 +31,7 @@ x^{2}+y^{2}=2\label{eq2}
 编译上述代码，得到文档如图8.1.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_1_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_1_1.png" width="450" />
 </p>
 
 <center><b>图8.1.1</b> 编译后的文档</center>
@@ -63,7 +63,7 @@ Figure \ref{butterfly} is a photo of butterfly.
 编译上述代码，得到文档如图8.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_1_2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_1_2.png" width="450" />
 </p>
 
 <center><b>图8.1.2</b> 编译后的文档</center>
@@ -100,7 +100,7 @@ Table~\ref{table1} shows the values of some basic functions.
 编译上述代码，得到文档如图8.1.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-8/graphics/example8_1_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-8/graphics/example8_1_3.png" width="450" />
 </p>
 
 <center><b>图8.1.3</b> 编译后的文档</center>

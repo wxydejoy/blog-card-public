@@ -5,7 +5,7 @@
 LaTeX是一款高质量的文档排版系统，LaTeX在读法上一般发作Lay-tek或者Lah-tek的音，而不是大家普遍认为的Lay-teks。LaTeX的历史可以追溯到1984年，在这一年里，兰波特博士作为早期开发者发布了LaTeX的最初版本。事实上，LaTeX完全是兰伯特博士的意外所得，他当年出于排版书籍的需要，在早先的文档排版系统TeX基础上新增了一些特定的宏包，为便于自己日后重复使用这些宏包，他将这些宏包构建成标准宏包。谁曾想，正是这些不经意间开发出来的宏包构成了LaTeX的雏形。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/Leslie_Lamport.jpeg" width="200" />
+<img align="middle" src="docs/latex/chapter-1/graphics/Leslie_Lamport.jpeg" width="200" />
 </p>
 
 <center><b>图1-2-1</b> 兰伯特博士，注：图片来源为兰伯特博士的维基百科网页。</center>

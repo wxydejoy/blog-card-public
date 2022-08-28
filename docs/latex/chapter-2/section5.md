@@ -35,7 +35,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-5-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_4_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_4_1.png" width="450" />
 </p>
 
 <center><b>图2-5-1</b> 编译后的文档</center>
@@ -73,7 +73,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-5-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_4_2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_4_2.png" width="450" />
 </p>
 
 <center><b>图2-5-2</b> 编译后的文档</center>
@@ -107,7 +107,7 @@ This document is our starting point for learning LaTeX and writing with it. It w
 编译上述代码，得到文档如图2-5-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example2_4_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example2_4_3.png" width="450" />
 </p>
 
 <center><b>图2-5-3</b> 编译后的文档</center>
@@ -152,8 +152,8 @@ The text of 2.3
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-2/graphics/example2_4_4_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-2/graphics/example2_4_4_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example2_4_4_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example2_4_4_2.png" width="300"></td>
 </tr>
 </table>
 </p>

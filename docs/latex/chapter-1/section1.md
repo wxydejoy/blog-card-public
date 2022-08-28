@@ -5,7 +5,7 @@ TeX是一种专门用于文档排版的计算机程序语言，同时也是一�
 那么TeX是怎么出现的呢？有时候，新生事物的出现往往伴随着一定的契机和巧合。上世纪70年代末，正当克努斯博士准备出版其著作《计算机程序设计艺术》时，他发现出版社提供的排版效果并不理想，当时的计算机排版技术也十分粗糙，这必将严重影响其著作的排版质量，于是，他计划花费几个月的时间开发一款更有效的文档排版系统，具体的开发目标便是实现高质量的书籍排版，一改彼时粗糙的计算机排版技术。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/Donald_Knuth.jpeg" width="200" />
+<img align="middle" src="docs/latex/chapter-1/graphics/Donald_Knuth.jpeg" width="200" />
 </p>
 
 <center><b>图1-1-1</b> 克努斯博士，注：图片来源为克努斯博士的维基百科网页。</center>

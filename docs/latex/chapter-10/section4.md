@@ -52,7 +52,7 @@ LaTeX可制作各类文档，其中也不乏简历，与其他各类文档相比
 编译效果如图10.4.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_4_1.png" width="250" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_4_1.png" width="250" />
 </p>
 
 <center><b>图10.4.1</b> 编译后效果</center>
@@ -79,7 +79,7 @@ LaTeX可制作各类文档，其中也不乏简历，与其他各类文档相比
 键入以上代码后，再次编译`CV.tex`文件，编译效果如图10.4.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_4_2.png" width="550" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_4_2.png" width="550" />
 </p>
 
 <center><b>图10.4.2</b> 编译后效果</center>
@@ -119,7 +119,7 @@ LaTeX可制作各类文档，其中也不乏简历，与其他各类文档相比
 编译效果如图10.4.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_4_3.png" width="550" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_4_3.png" width="550" />
 </p>
 
 <center><b>图10.4.3</b> 编译后效果</center>
@@ -167,7 +167,7 @@ I attended the University of Nowhere from 2012 to 2016.
 编译效果如图10.4.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_4_4.png" width="550" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_4_4.png" width="550" />
 </p>
 
 <center><b>图10.4.4</b> 编译后效果</center>
@@ -215,7 +215,7 @@ I attended the University of Nowhere from 2012 to 2016.
 编译效果如图10.4.5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_4_5.png" width="550" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_4_5.png" width="550" />
 </p>
 
 <center><b>图10.4.5</b> 编译后效果</center>
@@ -229,9 +229,9 @@ LaTeX在线网站Overleaf中提供了海量的[简历模板](https://www.overlea
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-10/graphics/example10_4_6_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-10/graphics/example10_4_6_2.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-10/graphics/example10_4_6_3.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-10/graphics/example10_4_6_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-10/graphics/example10_4_6_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-10/graphics/example10_4_6_3.png" width="300"></td>
 </tr>
 </table>
 </p>

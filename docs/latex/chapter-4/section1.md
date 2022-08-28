@@ -26,7 +26,7 @@ $$x+y=2$$
 编译上述代码，得到幻灯片如图4-1-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_1.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_1.png" width="600" />
 </p>
 
 <center><b>图4-1-1</b> 编译后的幻灯片效果</center>
@@ -53,7 +53,7 @@ x+y=2
 编译上述代码，得到幻灯片如图4-1-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_2.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_2.png" width="600" />
 </p>
 
 <center><b>图4-1-2</b> 编译后的幻灯片效果</center>
@@ -76,7 +76,7 @@ x+y=2
 编译上述代码，得到幻灯片如图4-1-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_3.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_3.png" width="600" />
 </p>
 
 <center><b>图4-1-3</b> 编译后的幻灯片效果</center>
@@ -101,7 +101,7 @@ x+y=2
 编译上述代码，得到幻灯片如图4.1.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_4.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_4.png" width="600" />
 </p>
 
 <center><b>图4-1-4</b> 编译后的幻灯片效果</center>
@@ -128,7 +128,7 @@ x+y&=2 \\
 编译上述代码，得到幻灯片如图4-1-5所示。其中，`&`符号声明了不同行公式之间的对齐参照点。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_5.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_5.png" width="600" />
 </p>
 
 <center><b>图4-1-5</b> 编译后的幻灯片效果</center>
@@ -210,7 +210,7 @@ x+y=2 \nonumber \\
 编译上述代码，得到幻灯片如图4-1-6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_8.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_8.png" width="600" />
 </p>
 
 <center><b>图4-1-6</b> 编译后的幻灯片效果</center>
@@ -237,7 +237,7 @@ x+y=2 \\
 编译上述代码，得到幻灯片如图4-1-7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_9.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_9.png" width="600" />
 </p>
 
 <center><b>图4-1-7</b> 编译后的幻灯片效果</center>
@@ -285,7 +285,7 @@ x^{2}+y^{2}-\sin z=4
 编译上述代码，得到幻灯片如图4-1-8所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_10.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_10.png" width="600" />
 </p>
 
 <center><b>图4-1-8</b> 编译后的幻灯片效果</center>
@@ -313,7 +313,7 @@ $\scriptscriptstyle{f(x)=\sum_{i=1}^{n}\frac{1}{x_{i}}}$.
 编译上述代码，得到幻灯片如图4-1-9所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_11.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_11.png" width="600" />
 </p>
 
 <center><b>图4-1-9</b> 编译后的幻灯片效果</center>
@@ -353,7 +353,7 @@ x+y=2 \\
 编译上述代码，得到幻灯片如图4-1-10所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_12.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_12.png" width="600" />
 </p>
 
 <center><b>图4.1.10</b> 编译后的幻灯片效果</center>
@@ -396,7 +396,7 @@ x+y=2 \\
 编译上述代码，得到幻灯片如图4-1-11所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_13.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_13.png" width="600" />
 </p>
 
 <center><b>图4-1-11</b> 编译后的幻灯片效果</center>
@@ -428,7 +428,7 @@ G = H
 编译上述代码，得到幻灯片如图4-1-12所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_1_14.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_1_14.png" width="600" />
 </p>
 
 <center><b>图4-1-12</b> 编译后的幻灯片效果</center>

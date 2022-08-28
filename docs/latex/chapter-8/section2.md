@@ -47,10 +47,10 @@ This is section 1.1.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_1_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_1_2.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_1_3.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_1_4.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_1_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_1_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_1_3.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_1_4.png" width="300"></td>
 </tr>
 </table>
 </p>
@@ -84,7 +84,7 @@ This is the website of open-source latex-cookbook repository: \href{https://gith
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_2.png" width="300"></td>
 
 </tr>
 </table>
@@ -115,7 +115,7 @@ This is the text of open-source latex-cookbook repository: \href{run:./LaTeX-coo
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_3.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_3.png" width="300"></td>
 
 </tr>
 </table>
@@ -176,10 +176,10 @@ This is the text of open-source latex-cookbook repository: \href{run:./LaTeX-coo
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_4_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_4_2.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_4_3.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-8/graphics/example8_2_4_4.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_4_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_4_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_4_3.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-8/graphics/example8_2_4_4.png" width="300"></td>
 </tr>
 </table>
 </p>

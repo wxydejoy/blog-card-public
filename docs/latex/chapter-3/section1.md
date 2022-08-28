@@ -54,7 +54,7 @@ Hello, LaTeX! Hello, LaTeX! Hello, LaTeX! Hello, LaTeX! Hello, LaTeX! Hello, LaT
 编译后的效果如图3-1-1所示：
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_1_1.png" width="500" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_1_1.png" width="500" />
 </p>
 
 <center><b>图3-1-1</b> 编译后效果</center>

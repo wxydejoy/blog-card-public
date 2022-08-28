@@ -36,7 +36,7 @@ This is a simple example:
 编译上述代码，得到的算法伪代码如图10.2.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example1.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example1.png" width="750" />
 </p>
 
 <center><b>图10.2.1</b> 编译后的算法伪代码</center>
@@ -76,7 +76,7 @@ $c=c+x_iy_i$\;
 编译上述代码，得到的算法伪代码如图10.2.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example2.png" width="750" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example2.png" width="750" />
 </p>
 
 <center><b>图10.2.2</b> 编译后的算法伪代码</center>

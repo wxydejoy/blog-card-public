@@ -42,15 +42,15 @@ Please check out the following parent function list.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example6_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example6_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example6_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example6_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example6_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example6_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example6_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example6_4.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example6_5.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example6_5.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -105,12 +105,12 @@ Please check out the following parent function list.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample7_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample7_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample7_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample7_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample7_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample7_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample7_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample7_4.png" width="450"></td>
 </tr>
 </table>
 </p>
@@ -184,12 +184,12 @@ LaTeX还提供了其它命令可以实现类似的动画效果，同样可以在
     <p align="center">
     <table>
     <tr>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample2_1.png" width="450"></td>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample2_2.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample2_1.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample2_2.png" width="450"></td>
     </tr>
     <tr>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample2_3.png" width="450"></td>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample2_4.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample2_3.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample2_4.png" width="450"></td>
     </tr>
     </table>
     </p>
@@ -232,12 +232,12 @@ LaTeX还提供了其它命令可以实现类似的动画效果，同样可以在
     <p align="center">
     <table>
     <tr>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample3_1.png" width="450"></td>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample3_2.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample3_1.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample3_2.png" width="450"></td>
     </tr>
     <tr>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample3_3.png" width="450"></td>
-    <td><img align="middle" src="latex/chapter-9/graphics/NEWexample3_4.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample3_3.png" width="450"></td>
+    <td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample3_4.png" width="450"></td>
     </tr>
     </table>
     </p>
@@ -361,12 +361,12 @@ Please check out the following parent function list.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample10_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample10_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample10_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample10_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample10_3.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/NEWexample10_4.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample10_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/NEWexample10_4.png" width="450"></td>
 </tr>
 </table>
 </p>

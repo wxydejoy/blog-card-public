@@ -62,7 +62,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_1.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_1.png" width="300" />
 </p>
 
 <center><b>图3-6-1</b> 编译后列表</center>
@@ -87,7 +87,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_2.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_2.png" width="300" />
 </p>
 
 <center><b>图3-6-2</b> 编译后列表</center>
@@ -114,7 +114,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_3.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_3.png" width="300" />
 </p>
 
 <center><b>图3-6-3</b> 编译后列表</center>
@@ -148,7 +148,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_4.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_4.png" width="300" />
 </p>
 
 <center><b>图3-6-4</b> 编译后列表</center>
@@ -186,7 +186,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_5.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_5.png" width="300" />
 </p>
 
 <center><b>图3-6-5</b> 编译后列表</center>
@@ -217,7 +217,7 @@ LaTeX中的无序列表环境一般用特定符号（如圆点、星号）作为
 编译上述代码，得到列表如图3-6-6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_6.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_6.png" width="300" />
 </p>
 
 <center><b>图3-6-6</b> 编译后列表</center>
@@ -279,7 +279,7 @@ Custom Spacing:
 编译上述代码，得到列表如图3-6-7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_6_7.png" width="300" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_6_7.png" width="300" />
 </p>
 
 <center><b>图3-6-7</b> 编译后列表</center>

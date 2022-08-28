@@ -25,7 +25,7 @@
 编译上述代码，得到图形如图7.1.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_1.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_1.png" width="200" />
 </p>
 
 <center><b>图7.1.1</b> 编译后的图形效果</center>
@@ -70,7 +70,7 @@
 编译上述代码，得到图形如图7.1.2所示。
 
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_2.png" width="350" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_2.png" width="350" />
 </p>
 
 <center><b>图7.1.2</b> 编译后的图形效果</center>
@@ -106,7 +106,7 @@
 
 编译上述代码，得到图形如图7.1.3所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_3.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_3.png" width="200" />
 </p>
 
 <center><b>图7.1.3</b> 编译后的图形效果</center>
@@ -132,7 +132,7 @@
 
 编译上述代码，得到图形如图7.1.4所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_4.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_4.png" width="200" />
 </p>
 
 <center><b>图7.1.4</b> 编译后的图形效果</center>
@@ -160,7 +160,7 @@
 
 编译上述代码，得到图形如图7.1.5所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_5.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_5.png" width="200" />
 </p>
 
 <center><b>图7.1.5</b> 编译后的图形效果</center>
@@ -192,7 +192,7 @@
 
 编译上述代码，得到图形如图7.1.6所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_6.png" width="100" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_6.png" width="100" />
 </p>
 
 <center><b>图7.1.6</b> 编译后的图形效果</center>
@@ -218,7 +218,7 @@
 
 编译上述代码，得到图形如图7.1.7所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_7.png" width="300" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_7.png" width="300" />
 </p>
 
 <center><b>图7.1.7</b> 编译后的图形效果</center>
@@ -244,7 +244,7 @@
 
 编译上述代码，得到图形如图7.1.8所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_8.png" width="300" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_8.png" width="300" />
 </p>
 
 <center><b>图7.1.8</b> 编译后的图形效果</center>
@@ -272,7 +272,7 @@
 
 编译上述代码，得到图形如图7.1.9所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_9.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_9.png" width="200" />
 </p>
 
 <center><b>图7.1.9</b> 编译后的图形效果</center>
@@ -294,7 +294,7 @@
 
 编译上述代码，得到图形如图7.1.10所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_10.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_10.png" width="200" />
 </p>
 
 <center><b>图7.1.10</b> 编译后的图形效果</center>
@@ -323,7 +323,7 @@
 
 编译上述代码，得到图形如图7.1.11所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_11.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_11.png" width="200" />
 </p>
 
 <center><b>图7.1.11</b> 编译后的图形效果</center>
@@ -353,7 +353,7 @@
 
 编译上述代码，得到图形如图7.1.12所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_12.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_12.png" width="200" />
 </p>
 
 <center><b>图7.1.12</b> 编译后的图形效果</center>
@@ -378,7 +378,7 @@
 
 编译上述代码，得到图形如图7.1.13所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_13.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_13.png" width="200" />
 </p>
 
 <center><b>图7.1.13</b> 编译后的图形效果</center>
@@ -407,7 +407,7 @@
 
 编译上述代码，得到图形如图7.1.14所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_14.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_14.png" width="200" />
 </p>
 
 <center><b>图7.1.14</b> 编译后的图形效果</center>
@@ -436,7 +436,7 @@
 
 编译上述代码，得到图形如图7.1.15所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_1_15.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_1_15.png" width="200" />
 </p>
 
 <center><b>图7.1.15</b> 编译后的图形效果</center>

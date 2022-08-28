@@ -28,7 +28,7 @@ This is latex-cookbook!
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-3/graphics/example3_7_1_1.png" width="500"></td>
+<td><img align="middle" src="docs/latex/chapter-3/graphics/example3_7_1_1.png" width="500"></td>
 </tr>
 </table>
 </p>
@@ -65,8 +65,8 @@ This is latex-cookbook!
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-3/graphics/example3_7_2_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-3/graphics/example3_7_2_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-3/graphics/example3_7_2_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-3/graphics/example3_7_2_2.png" width="300"></td>
 </tr>
 </table>
 </p>
@@ -92,7 +92,7 @@ Xinyu Chen\footnote{Xinyu Chen is a PhD from the University of Montreal.} and Ji
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-3/graphics/example3_7_3.png" width="500"></td>
+<td><img align="middle" src="docs/latex/chapter-3/graphics/example3_7_3.png" width="500"></td>
 </tr>
 </table>
 </p>
@@ -123,7 +123,7 @@ Xinyu Chen\footnote{Xinyu Chen is a PhD from the University of Montreal.} and Ji
 编译后效果如图3-7-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_7_4.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_7_4.png" width="600" />
 </p>
 
 <center><b>图3-7-4</b> 编译后效果</center>

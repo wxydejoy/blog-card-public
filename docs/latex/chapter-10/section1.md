@@ -41,7 +41,7 @@ print(x)
 编译后效果如图10.1.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_1_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_1_1.png" width="450" />
 </p>
 
 <center><b>图10.1.1</b> 编译后效果</center>
@@ -79,7 +79,7 @@ print(x)
 编译后效果如图10.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_1_2.png" width="450" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_1_2.png" width="450" />
 </p>
 
 <center><b>图10.1.2</b> 编译后效果</center>
@@ -134,7 +134,7 @@ print(x)
 编译后效果如图10.1.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-10/graphics/example10_1_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-10/graphics/example10_1_3.png" width="450" />
 </p>
 
 <center><b>图10.1.3</b> 编译后效果</center>

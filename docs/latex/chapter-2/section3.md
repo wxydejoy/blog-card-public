@@ -48,7 +48,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译上述代码，得到文档如图2-3-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-2/graphics/example3_1.png" width="300" />
+<img align="middle" src="docs/latex/chapter-2/graphics/example3_1.png" width="300" />
 </p>
 
 <center><b>图2-3-1</b> 编译后的文档</center>
@@ -83,8 +83,8 @@ Hello, LaTeXers! This is our first LaTeX document.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-2/graphics/example3_2_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-2/graphics/example3_2_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example3_2_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example3_2_2.png" width="300"></td>
 </tr>
 </table>
 </p>
@@ -120,9 +120,9 @@ Hello, LaTeXers! This is our first LaTeX document.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-2/graphics/example3_3_1.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-2/graphics/example3_3_2.png" width="300"></td>
-<td><img align="middle" src="latex/chapter-2/graphics/example3_3_3.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example3_3_1.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example3_3_2.png" width="300"></td>
+<td><img align="middle" src="docs/latex/chapter-2/graphics/example3_3_3.png" width="300"></td>
 </tr>
 </table>
 </p>

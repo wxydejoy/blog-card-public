@@ -20,7 +20,7 @@ In \LaTeX, We can use the setlength command to adjust the indentation distance o
 编译后效果如图3-4-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_1.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_1.png" width="600" />
 </p>
 
 <center><b>图3-4-1</b> 编译后效果</center>
@@ -44,7 +44,7 @@ In \LaTeX, We can use the setlength command to adjust the indentation distance o
 编译后效果如图3-4-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_2.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_2.png" width="600" />
 </p>
 
 <center><b>图3-4-2</b> 编译后效果</center>
@@ -70,7 +70,7 @@ In \LaTeX, We can use the setlength command to adjust the indentation distance o
 编译后效果如图3-4-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_3.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_3.png" width="600" />
 </p>
 
 <center><b>图3-4-3</b> 编译后效果</center>
@@ -95,7 +95,7 @@ In \LaTeX, We can use the setlength command to adjust the indentation distance o
 编译后效果如图3-4-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_4.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_4.png" width="600" />
 </p>
 
 <center><b>图3-4-4</b> 编译后效果</center>
@@ -133,7 +133,7 @@ How to set space between any two paragraphs?
 编译后效果如图3-4-5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_5.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_5.png" width="600" />
 </p>
 
 <center><b>图3-4-5</b> 编译后效果</center>
@@ -166,7 +166,7 @@ How to set space between any two paragraphs?
 编译后效果如图3-4-6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_6.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_6.png" width="600" />
 </p>
 
 <center><b>图3-4-6</b> 编译后效果</center>
@@ -203,7 +203,7 @@ This is latex-cookbook
 编译后效果如图3-4-7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_4_7.png" width="600" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_4_7.png" width="600" />
 </p>
 
 <center><b>图3-4-7</b> 编译后效果</center>

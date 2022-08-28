@@ -47,7 +47,7 @@
 
 编译上述代码，得到图形如图7.2.1所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_2_1.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_2_1.png" width="200" />
 </p>
 
 <center><b>图7.2.1</b> 编译后的图形效果</center>
@@ -212,7 +212,7 @@
 
 编译上述代码，得到图形如图7.2.2所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_2_2.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_2_2.png" width="200" />
 </p>
 
 <center><b>图7.2.2</b> 编译后的图形效果</center>
@@ -289,7 +289,7 @@
 ```
 编译上述代码，得到图形如图7.2.3所示。
 <p align="center"> 
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_2_3.png" width="200" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_2_3.png" width="200" />
 </p>
 
 <center><b>图7.2.3</b> 编译后的图形效果</center>

@@ -11,7 +11,7 @@ Stack Exchange技术问答社区按计算机程序语言类型进行划分，我
 > 网址为[https://stackexchange.com/](https://stackexchange.com/)，它与Stack Overflow问答社区一样在全球范围内拥有广泛的用户群体。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/tex_stackexchange_webpage.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/tex_stackexchange_webpage.png" width="900" />
 </p>
 
 <center><b>图1-4-1</b> https://tex.stackexchange.com/首页，该问答社区支持内容搜索，我们也可以根据需要在首页显示当前热门问题、当月高频访问问题等。</center>
@@ -19,7 +19,7 @@ Stack Exchange技术问答社区按计算机程序语言类型进行划分，我
 除Stack Exchange这种涵盖了多种计算机程序语言的技术问答社区外，LaTeX forum社区（[https://latex.org/forum/](https://latex.org/forum/)）是一个专门面向LaTeX的技术交流平台，它拥有活跃的用户群体与丰富的问答资源，该平台上有超过10万篇分门别类的技术帖子，我们可根据浏览量从该平台上一览高频访问问题，如图1-6所示，涉及“图表”（latex/chapter-1/graphics, Figures & Tables）的帖子已超过15000篇，涉及文本排版（text formatting）的帖子已超过10000篇。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/latex_forum_webpage.png" width="900" />
+<img align="middle" src="docs/latex/chapter-1/graphics/latex_forum_webpage.png" width="900" />
 </p>
 
 <center><b>图1-4-2</b> https://latex.org/forum/首页，该问答社区已经将帖子按照话题进行分门别类，我们可以看到：涉及“图表”（latex/chapter-1/graphics, Figures & Tables）的帖子已超过15000篇，涉及文本排版（text formatting）的帖子已超过10000篇。</center>
@@ -31,7 +31,7 @@ Stack Exchange技术问答社区按计算机程序语言类型进行划分，我
 顾名思义，高频访问问题是指访问量较高的问题。LaTeX forum社区已将问答帖子进行分类，针对某一特定话题，展开内容即可看到各类问题的访问情况。
 
 <p align="center">
-<img align="middle" src="latex/chapter-1/graphics/latex_forum_math_science.png" width="750" />
+<img align="middle" src="docs/latex/chapter-1/graphics/latex_forum_math_science.png" width="750" />
 </p>
 
 <center><b>图1-4-3</b> LaTeX forum社区中涉及“数学和科学”（math & science）话题的帖子，这里已经按照访问量对问答帖子进行了排序，图片来自于https://latex.org/forum/。</center>

@@ -33,7 +33,7 @@ According to the picture, we know ...
 编译后的插图效果如图6.2.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_3.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_3.png" width="450" />
 </p>
 
 <center><b>图6.2.1</b> 编译后的插图效果</center>
@@ -64,7 +64,7 @@ According to the picture, we know ...
 编译后的插图效果如图6.2.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_4.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_4.png" width="450" />
 </p>
 
 <center><b>图6.2.2</b> 编译后的插图效果</center>
@@ -101,7 +101,7 @@ The two figures are displayed side by side.
 编译后的插图效果如图6.2.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/example6_2_1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/example6_2_1.png" width="450" />
 </p>
 
 <center><b>图6.2.3</b> 编译后的插图效果</center>

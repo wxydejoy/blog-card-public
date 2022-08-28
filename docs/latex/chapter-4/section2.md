@@ -213,7 +213,7 @@ $$x\left\{\frac{1}{y}+1\right\}$$
 编译上述代码，得到幻灯片如图4-2-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_2_11.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_2_11.png" width="600" />
 </p>
 
 <center><b>图4-2-1</b> 编译后的幻灯片效果</center>
@@ -291,7 +291,7 @@ $$\mathbb{1},\mathbb{2},\mathbb{3},\mathbb{4},\mathbb{5}$$
 编译上述代码，得到幻灯片如图4-2-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-4/graphics/example4_2_15.png" width="600" />
+<img align="middle" src="docs/latex/chapter-4/graphics/example4_2_15.png" width="600" />
 </p>
 
 <center><b>图4-2-2</b> 编译后的幻灯片效果</center>

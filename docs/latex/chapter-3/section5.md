@@ -26,7 +26,7 @@ Produce \texttt{typewriter font} text. \\ % 生成打字机字体的文本
 编译后效果如图3-5-1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_1.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_1.png" width="400" />
 </p>
 
 <center><b>图3-5-1</b> 编译后效果</center>
@@ -53,7 +53,7 @@ Produce \texttt{typewriter font} text. \\ % 生成打字机字体的文本
 编译后效果如图3-5-2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_2.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_2.png" width="400" />
 </p>
 
 <center><b>图3-5-2</b> 编译后效果</center>
@@ -95,7 +95,7 @@ Produce {\Huge Huge word}
 编译后效果如图3-5-3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_3.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_3.png" width="400" />
 </p>
 
 <center><b>图3-5-3</b> 编译后效果</center>
@@ -118,7 +118,7 @@ Produce \begin{LARGE}large word\end{LARGE}
 编译后效果如图3-5-4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_4.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_4.png" width="400" />
 </p>
 
 <center><b>图3-5-4</b> 编译后效果</center>
@@ -161,7 +161,7 @@ This is a simple example for using \LaTeX.
 编译后效果如图3-5-5所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_5.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_5.png" width="400" />
 </p>
 
 <center><b>图3-5-5</b> 编译后效果</center>
@@ -198,7 +198,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译后效果如图3-5-6所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_6.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_6.png" width="400" />
 </p>
 
 <center><b>图3-5-6</b> 编译后效果</center>
@@ -220,7 +220,7 @@ Hello, LaTeXers! This is our first LaTeX document.
 编译后效果如图3-5-7所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_7_1.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_7_1.png" width="400" />
 </p>
 
 <center><b>图3-5-7</b> 编译后效果</center>
@@ -255,7 +255,7 @@ Generate \uwave{wavy underlined} text. \\   % 生成波浪线的文本
 编译后效果如图3-5-8所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_7.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_7.png" width="400" />
 </p>
 
 <center><b>图3-5-8</b> 编译后效果</center>
@@ -281,7 +281,7 @@ Generate \st{many many strikethrough strikethrough strikethrough strikethrough s
 编译后效果如图3-5-9所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_8.png" width="750" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_8.png" width="750" />
 </p>
 
 <center><b>图3-5-9</b> 编译后效果</center>
@@ -304,7 +304,7 @@ This\_is\_text\_with\_underscores.
 编译后效果如图3-5-10所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_9.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_9.png" width="400" />
 </p>
 
 <center><b>图3-5-10</b> 编译后效果</center>
@@ -342,7 +342,7 @@ Type 4: \ding{202}-\ding{203}-\ding{204}-\ding{205}-\ding{206}-\ding{207}-\ding{
 编译后效果如图3-5-11所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-3/graphics/example3_5_10.png" width="400" />
+<img align="middle" src="docs/latex/chapter-3/graphics/example3_5_10.png" width="400" />
 </p>
 
 <center><b>图3-5-11</b> 编译后效果</center>

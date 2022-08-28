@@ -56,7 +56,7 @@ below left=5pt and 0pt of #1.south]
 编译上述代码，得到图形如图7.4.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_4_1.png" width="250" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_4_1.png" width="250" />
 </p>
 
 <center><b>图7.4.1</b> 编译后的图形效果</center>
@@ -133,7 +133,7 @@ below left=5pt and 0pt of #1.south]
 编译上述代码，得到图形如图7.4.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_4_2.png" width="400" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_4_2.png" width="400" />
 </p>
 
 <center><b>图7.4.2</b> 编译后的图形效果</center>
@@ -244,7 +244,7 @@ below left=5pt and 0pt of #1.south]
 编译上述代码，得到图形如图7.4.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_4_3.png" width="500" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_4_3.png" width="500" />
 </p>
 
 <center><b>图7.4.3</b> 编译后的图形效果</center>
@@ -295,7 +295,7 @@ below left=5pt and 0pt of #1.south]
 编译上述代码，得到图形如图7.4.4所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-7/graphics/example_sec7_4_4.png" width="350" />
+<img align="middle" src="docs/latex/chapter-7/graphics/example_sec7_4_4.png" width="350" />
 </p>
 
 <center><b>图7.4.4</b> 编译后的图形效果</center>

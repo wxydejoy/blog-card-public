@@ -49,7 +49,7 @@ for x in range(1, 101):
 编译上述代码，得到幻灯片如图9.5.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example15.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/example15.png" width="450">
 </p>
 
 <center><b>图9.5.2</b> 编译后的幻灯片效果</center>
@@ -97,7 +97,7 @@ for x in range(1, 101):
 编译上述代码，得到幻灯片如图9.5.3所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/example16.png" width="450">
+<img align="middle" src="docs/latex/chapter-9/graphics/example16.png" width="450">
 </p>
 
 <center><b>图9.5.3</b> 编译后的幻灯片效果</center>

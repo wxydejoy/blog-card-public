@@ -48,7 +48,7 @@ Here are three inserted figures...
 编译后的图表目录如图6.1.2所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-6/graphics/eg_5NEW.png" width="450" />
+<img align="middle" src="docs/latex/chapter-6/graphics/eg_5NEW.png" width="450" />
 </p>
 
 <center><b>图6.1.2</b> 编译后的插图效果</center>

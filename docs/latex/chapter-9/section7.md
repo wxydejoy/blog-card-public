@@ -34,7 +34,7 @@ The created table\ref{tab:table_a} is shown as follows.
 编译上述代码，得到幻灯片如图9.7.1所示。
 
 <p align="center">
-<img align="middle" src="latex/chapter-9/graphics/eg1.png" width="450" />
+<img align="middle" src="docs/latex/chapter-9/graphics/eg1.png" width="450" />
 </p>
 
 <center><b>图9.7.1</b> 编译后的幻灯片效果</center>
@@ -72,11 +72,11 @@ The created table\ref{tab:table_a} is shown as follows.
 <p align="center">
 <table>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example14_1.png" width="450"></td>
-<td><img align="middle" src="latex/chapter-9/graphics/example14_2.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example14_1.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example14_2.png" width="450"></td>
 </tr>
 <tr>
-<td><img align="middle" src="latex/chapter-9/graphics/example14_3.png" width="450"></td>
+<td><img align="middle" src="docs/latex/chapter-9/graphics/example14_3.png" width="450"></td>
 </tr>
 </table>
 </p>
