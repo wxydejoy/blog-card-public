@@ -20,8 +20,8 @@
 
 参照书前的学习计划安排自己的学习计划
 
-![](https://c.undf.top/images/others/2022-07-04-20-31-15.png)
-![](https://c.undf.top/images/others/2022-07-04-20-31-32.png)
+![](https://image.wxydejoy.top/cundf/others/2022-07-04-20-31-15.png)
+![](https://image.wxydejoy.top/cundf/others/2022-07-04-20-31-32.png)
 p31
 
 ## QT
@@ -32,17 +32,17 @@ p31
 
 一些原理，之前就已经学过，这里就不再详细记录。
 
-![2](https://c.undf.top/images/others/2022-07-26-14-54-07.png)
+![2](https://image.wxydejoy.top/cundf/others/2022-07-26-14-54-07.png)
 
 ### 第二章 开始学习
 
-![](https://c.undf.top/images/others/C++PrimerPlus.md/2022-07-26-15-25-51.png)
+![](https://image.wxydejoy.top/cundf/others/C++PrimerPlus.md/2022-07-26-15-25-51.png)
 
-![](https://c.undf.top/images/others/2022-07-26-15-16-12.png)
+![](https://image.wxydejoy.top/cundf/others/2022-07-26-15-16-12.png)
 
 基本也没太多知识点，简单记一个吧。
 
-![](https://c.undf.top/images/others/C++PrimerPlus.md/2022-07-26-15-57-46.png)
+![](https://image.wxydejoy.top/cundf/others/C++PrimerPlus.md/2022-07-26-15-57-46.png)
 
 ```cpp
 using  std::cout; // namespace
@@ -51,11 +51,11 @@ using namespace std; // namespace
 
 ### 第三章 处理数据
 
-![](https://c.undf.top/images/others/C++PrimerPlus.md/2022-07-26-16-08-35.png)
+![](https://image.wxydejoy.top/cundf/others/C++PrimerPlus.md/2022-07-26-16-08-35.png)
 
 #### c++ 11 初始化方式
 
-![](https://c.undf.top/images/others/C++PrimerPlus.md/2022-07-26-16-24-32.png)
+![](https://image.wxydejoy.top/cundf/others/C++PrimerPlus.md/2022-07-26-16-24-32.png)
 
 这里第一次见，跑一下看看
 
@@ -78,7 +78,7 @@ cout << sizeof(aaa) << sizeof(bbb) << sizeof(ccc) << sizeof(ddd)  << endl;
 
 看来是印刷错误
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-15-13-43.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-15-13-43.png)
 
 #### 强制类型转换
 
@@ -91,11 +91,11 @@ int(aaa);   // c++
 
 尽量少用
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-15-27-16.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-15-27-16.png)
 
 ### 复合类型
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-15-28-43.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-15-28-43.png)
 
 #### 数组
 
@@ -116,7 +116,7 @@ int counts[5] {};     // there are no elements in the {}, so the elements are de
 ```
 
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-18-19-01.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-18-19-01.png)
 
 
 #### 字符串
@@ -169,9 +169,9 @@ enum Color {
 
 #### 指针和自由存储空间
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-18-40-41.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-18-40-41.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-18-40-53.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-18-40-53.png)
 
 ```cpp
 int *p = new int;
@@ -195,35 +195,35 @@ v.push_back(1);
 array<int, 10> a;
 ```
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-18-49-53.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-18-49-53.png)
 
 #### 小结
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-02-18-51-36.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-02-18-51-36.png)
 
 
 
 ### 循环和关系表达式
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-11-51.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-11-51.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-15-55.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-15-55.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-18-52.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-18-52.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-21-39.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-21-39.png)
 
 这个有点意思
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-24-41.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-24-41.png)
 
 
 #### 小结
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-03-14-26-44.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-03-14-26-44.png)
 
 ### 分支语句和逻辑运算符
-![](https://c.undf.top/images/others/C++学习.md/2022-08-04-12-00-36.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-04-12-00-36.png)
 
 #### cctype
 ```cpp
@@ -237,7 +237,7 @@ isupper('1'); // false
 
 ```
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-04-12-03-13.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-04-12-03-13.png)
 
 #### 简单文件输入输出  
 
@@ -277,14 +277,14 @@ in.close();
 
 ### 函数
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-05-15-03-03.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-05-15-03-03.png)
 
 
 const
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-05-15-31-30.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-05-15-31-30.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-05-15-31-32.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-05-15-31-32.png)
 
 
 
@@ -300,19 +300,19 @@ p(1, 2);
 ```
 #### 小结
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-05-15-38-34.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-05-15-38-34.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-05-15-39-49.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-05-15-39-49.png)
 
 
 ### 函数探幽
 
 并没有认真阅读,只是粗略了解
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-08-14-41-34.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-08-14-41-34.png)
 
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-08-14-42-58.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-08-14-42-58.png)
 
 #### 引用变量
 ```cpp
@@ -325,7 +325,7 @@ cout << a << endl;
 
 何时使用
 
-![](https://c.undf.top/images/others/C++学习.md/X.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/X.png)
 
 #### 默认参数
 ```cpp
@@ -342,7 +342,7 @@ int add(int a, int b);
 int add(int a, int b, int c);
 ```
 何时使用
-![](https://c.undf.top/images/others/C++学习.md/2022-08-08-16-06-00.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-08-16-06-00.png)
 
 #### 函数模板
 ```cpp
@@ -359,12 +359,12 @@ add<int>(1, 2);
 
 #### 小结
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-08-16-09-23.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-08-16-09-23.png)
 
 
 ### 内存模型和名称空间
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-31-53.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-31-53.png)
 
 和C语言一样，C++也允许甚至鼓励程序员将组件函数放在独立的文件中。第1章介绍过，可以单独编译这些文件，然后将它们链接成可执行的程序。（通常，C++编译器既编译程序，也管理链接器。）如果只修改了一个文件，则可以只重新编译该文件，然后将它与其他文件的编译版本链接。这使得大程序的管理更便捷。另外，，大多数C++环境都提供了其他工具来帮助管理。.例如，UNIX和Linux系统都具有make程序，可以跟踪程序依赖的文件以及这些文件的最后修改时间。运行makc时，如果它检测到上次编译后修改了源文件，make将记住重新构建程序所需的步骤。大多数集成开发环境（包括：Embarcadero C+Builder,Microsoft Visual C+、.Apple.Xcode和Freescale CodeWarrior)都在Project菜单中提供了类似的工具。
 
@@ -416,25 +416,25 @@ C++变量的作用域有多种。
 
 #### 名称空间
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-47-23.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-47-23.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-47-50.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-47-50.png)
 
 1. using 声明 和 using 编译指令
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-50-18.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-50-18.png)
 
 由于using声明将名称添加到局部声明区域中，因此这个示例避免了将另一个局部变量也命名为fetch。另外，和其他局部变量一样，fetch也将覆盖同名的全局变量。在函数的外面使用usig声明时，将把名称添加到全局名称空间中：
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-51-21.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-51-21.png)
 
 using声明使一个名称可用，而using编译指令使所有的名称都可用。usig编译指令由名称空间名和它前面的关键字using namespace组成，它使名称空间中的所有名称都可用，而不需要使用作用域解析运算符：一
 
 `using namespace std;`
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-52-55.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-52-55.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-11-18-54-40.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-11-18-54-40.png)
 
 - 一般使用using声明来替代using编译指令，因为using声明更易读。安全
 
@@ -444,13 +444,13 @@ using声明使一个名称可用，而using编译指令使所有的名称都可�
 
 #### 对象数组
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-13-16-18-11.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-13-16-18-11.png)
 
-![](https://c.undf.top/images/others/C++学习.md/2022-08-13-16-18-18.png)
+![](https://image.wxydejoy.top/cundf/others/C++学习.md/2022-08-13-16-18-18.png)
 
 ### 使用类
 
-![](https://c.undf.top/images/others/cpp_study.md/2022-08-14-19-54-05.png)
+![](https://image.wxydejoy.top/cundf/others/cpp_study.md/2022-08-14-19-54-05.png)
 #### 友元
 1. 友元函数
 2. 友元类
@@ -458,14 +458,14 @@ using声明使一个名称可用，而using编译指令使所有的名称都可�
 
 这里只介绍 友元函数
 
-![](https://c.undf.top/images/others/cpp_study.md/2022-08-14-19-57-52.png)
+![](https://image.wxydejoy.top/cundf/others/cpp_study.md/2022-08-14-19-57-52.png)
 
 说实话 看不懂
 截个图吧
 
-![](https://c.undf.top/images/others/cpp_study.md/2022-08-14-20-01-03.png)
+![](https://image.wxydejoy.top/cundf/others/cpp_study.md/2022-08-14-20-01-03.png)
 
-![](https://c.undf.top/images/others/cpp_study.md/2022-08-14-20-01-12.png)
+![](https://image.wxydejoy.top/cundf/others/cpp_study.md/2022-08-14-20-01-12.png)
 
 
 
