@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2023-01-03T09:45:16.533Z</updated>
+  <updated>2023-01-03T10:44:10.509Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ROS 自定义订阅者</title>
+    <link href="https://c.undf.top/posts/7e7b94b3/"/>
+    <id>https://c.undf.top/posts/7e7b94b3/</id>
+    <published>2023-01-03T10:31:53.000Z</published>
+    <updated>2023-01-03T10:44:10.509Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;h3 id=&quot;软件平台&quot;&gt;&lt;a href=&quot;#软件平台&quot; class=&quot;headerlink&quot; title=&quot;软件平台&quot;&gt;&lt;/a&gt;软件平台&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;The Robot Operating System (ROS)</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ROS" scheme="https://c.undf.top/tags/ROS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>干饭日记</title>
     <link href="https://c.undf.top/posts/39fh31o/"/>
     <id>https://c.undf.top/posts/39fh31o/</id>
     <published>2022-11-09T04:48:24.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.513Z</updated>
     
     
       
@@ -42,7 +66,7 @@
     <link href="https://c.undf.top/posts/2scrgfh/"/>
     <id>https://c.undf.top/posts/2scrgfh/</id>
     <published>2022-10-21T06:20:49.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -70,7 +94,7 @@
     <link href="https://c.undf.top/posts/2nqj13j/"/>
     <id>https://c.undf.top/posts/2nqj13j/</id>
     <published>2022-10-18T11:58:28.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -92,7 +116,7 @@
     <link href="https://c.undf.top/posts/3ie04lo/"/>
     <id>https://c.undf.top/posts/3ie04lo/</id>
     <published>2022-10-01T08:39:46.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -117,7 +141,7 @@
     <link href="https://c.undf.top/posts/307ko19/"/>
     <id>https://c.undf.top/posts/307ko19/</id>
     <published>2022-08-10T02:59:28.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -142,7 +166,7 @@
     <link href="https://c.undf.top/posts/3ahvaci/"/>
     <id>https://c.undf.top/posts/3ahvaci/</id>
     <published>2022-08-01T01:56:24.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -163,7 +187,7 @@
     <link href="https://c.undf.top/posts/49u3l9/"/>
     <id>https://c.undf.top/posts/49u3l9/</id>
     <published>2022-07-18T06:14:27.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -185,7 +209,7 @@
     <link href="https://c.undf.top/posts/21r8od0/"/>
     <id>https://c.undf.top/posts/21r8od0/</id>
     <published>2022-07-04T12:09:03.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -216,7 +240,7 @@
     <link href="https://c.undf.top/posts/1s2b6vp/"/>
     <id>https://c.undf.top/posts/1s2b6vp/</id>
     <published>2022-06-27T05:55:13.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -240,7 +264,7 @@
     <link href="https://c.undf.top/posts/1325oa2/"/>
     <id>https://c.undf.top/posts/1325oa2/</id>
     <published>2022-06-21T07:36:43.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -262,7 +286,7 @@
     <link href="https://c.undf.top/posts/3foj6j8/"/>
     <id>https://c.undf.top/posts/3foj6j8/</id>
     <published>2022-06-10T04:23:15.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -289,7 +313,7 @@
     <link href="https://c.undf.top/posts/1qkkb5f/"/>
     <id>https://c.undf.top/posts/1qkkb5f/</id>
     <published>2022-05-28T10:31:53.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -311,7 +335,7 @@
     <link href="https://c.undf.top/posts/2fsd2a9/"/>
     <id>https://c.undf.top/posts/2fsd2a9/</id>
     <published>2022-04-09T13:16:45.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -332,7 +356,7 @@
     <link href="https://c.undf.top/posts/2h3skbi/"/>
     <id>https://c.undf.top/posts/2h3skbi/</id>
     <published>2022-03-27T03:06:46.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.513Z</updated>
     
     
       
@@ -353,7 +377,7 @@
     <link href="https://c.undf.top/posts/1v242pf/"/>
     <id>https://c.undf.top/posts/1v242pf/</id>
     <published>2022-02-20T14:31:17.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -377,7 +401,7 @@
     <link href="https://c.undf.top/posts/jugpa0/"/>
     <id>https://c.undf.top/posts/jugpa0/</id>
     <published>2022-02-09T06:32:45.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.513Z</updated>
     
     
       
@@ -402,7 +426,7 @@
     <link href="https://c.undf.top/posts/aqu6r6/"/>
     <id>https://c.undf.top/posts/aqu6r6/</id>
     <published>2022-01-29T11:46:10.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.513Z</updated>
     
     
       
@@ -431,7 +455,7 @@
     <link href="https://c.undf.top/posts/e556/"/>
     <id>https://c.undf.top/posts/e556/</id>
     <published>2022-01-03T13:20:55.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -460,7 +484,7 @@
     <link href="https://c.undf.top/posts/iir0g4/"/>
     <id>https://c.undf.top/posts/iir0g4/</id>
     <published>2022-01-03T01:24:04.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
+    <updated>2023-01-03T10:44:10.509Z</updated>
     
     
       
@@ -479,30 +503,6 @@
     <category term="💻Corn" scheme="https://c.undf.top/tags/%F0%9F%92%BBCorn/"/>
     
     <category term="💻CIDR" scheme="https://c.undf.top/tags/%F0%9F%92%BBCIDR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>upyun</title>
-    <link href="https://c.undf.top/posts/3f4daa0d/"/>
-    <id>https://c.undf.top/posts/3f4daa0d/</id>
-    <published>2021-12-31T11:12:21.000Z</published>
-    <updated>2023-01-03T09:45:16.533Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;启&quot;&gt;&lt;a href=&quot;#启&quot; class=&quot;headerlink&quot; title=&quot;启&quot;&gt;&lt;/a&gt;启&lt;/h2&gt;&lt;p&gt;前段时间折腾存储空间，折腾一圈还是又拍云最香，&lt;strong&gt;免费&lt;/strong&gt;。但是自己不小心把一个文件夹删了，想要找回，却没有回收站这个功能，很遗憾，它就这么没了。&lt;/p&gt;
-&lt;p&gt;所以想找个办法备份图床，另外在 Github 逛到了 upyun-sdk</summary>
-        
-      
-    
-    
-    
-    
-    <category term="😄Upyun" scheme="https://c.undf.top/tags/%F0%9F%98%84Upyun/"/>
     
   </entry>
   
