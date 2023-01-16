@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2023-01-15T08:33:33.513Z</updated>
+  <updated>2023-01-16T14:17:03.912Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>FreeRTOS</title>
+    <link href="https://c.undf.top/posts/1rvt88k/"/>
+    <id>https://c.undf.top/posts/1rvt88k/</id>
+    <published>2023-01-18T12:50:28.000Z</published>
+    <updated>2023-01-16T14:17:03.912Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;大部分内容都为摘抄&lt;br&gt;其实已经看过很多遍，但一直没用过。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;内存管理&quot;&gt;&lt;a href=&quot;#内存管理&quot; class=&quot;headerlink&quot; title=&quot;内存管理&quot;&gt;&lt;/a&gt;内存管理&lt;/h2&gt;&lt;p&gt;task、queue、semaphores和event</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>2022照片故事分享</title>
     <link href="https://c.undf.top/posts/6679f469/"/>
     <id>https://c.undf.top/posts/6679f469/</id>
     <published>2023-01-15T03:06:46.000Z</published>
-    <updated>2023-01-15T08:33:33.513Z</updated>
+    <updated>2023-01-16T14:17:03.916Z</updated>
     
     
       
@@ -47,7 +71,7 @@
     <link href="https://c.undf.top/posts/7c3617f6/"/>
     <id>https://c.undf.top/posts/7c3617f6/</id>
     <published>2023-01-11T03:06:46.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.916Z</updated>
     
     
       
@@ -70,7 +94,7 @@
     <link href="https://c.undf.top/posts/7e7b94b3/"/>
     <id>https://c.undf.top/posts/7e7b94b3/</id>
     <published>2023-01-03T10:31:53.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -94,7 +118,7 @@
     <link href="https://c.undf.top/posts/39fh31o/"/>
     <id>https://c.undf.top/posts/39fh31o/</id>
     <published>2022-11-09T04:48:24.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.916Z</updated>
     
     
       
@@ -115,7 +139,7 @@
     <link href="https://c.undf.top/posts/2scrgfh/"/>
     <id>https://c.undf.top/posts/2scrgfh/</id>
     <published>2022-10-21T06:20:49.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -143,7 +167,7 @@
     <link href="https://c.undf.top/posts/2nqj13j/"/>
     <id>https://c.undf.top/posts/2nqj13j/</id>
     <published>2022-10-18T11:58:28.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -165,7 +189,7 @@
     <link href="https://c.undf.top/posts/3ie04lo/"/>
     <id>https://c.undf.top/posts/3ie04lo/</id>
     <published>2022-10-01T08:39:46.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -190,7 +214,7 @@
     <link href="https://c.undf.top/posts/307ko19/"/>
     <id>https://c.undf.top/posts/307ko19/</id>
     <published>2022-08-10T02:59:28.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -215,7 +239,7 @@
     <link href="https://c.undf.top/posts/3ahvaci/"/>
     <id>https://c.undf.top/posts/3ahvaci/</id>
     <published>2022-08-01T01:56:24.000Z</published>
-    <updated>2023-01-15T08:33:33.513Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -236,7 +260,7 @@
     <link href="https://c.undf.top/posts/49u3l9/"/>
     <id>https://c.undf.top/posts/49u3l9/</id>
     <published>2022-07-18T06:14:27.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -258,7 +282,7 @@
     <link href="https://c.undf.top/posts/21r8od0/"/>
     <id>https://c.undf.top/posts/21r8od0/</id>
     <published>2022-07-04T12:09:03.000Z</published>
-    <updated>2023-01-15T08:33:33.513Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -289,7 +313,7 @@
     <link href="https://c.undf.top/posts/1s2b6vp/"/>
     <id>https://c.undf.top/posts/1s2b6vp/</id>
     <published>2022-06-27T05:55:13.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -313,7 +337,7 @@
     <link href="https://c.undf.top/posts/1325oa2/"/>
     <id>https://c.undf.top/posts/1325oa2/</id>
     <published>2022-06-21T07:36:43.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -335,7 +359,7 @@
     <link href="https://c.undf.top/posts/3foj6j8/"/>
     <id>https://c.undf.top/posts/3foj6j8/</id>
     <published>2022-06-10T04:23:15.000Z</published>
-    <updated>2023-01-15T08:33:33.513Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -362,7 +386,7 @@
     <link href="https://c.undf.top/posts/1qkkb5f/"/>
     <id>https://c.undf.top/posts/1qkkb5f/</id>
     <published>2022-05-28T10:31:53.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -384,7 +408,7 @@
     <link href="https://c.undf.top/posts/2fsd2a9/"/>
     <id>https://c.undf.top/posts/2fsd2a9/</id>
     <published>2022-04-09T13:16:45.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -405,7 +429,7 @@
     <link href="https://c.undf.top/posts/2h3skbi/"/>
     <id>https://c.undf.top/posts/2h3skbi/</id>
     <published>2022-03-27T03:06:46.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.916Z</updated>
     
     
       
@@ -426,7 +450,7 @@
     <link href="https://c.undf.top/posts/1v242pf/"/>
     <id>https://c.undf.top/posts/1v242pf/</id>
     <published>2022-02-20T14:31:17.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.912Z</updated>
     
     
       
@@ -450,7 +474,7 @@
     <link href="https://c.undf.top/posts/jugpa0/"/>
     <id>https://c.undf.top/posts/jugpa0/</id>
     <published>2022-02-09T06:32:45.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
+    <updated>2023-01-16T14:17:03.916Z</updated>
     
     
       
@@ -467,35 +491,6 @@
     
     
     <category term="⚙️机械工程" scheme="https://c.undf.top/tags/%E2%9A%99%EF%B8%8F%E6%9C%BA%E6%A2%B0%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>欲善其事 先利其器</title>
-    <link href="https://c.undf.top/posts/aqu6r6/"/>
-    <id>https://c.undf.top/posts/aqu6r6/</id>
-    <published>2022-01-29T11:46:10.000Z</published>
-    <updated>2023-01-15T08:33:33.517Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;好软推荐（记录）&lt;/p&gt;
-&lt;p&gt;大部分 Windows 软件来自&lt;a href=&quot;https://www.52pojie.cn/&quot;&gt;吾爱破解论坛&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;压缩包较大，需要请留言。侵删！&lt;/p&gt;
-&lt;p&gt;前方大量图片来袭!!!&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="📦software" scheme="https://c.undf.top/tags/%F0%9F%93%A6software/"/>
     
   </entry>
   
