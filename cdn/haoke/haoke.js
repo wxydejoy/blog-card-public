@@ -15,4 +15,3 @@ _howxm("setAppID", "7dd6ab07-bc2e-4eb4-a75f-1f9f82711363");
     t.parentNode.insertBefore(e, t);
   }
 })();
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
