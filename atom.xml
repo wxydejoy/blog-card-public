@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2023-06-23T09:47:13.247Z</updated>
+  <updated>2023-07-03T15:37:25.094Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -17,37 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>旭日 x3PI RealSense人体关键点识别</title>
-    <link href="https://c.undf.top/posts/6306f887/"/>
-    <id>https://c.undf.top/posts/6306f887/</id>
-    <published>2023-06-23T09:47:13.247Z</published>
-    <updated>2023-06-23T09:47:13.247Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!--
- * @Author: weiekko weiekko@gmail.com
- * @Date: 2023-05-26 19:40:31
- * @LastEditors: weiekko weiekko@gmail.com
- * @LastEditTime: 2023-05-26 20:29:30
- * @FilePath: &#92;blog&#92;source&#92;_posts&#92;code&#92;旭日</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>leetcode #3 无重复字符的最长子串</title>
     <link href="https://c.undf.top/posts/c456ab8/"/>
     <id>https://c.undf.top/posts/c456ab8/</id>
-    <published>2023-06-23T09:47:13.243Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <published>2023-07-03T15:37:25.094Z</published>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -69,11 +43,63 @@
   </entry>
   
   <entry>
+    <title>旭日 x3PI RealSense人体关键点识别</title>
+    <link href="https://c.undf.top/posts/6306f887/"/>
+    <id>https://c.undf.top/posts/6306f887/</id>
+    <published>2023-07-03T15:37:25.094Z</published>
+    <updated>2023-07-03T15:37:25.094Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!--
+ * @Author: weiekko weiekko@gmail.com
+ * @Date: 2023-05-26 19:40:31
+ * @LastEditors: weiekko weiekko@gmail.com
+ * @LastEditTime: 2023-05-26 20:29:30
+ * @FilePath: &#92;blog&#92;source&#92;_posts&#92;code&#92;旭日</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QtCreator 一键打包你的APP</title>
+    <link href="https://c.undf.top/posts/ca763a9f/"/>
+    <id>https://c.undf.top/posts/ca763a9f/</id>
+    <published>2023-07-03T11:12:21.000Z</published>
+    <updated>2023-07-03T15:37:25.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!-- ![img-2023-07-03]() --&gt;
+&lt;p&gt;打开这个&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img.undf.top/image/QtCreator/Qtcreator%E9%85%8D%E7%BD%AE-2023-07-03.png&quot; alt=&quot;Qtcreator配置-2023-07-03&quot;&gt;&lt;/p&gt;
+&lt;p&gt;添加外部程序</summary>
+        
+      
+    
+    
+    
+    
+    <category term="😄QT" scheme="https://c.undf.top/tags/%F0%9F%98%84QT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MoneyProgress_win</title>
     <link href="https://c.undf.top/posts/3ouvu5p/"/>
     <id>https://c.undf.top/posts/3ouvu5p/</id>
     <published>2023-04-11T04:08:17.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -98,7 +124,7 @@
     <link href="https://c.undf.top/posts/2llqu4i/"/>
     <id>https://c.undf.top/posts/2llqu4i/</id>
     <published>2023-04-01T15:35:11.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -122,7 +148,7 @@
     <link href="https://c.undf.top/posts/1rvt88k/"/>
     <id>https://c.undf.top/posts/1rvt88k/</id>
     <published>2023-01-18T12:50:28.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -146,7 +172,7 @@
     <link href="https://c.undf.top/posts/6679f469/"/>
     <id>https://c.undf.top/posts/6679f469/</id>
     <published>2023-01-15T03:06:46.000Z</published>
-    <updated>2023-06-23T09:47:13.247Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -172,7 +198,7 @@
     <link href="https://c.undf.top/posts/a941f9c6/"/>
     <id>https://c.undf.top/posts/a941f9c6/</id>
     <published>2023-01-12T11:06:46.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -195,7 +221,7 @@
     <link href="https://c.undf.top/posts/7c3617f6/"/>
     <id>https://c.undf.top/posts/7c3617f6/</id>
     <published>2023-01-11T03:06:46.000Z</published>
-    <updated>2023-06-23T09:47:13.247Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -218,7 +244,7 @@
     <link href="https://c.undf.top/posts/7e7b94b3/"/>
     <id>https://c.undf.top/posts/7e7b94b3/</id>
     <published>2023-01-03T10:31:53.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -242,7 +268,7 @@
     <link href="https://c.undf.top/posts/39fh31o/"/>
     <id>https://c.undf.top/posts/39fh31o/</id>
     <published>2022-11-09T04:48:24.000Z</published>
-    <updated>2023-06-23T09:47:13.247Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -263,7 +289,7 @@
     <link href="https://c.undf.top/posts/2scrgfh/"/>
     <id>https://c.undf.top/posts/2scrgfh/</id>
     <published>2022-10-21T06:20:49.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -291,7 +317,7 @@
     <link href="https://c.undf.top/posts/2nqj13j/"/>
     <id>https://c.undf.top/posts/2nqj13j/</id>
     <published>2022-10-18T11:58:28.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -313,7 +339,7 @@
     <link href="https://c.undf.top/posts/3ie04lo/"/>
     <id>https://c.undf.top/posts/3ie04lo/</id>
     <published>2022-10-01T08:39:46.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -338,7 +364,7 @@
     <link href="https://c.undf.top/posts/307ko19/"/>
     <id>https://c.undf.top/posts/307ko19/</id>
     <published>2022-08-10T02:59:28.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -363,7 +389,7 @@
     <link href="https://c.undf.top/posts/3ahvaci/"/>
     <id>https://c.undf.top/posts/3ahvaci/</id>
     <published>2022-08-01T01:56:24.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -384,7 +410,7 @@
     <link href="https://c.undf.top/posts/49u3l9/"/>
     <id>https://c.undf.top/posts/49u3l9/</id>
     <published>2022-07-18T06:14:27.000Z</published>
-    <updated>2023-06-23T09:47:13.247Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -406,7 +432,7 @@
     <link href="https://c.undf.top/posts/21r8od0/"/>
     <id>https://c.undf.top/posts/21r8od0/</id>
     <published>2022-07-04T12:09:03.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -437,7 +463,7 @@
     <link href="https://c.undf.top/posts/1s2b6vp/"/>
     <id>https://c.undf.top/posts/1s2b6vp/</id>
     <published>2022-06-27T05:55:13.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.094Z</updated>
     
     
       
@@ -461,7 +487,7 @@
     <link href="https://c.undf.top/posts/1325oa2/"/>
     <id>https://c.undf.top/posts/1325oa2/</id>
     <published>2022-06-21T07:36:43.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
+    <updated>2023-07-03T15:37:25.090Z</updated>
     
     
       
@@ -475,33 +501,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>ESP32</title>
-    <link href="https://c.undf.top/posts/3foj6j8/"/>
-    <id>https://c.undf.top/posts/3foj6j8/</id>
-    <published>2022-06-10T04:23:15.000Z</published>
-    <updated>2023-06-23T09:47:13.243Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;芯片涨价、支持国产、物联网、方便好用、支持低代码&lt;/p&gt;
-&lt;p&gt;这些都是选择ESP32的原因之一&lt;/p&gt;
-&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h2&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
-    
-    
-    <category term="💻嵌入式" scheme="https://c.undf.top/tags/%F0%9F%92%BB%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     
   </entry>
   
