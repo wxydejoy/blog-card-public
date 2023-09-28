@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2023-08-21T11:05:00.000Z</updated>
+  <updated>2023-09-28T11:05:00.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OMPL开源轨迹规划库</title>
+    <link href="https://c.undf.top/posts/7f43910f/"/>
+    <id>https://c.undf.top/posts/7f43910f/</id>
+    <published>2023-09-28T11:05:00.000Z</published>
+    <updated>2023-09-28T11:05:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;下面列出的所有实现都被视为功能齐全。在OMPL中，规划器分为三类:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ompl.kavrakilab.org/core/planners.html#geometric_planners&quot;&gt;几何规划器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="🦾ROS2" scheme="https://c.undf.top/tags/%F0%9F%A6%BEROS2/"/>
+    
+  </entry>
   
   <entry>
     <title>URDF 导出资料（ROS2）</title>
@@ -500,41 +526,6 @@
     <category term="🦾Nginx" scheme="https://c.undf.top/tags/%F0%9F%A6%BENginx/"/>
     
     <category term="🦾宝塔" scheme="https://c.undf.top/tags/%F0%9F%A6%BE%E5%AE%9D%E5%A1%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++学习</title>
-    <link href="https://c.undf.top/posts/21r8od0/"/>
-    <id>https://c.undf.top/posts/21r8od0/</id>
-    <published>2022-07-04T12:09:03.000Z</published>
-    <updated>2022-07-04T12:09:03.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;因&quot;&gt;&lt;a href=&quot;#因&quot; class=&quot;headerlink&quot; title=&quot;因&quot;&gt;&lt;/a&gt;因&lt;/h2&gt;&lt;p&gt;目前 c++的学习主要是针对三个方向&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基本语法&lt;/li&gt;
-&lt;li&gt;数据结构&lt;/li&gt;
-&lt;li&gt;QT(能用就行的地步)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;参考书:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;C++ Primer Plus（第 6</summary>
-        
-      
-    
-    
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
-    
-    <category term="🦾C++" scheme="https://c.undf.top/tags/%F0%9F%A6%BEC/"/>
-    
-    <category term="🦾Study" scheme="https://c.undf.top/tags/%F0%9F%A6%BEStudy/"/>
     
   </entry>
   
