@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.3.0"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.22.1" version="1.22.1"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://gcore.jsdelivr.net"><link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="dns-prefetch" href="//unpkg.com"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#f8f8f8"><title>三种常用表达式 - 沐印小站</title><meta name="description" content="Regex正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”）。 正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。 正则表达式是繁琐的，但它是强大的，学会之后的应用会让你除了提高效率外，会给你带来绝对的成就感。只要认真阅读本教程，加上应用的时候进行一定的参考，掌握正则表达式不是问题。 许多程序"><meta property="og:type" content="article"><meta property="og:title" content="三种常用表达式"><meta property="og:url" content="https://c.undf.top/posts/iir0g4/index.html"><meta property="og:site_name" content="沐印小站"><meta property="og:description" content="Regex正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”）。 正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。 正则表达式是繁琐的，但它是强大的，学会之后的应用会让你除了提高效率外，会给你带来绝对的成就感。只要认真阅读本教程，加上应用的时候进行一定的参考，掌握正则表达式不是问题。 许多程序"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://img.undf.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-10-22-56-10.png!max"><meta property="og:image" content="https://img.undf.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-03-09-40-27.png"><meta property="article:published_time" content="2022-01-03T01:24:04.000Z"><meta property="article:modified_time" content="2022-01-03T01:24:04.000Z"><meta property="article:author" content="wxy"><meta property="article:tag" content="💻Regex"><meta property="article:tag" content="💻Corn"><meta property="article:tag" content="💻CIDR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://img.undf.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-10-22-56-10.png!max"><meta name="keywords" content="💻Regex,💻Corn,💻CIDR"><link rel="alternate" href="/atom.xml" title="沐印小站" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css"><link rel="shortcut icon" href="/icon/favicon-32x32.png"></head><body><div class="l_body" id="start"><aside class="l_left" layout="post"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://img.undf.top/image/_config/2022-01-28-13-35-03.jpg" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/image/2659360.svg"'></a><a class="title" href="/"><div class="main" ff="title">沐印小站</div><div class="sub cap">沐印</div></a></div><nav class="menu dis-select"></nav></header><div class="widgets"><widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6 723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget><widget class="widget-wrapper toc single" id="data-toc" collapse="false"><div class="widget-header cap dis-select"><span class="name">三种常用表达式</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Regex"><span class="toc-text">Regex</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E7%95%99%E5%8C%B9%E9%85%8D%E5%86%85%E5%AE%B9"><span class="toc-text">保留匹配内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E6%89%93%E5%8D%B0%E5%AD%97%E7%AC%A6"><span class="toc-text">非打印字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-text">特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%90%E5%AE%9A%E7%AC%A6"><span class="toc-text">限定符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E7%AC%A6"><span class="toc-text">定位符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Corn"><span class="toc-text">Corn</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cidr"><span class="toc-text">Cidr</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol></div></div></widget></div></aside><div class="l_main"><div class="bread-nav fs12"><div class="left"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta"> <span>发布于&nbsp;<time datetime="2022-01-03T01:24:04.000Z">2022-01-03</time></span> <span>更新于&nbsp;<time datetime="2022-01-03T01:24:04.000Z">2022-01-03</time></span></div></div></div><article class="md-text content post"><h1 class="article-title"><span>三种常用表达式</span></h1><h2 id="Regex"><a href="#Regex" class="headerlink" title="Regex"></a>Regex</h2><p>正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”）。</p><p>正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。</p><p>正则表达式是繁琐的，但它是强大的，学会之后的应用会让你除了提高效率外，会给你带来绝对的成就感。只要认真阅读本教程，加上应用的时候进行一定的参考，掌握正则表达式不是问题。</p><p>许多程序设计语言都支持利用正则表达式进行字符串操作。</p><h2 id="保留匹配内容"><a href="#保留匹配内容" class="headerlink" title="保留匹配内容"></a>保留匹配内容</h2><p>为了保留某部分，通常情况下我们在正则表达式中使用()将我们要保留的内容括住。如下，我们要保留的是中间的数字部分，在替换时使用$1将括号的内容表达出来。$1可以认为是一个变量，代表着()中的内容。</p><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-10-22-56-10.png!max" alt="2022-01-10-22-56-10"></p><h3 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h3><table><thead><tr><th>字符</th><th>描述</th></tr></thead><tbody><tr><td>\cx</td><td>匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 ‘c’ 字符。</td></tr><tr><td>\f</td><td>匹配一个换页符。等价于 \x0c 和 \cL。</td></tr><tr><td>\n</td><td>匹配一个换行符。等价于 \x0a 和 \cJ。</td></tr><tr><td>\r</td><td>匹配一个回车符。等价于 \x0d 和 \cM。</td></tr><tr><td>\s</td><td>匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。注意 Unicode 正则表达式会匹配全角空格符。</td></tr><tr><td>\S</td><td>匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。</td></tr><tr><td>\t</td><td>匹配一个制表符。等价于 \x09 和 \cI。</td></tr><tr><td>\v</td><td>匹配一个垂直制表符。等价于 \x0b 和 \cK。</td></tr></tbody></table><h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><table><thead><tr><th>字符</th><th>描述</th></tr></thead><tbody><tr><td><code>$</code></td><td>匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 $。</td></tr><tr><td><code>( )</code></td><td>标记一个<code>子表达式</code>的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。</td></tr><tr><td><code>*</code></td><td>匹配前面的子表达式零次或多次。要匹配 * 字符，请使用 *。</td></tr><tr><td><code>+</code></td><td>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。</td></tr><tr><td><code>.</code></td><td>匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。</td></tr><tr><td><code>[</code></td><td>标记一个中括号表达式的开始。要匹配 [，请使用 [。</td></tr><tr><td><code>?</code></td><td>匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 ?。</td></tr><tr><td><code>\</code></td><td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “&quot;，而 ‘(‘ 则匹配 “(“。</td></tr><tr><td><code>^</code></td><td>匹配输入字符串的开始位置，除非在方括号表达式中使用，当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合。要匹配 ^ 字符本身，请使用 ^。</td></tr><tr><td><code>&#123;</code></td><td>标记限定符<code>表达式</code>的开始。要匹配 {，请使用 {。</td></tr><tr><td>&#96;</td><td>&#96;</td></tr></tbody></table><h3 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h3><p>限定符用来指定正则表达式的一个给定组件必须要出现多少次才能满足匹配。有 * 或 + 或 ? 或 {n} 或 {n,} 或 {n,m} 共6种。</p><p>正则表达式的限定符有：</p><table><thead><tr><th>字符</th><th>描述</th></tr></thead><tbody><tr><td><code>*</code></td><td>匹配前面的子表达式零次或多次。例如，zo* 能匹配 “z” 以及 “zoo”。* 等价于{0,}。</td></tr><tr><td><code>+</code></td><td>匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。</td></tr><tr><td><code>?</code></td><td>匹配前面的子表达式零次或一次。例如，”do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “doxy” 中的 “do” 。? 等价于 {0,1}。</td></tr><tr><td><code>&#123;n&#125;</code></td><td>n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td></tr><tr><td><code>&#123;n,&#125;</code></td><td>n 是一个非负整数。至少匹配n 次。例如，’o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “foooood” 中的所有 o。’o{1,}’ 等价于 ‘o+’。’o{0,}’ 则等价于 ‘o*’。</td></tr><tr><td><code>&#123;n,m&#125;</code></td><td>m 和 n 均为非负整数，其中n &lt;&#x3D; m。最少匹配 n 次且最多匹配 m 次。例如，”o{1,3}” 将匹配 “fooooood” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。</td></tr><tr><td>以下正则表达式匹配一个正整数，[1-9]设置第一个数字不是 0，[0-9]* 表示任意多个数字：</td><td></td></tr></tbody></table><h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><p>定位符使您能够将正则表达式固定到行首或行尾。它们还使您能够创建这样的正则表达式，这些正则表达式出现在一个单词内、在一个单词的开头或者一个单词的结尾。</p><p>定位符用来描述字符串或单词的边界，^ 和 $ 分别指字符串的开始与结束，\b 描述单词的前或后边界，\B 表示非单词边界。</p><p>正则表达式的定位符有：</p><table><thead><tr><th>字符</th><th>描述</th></tr></thead><tbody><tr><td><code>^</code></td><td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。</td></tr><tr><td><code>$</code></td><td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。</td></tr><tr><td><code>\b</code></td><td>匹配一个单词边界，即字与空格间的位置。</td></tr><tr><td><code>\B</code></td><td>非单词边界匹配。</td></tr></tbody></table><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8Ecorn%E8%A1%A8%E8%BE%BE%E5%BC%8F/2022-01-03-09-40-27.png" alt="2022-01-03-09-40-27"></p><h2 id="Corn"><a href="#Corn" class="headerlink" title="Corn"></a>Corn</h2><p>Cron表达式是一个字符串，字符串以5或6个空格隔开，分为6或7个域，每一个域代表一个含义：</p><table><thead><tr><th>字段</th><th>允许值</th><th>允许的特殊字符</th></tr></thead><tbody><tr><td>秒（Seconds）</td><td>0~59的整数</td><td>, - * &#x2F;</td></tr><tr><td>分（Minutes）</td><td>0~59的整数</td><td>, - * &#x2F;</td></tr><tr><td>小时（Hours）</td><td>0~23的整数</td><td>, - * &#x2F;</td></tr><tr><td>日期（DayofMonth）</td><td>1~31的整数（但是你需要考虑你月的天数）</td><td>,- * ? &#x2F; L W C</td></tr><tr><td>月份（Month）</td><td>1~12的整数或者 JAN-DEC</td><td>, - * &#x2F;</td></tr><tr><td>星期（DayofWeek）</td><td>1~7的整数或者 SUN-SAT （1&#x3D;SUN）</td><td>, - * ? &#x2F; L C #</td></tr><tr><td>年(可选，留空)（Year）</td><td>1970~2099</td><td>, - * &#x2F;</td></tr></tbody></table><p>每一个域都使用数字，但还可以出现如下特殊字符，它们的含义是：</p><ul><li><p>（1）：表示匹配该域的任意值。假如在Minutes域使用, 即表示每分钟都会触发事件。</p></li><li><p>（2）?：只能用在DayofMonth和DayofWeek两个域。它也匹配域的任意值，但实际不会。因为DayofMonth和DayofWeek会相互影响。例如想在每月的20日触发调度，不管20日到底是星期几，则只能使用如下写法： 13 13 15 20 ?, 其中最后一位只能用？，而不能使用，如果使用表示不管星期几都会触发，实际上并不是这样。</p></li><li><p>（3）-：表示范围。例如在Minutes域使用5-20，表示从5分到20分钟每分钟触发一次</p></li><li><p>（4）&#x2F;：表示起始时间开始触发，然后每隔固定时间触发一次。例如在Minutes域使用5&#x2F;20,则意味着5分钟触发一次，而25，45等分别触发一次.</p></li><li><p>（5）,：表示列出枚举值。例如：在Minutes域使用5,20，则意味着在5和20分每分钟触发一次。</p></li><li><p>（6）L：表示最后，只能出现在DayofWeek和DayofMonth域。如果在DayofWeek域使用5L,意味着在最后的一个星期四触发。</p></li><li><p>（7）W:表示有效工作日(周一到周五),只能出现在DayofMonth域，系统将在离指定日期的最近的有效工作日触发事件。例如：在 DayofMonth使用5W，如果5日是星期六，则将在最近的工作日：星期五，即4日触发。如果5日是星期天，则在6日(周一)触发；如果5日在星期一到星期五中的一天，则就在5日触发。另外一点，W的最近寻找不会跨过月份 。</p></li><li><p>（8）LW:这两个字符可以连用，表示在某个月最后一个工作日，即最后一个星期五。</p></li><li><p>（9）#:用于确定每个月第几个星期几，只能出现在DayofMonth域。例如在4#2，表示某月的第二个星期三。</p></li></ul><h2 id="Cidr"><a href="#Cidr" class="headerlink" title="Cidr"></a>Cidr</h2><table><thead><tr><th>CIDR Block</th><th>地址范围</th><th>IP地址数</th></tr></thead><tbody><tr><td>10.0.0.0&#x2F;8</td><td>10.0.0.0 – 10.255.255.255</td><td>16,777,216</td></tr><tr><td>172.16.0.0&#x2F;12</td><td>172.16.0.0 – 172.31.255.255</td><td>1,048,576</td></tr><tr><td>192.168.0.0&#x2F;16</td><td>192.168.0.0 – 192.168.255.255</td><td>65,536</td></tr></tbody></table><p>比如腾讯云的防火墙就可以根据自己的ip设置</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/regexp/regexp-tutorial.html">菜鸟教程</a></p><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yanghj010/p/10875151.html">博客园</a></p><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cumo7370/article/details/107393927">cidr</a></p><div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p></div></section></div></article><div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/posts/e556/">三根杆</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/posts/3f4daa0d/">upyun</a></div></section></div><footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p></div></footer><div class="float-panel mobile-only blur" style="display:none"> <button type="button" class="sidebar-toggle mobile" onclick="sidebar.toggle()"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4zm309.3-249.9c26.9-.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-.1.8-.1 1.7-.2 2.5.9 27.2 23.6 48.5 50.7 47.6H875.707zm-103.1-245.9c26.9-.1 49.3-20.8 51.6-47.6-.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v.2c1.4 27.8 25.2 49.2 53 47.8.8 0 1.7-.1 2.5-.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5zm309.3-249.9c26.9-.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-.1.8-.1 1.7-.2 2.5.9 27.2 23.6 48.5 50.7 47.6H875.707zm-103.1-245.9c26.9-.1 49.3-20.8 51.6-47.6-.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v.2c1.4 27.8 25.2 49.2 53 47.8.8 0 1.7-.1 2.5-.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.22.1';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.22.1';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js","memos":"/js/plugins/memos.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@10.3/swiper-bundle.min.css","js":"https://unpkg.com/swiper@10.3/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".fancybox img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script><script src="/js/main.js" async></script></div></body></html>
