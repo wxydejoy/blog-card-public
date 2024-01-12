@@ -110,7 +110,7 @@ $(function () {
     var cfg = new Object();
     cfg.el = el;
     cfg.api = api;
-    cfg.avatar = 'https://cdn.undf.top/placeholder//avatar/round/3442075.svg';
+    cfg.avatar = 'https://c.undf.top/icon/android-chrome-36x36.png';
     weibojs.layoutDiv(cfg);
   }
 });
