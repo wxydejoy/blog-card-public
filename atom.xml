@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2024-02-08T06:34:00.951Z</updated>
+  <updated>2023-09-28T11:05:00.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>哔哩哔哩投稿计划</title>
-    <link href="https://c.undf.top/posts/ebf2e125/"/>
-    <id>https://c.undf.top/posts/ebf2e125/</id>
-    <published>2024-02-08T06:34:00.951Z</published>
-    <updated>2024-02-08T06:34:00.951Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;B站账号&quot;&gt;&lt;a href=&quot;#B站账号&quot; class=&quot;headerlink&quot; title=&quot;B站账号&quot;&gt;&lt;/a&gt;B站账号&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://space.bilibili.com/20694838&quot;&gt;熊孩子来巡山&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这不点个关注&lt;/p&gt;
-&lt;h2 id=&quot;主要内容&quot;&gt;&lt;a href=&quot;#主要内容&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>OMPL开源轨迹规划库</title>
@@ -519,6 +496,36 @@
     
     
     <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cloudreve配置修复</title>
+    <link href="https://c.undf.top/posts/49u3l9/"/>
+    <id>https://c.undf.top/posts/49u3l9/</id>
+    <published>2022-07-18T06:14:27.000Z</published>
+    <updated>2022-07-18T06:14:27.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;初&quot;&gt;&lt;a href=&quot;#初&quot; class=&quot;headerlink&quot; title=&quot;初&quot;&gt;&lt;/a&gt;初&lt;/h2&gt;&lt;p&gt;最近通过 Cloudreve 搭建了实验室网盘系统，但是在使用时遇到一个 bug：无法上传大于 1MB 的文件，下面来讲讲修复之路。&lt;/p&gt;
+&lt;h2 id=&quot;启&quot;&gt;&lt;a href=&quot;#启&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="🦾Cloudreve" scheme="https://c.undf.top/tags/%F0%9F%A6%BECloudreve/"/>
+    
+    <category term="🦾Bug" scheme="https://c.undf.top/tags/%F0%9F%A6%BEBug/"/>
+    
+    <category term="🦾Nginx" scheme="https://c.undf.top/tags/%F0%9F%A6%BENginx/"/>
+    
+    <category term="🦾宝塔" scheme="https://c.undf.top/tags/%F0%9F%A6%BE%E5%AE%9D%E5%A1%94/"/>
     
   </entry>
   
