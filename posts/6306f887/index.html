@@ -80,7 +80,7 @@
 
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/posts/7f43910f/"><span class="title">OMPL开源轨迹规划库</span></a><a class="item title" href="/posts/711bc132/"><span class="title">URDF 导出资料（ROS2）</span></a><a class="item title" href="/posts/5ecf4bea/"><span class="title">旭日x3PI的开发日常</span></a><a class="item title" href="/posts/ca763a9f/"><span class="title">QtCreator 一键打包你的APP</span></a><a class="item title" href="/posts/d444c6c7/"><span class="title">leetcode 刷题记录（倒序）</span></a><a class="item title active" href="/posts/6306f887/"><span class="title">旭日 x3PI RealSense人体关键点识别</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item title" href="/posts/3ouvu5p/"><span class="title">MoneyProgress_win</span></a><a class="item title" href="/posts/2llqu4i/"><span class="title">ROS2自定义消息使用记录</span></a><a class="item title" href="/posts/1rvt88k/"><span class="title">FreeRTOS</span></a><a class="item title" href="/posts/6679f469/"><span class="title">2022照片故事分享</span></a></div></widget>
 </div>
-<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
 
@@ -115,7 +115,7 @@
 -->
 <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>简单介绍一下我的目标</p>
 <p>获取部分人体关键点的空间坐标 控制双臂机器人进行拥抱</p>
-<h2 id="首次尝试"><a href="#首次尝试" class="headerlink" title="首次尝试"></a>首次尝试</h2><p>2022.11 开始做识别部分的内容，开始挑选硬件<br>这是当时小组会的PPT<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/utools/1685101433236_ojwjf9ncpghqr0z3.png"></p>
+<h2 id="首次尝试"><a href="#首次尝试" class="headerlink" title="首次尝试"></a>首次尝试</h2><p>2022.11 开始做识别部分的内容，开始挑选硬件<br>这是当时小组会的PPT<br><img src="https://img.undf.top/utools/1685101433236_ojwjf9ncpghqr0z3.png"></p>
 <p>X3就不用多说了 非常强大 </p>
 <h2 id="初次接触人体关键点识别"><a href="#初次接触人体关键点识别" class="headerlink" title="初次接触人体关键点识别"></a>初次接触人体关键点识别</h2><p>刚开始是拿了一个普通的USB摄像头进行识别，但是摄像头的输出像素格式是YUYV，当时关键点识别还只能用mjpeg的USB摄像头或者MIPI的摄像头，于是乎买了官方的MIPI进行尝试</p>
 <p>效果确实不错，但是我不光要关键点的二维坐标，还要三维坐标，这里就需要深度相机了</p>
@@ -124,7 +124,7 @@
 <p>当时问群里的开发人员，他们说这个相机暂时不支持，后面可能会支持。其实当时已经有codec模块了，但是好像没有文档，反正是没找到。</p>
 <p>所以转去了用笔记本做主控，但是因为一些结构上的原因我又回来了 </p>
 <p>其实也就花了两天的时间，比我移植ALPHAPOSE快多了</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/utools/1685102218857_03dwsrnjm02gsp2w.png"></p>
+<p><img src="https://img.undf.top/utools/1685102218857_03dwsrnjm02gsp2w.png"></p>
 <h2 id="RealSense-人体关键点识别"><a href="#RealSense-人体关键点识别" class="headerlink" title="RealSense 人体关键点识别"></a>RealSense 人体关键点识别</h2><p>先讲一下整体思路</p>
 <p>Realsense node发布的是rgb格式的图像，使用hobot_codec把rgb转成jpeg jpeg转nv12（rgb8好像不能转nv12 我也不知道为什么 程序说的）,最后nv12送给mono2d_body_detection 就可以了</p>
 <h3 id="安装realsense2-SDK"><a href="#安装realsense2-SDK" class="headerlink" title="安装realsense2 SDK"></a>安装realsense2 SDK</h3><h4 id="设置网络环境"><a href="#设置网络环境" class="headerlink" title="设置网络环境"></a>设置网络环境</h4><p>这里因为网络原因需要设置一下GITHUB的代理的host，不然无法访问。</p>
@@ -173,15 +173,15 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://c.undf.top/posts/6306f887/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/6306f887/&title=旭日 x3PI RealSense人体关键点识别 - 沐印小站&pics=https://img.undf.top/utools/ltc2497%20%E5%89%AF%E6%9C%AC%20%E5%89%AF%E6%9C%AC%20%E5%89%AF%E6%9C%AC_tw58b3lpdvpjn8yp.png&summary=
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/6306f887/&title=旭日 x3PI RealSense人体关键点识别 - 沐印小站&pics=https://img.undf.top/utools/ltc2497%20%E5%89%AF%E6%9C%AC%20%E5%89%AF%E6%9C%AC%20%E5%89%AF%E6%9C%AC_tw58b3lpdvpjn8yp.png&summary=
 起因简单介绍一下我的目标
 获取部分人体关键点的空间坐标 控制双臂机器人进行拥抱
 首次尝试2022.11 开始做识别部分的内容，开始挑选硬件这是当时小组会的PPT
 X3就不用多说了 非常强大 
-初次接触人体关键点识别刚开始是拿了一个普..."><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=旭日 x3PI RealSense人体关键点识别 - 沐印小站&amp;body=https://c.undf.top/posts/6306f887/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+初次接触人体关键点识别刚开始是拿了一个普..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=旭日 x3PI RealSense人体关键点识别 - 沐印小站&amp;body=https://c.undf.top/posts/6306f887/"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
-          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/6306f887/"/>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/6306f887/"/>
         </div>
         
       </div>
@@ -346,8 +346,8 @@ X3就不用多说了 非常强大
 
   stellar.plugins.marked = Object.assign("https://cdn.undf.top/js/marked.min.js");
   // optional plugins
-  if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
+  if ('false' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":false,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://cdn.undf.top/js/swiper-bundle.min.css","js":"https://cdn.undf.top/js/swiper-bundle.min.js"});

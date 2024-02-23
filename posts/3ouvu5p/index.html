@@ -81,7 +81,7 @@
 
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/posts/7f43910f/"><span class="title">OMPL开源轨迹规划库</span></a><a class="item title" href="/posts/711bc132/"><span class="title">URDF 导出资料（ROS2）</span></a><a class="item title" href="/posts/5ecf4bea/"><span class="title">旭日x3PI的开发日常</span></a><a class="item title" href="/posts/ca763a9f/"><span class="title">QtCreator 一键打包你的APP</span></a><a class="item title" href="/posts/d444c6c7/"><span class="title">leetcode 刷题记录（倒序）</span></a><a class="item title" href="/posts/6306f887/"><span class="title">旭日 x3PI RealSense人体关键点识别</span></a><a class="item title active" href="/posts/3ouvu5p/"><span class="title">MoneyProgress_win</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item title" href="/posts/2llqu4i/"><span class="title">ROS2自定义消息使用记录</span></a><a class="item title" href="/posts/1rvt88k/"><span class="title">FreeRTOS</span></a><a class="item title" href="/posts/6679f469/"><span class="title">2022照片故事分享</span></a></div></widget>
 </div>
-<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
 
@@ -119,18 +119,18 @@
 <h3 id="问题1-图片过大"><a href="#问题1-图片过大" class="headerlink" title="问题1: 图片过大"></a>问题1: 图片过大</h3><p>原作者的图片都是png格式,大小足足有3.27MB,分辨率为1024x1024,应该是自己画的吧.</p>
 <p>刚开始导入图片设置为<code>label</code>设置样式表<code>background-image: url(:/img/avatar.png);</code></p>
 <p>是这样的:</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/image/MoneyProgress_win/20230411122233-2023-04-11.png" alt="20230411122233-2023-04-11"></p>
+<p><img src="https://img.undf.top/image/MoneyProgress_win/20230411122233-2023-04-11.png" alt="20230411122233-2023-04-11"></p>
 <p>可以看到图片很大,很奇怪,</p>
 <p>解决办法:</p>
 <p><strong>设置为<code>border-image: url(:/img/avatar.png);</code></strong></p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/image/MoneyProgress_win/20230411122553-2023-04-11.png" alt="20230411122553-2023-04-11"></p>
+<p><img src="https://img.undf.top/image/MoneyProgress_win/20230411122553-2023-04-11.png" alt="20230411122553-2023-04-11"></p>
 <p>这样它就会自动缩放了.可以通过设置<code>label</code>的<code>width</code>和<code>height</code>来控制图片的大小.</p>
 <h3 id="问题2-无法获取到正确的屏幕分辨率"><a href="#问题2-无法获取到正确的屏幕分辨率" class="headerlink" title="问题2: 无法获取到正确的屏幕分辨率"></a>问题2: 无法获取到正确的屏幕分辨率</h3><p>这个问题是论坛上有人提出来的,我也遇到了.</p>
 <p>原代码为:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里省略了一些代码</span></span><br><span class="line"><span class="comment">// 获取屏幕分辨率高度</span></span><br><span class="line">QApplication::<span class="built_in">desktop</span>()-&gt;<span class="built_in">width</span>();</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>实际获取的不一定就是当前屏幕的分辨率,有时候会获取到错误的值.<br>比如你有多块屏幕,它会获取到所有屏幕的分辨率的和.就很离谱.<br>这就会导致我们的程序在不同的屏幕上显示的效果不一样.<br>任务栏的弹窗就奇奇怪怪的.甚至看不到.</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.undf.top/image/MoneyProgress_win/20230411123559-2023-04-11.png" alt="20230411123559-2023-04-11"></p>
+<p><img src="https://img.undf.top/image/MoneyProgress_win/20230411123559-2023-04-11.png" alt="20230411123559-2023-04-11"></p>
 <p>解决办法:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里省略了一些代码</span></span><br><span class="line">QApplication::<span class="built_in">screenAt</span>(<span class="built_in">QCursor</span>().<span class="built_in">pos</span>())-&gt;<span class="built_in">geometry</span>().<span class="built_in">width</span>()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>意为获取鼠标所在屏幕的分辨率宽度.非常ok.</p>
@@ -181,12 +181,12 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://c.undf.top/posts/3ouvu5p/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/3ouvu5p/&title=MoneyProgress_win - 沐印小站&pics=https://img.undf.top/image/MoneyProgress_win/money-2023-04-11.png&summary=起因前段时间分享了一个MoneyProgress的Mac软件,一直有人在论坛发帖问有没有win版的,恰好最近在看Qt,于是就有了这个项目.
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/3ouvu5p/&title=MoneyProgress_win - 沐印小站&pics=https://img.undf.top/image/MoneyProgress_win/money-2023-04-11.png&summary=起因前段时间分享了一个MoneyProgress的Mac软件,一直有人在论坛发帖问有没有win版的,恰好最近在看Qt,于是就有了这个项目.
 写这个贴子的目的是为了记录一下开发过程,以及遇到的问题.
-以后可以拿它做参考,也可以给有需要的..."><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=MoneyProgress_win - 沐印小站&amp;body=https://c.undf.top/posts/3ouvu5p/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+以后可以拿它做参考,也可以给有需要的..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=MoneyProgress_win - 沐印小站&amp;body=https://c.undf.top/posts/3ouvu5p/"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
-          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/3ouvu5p/"/>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/3ouvu5p/"/>
         </div>
         
       </div>
@@ -351,8 +351,8 @@
 
   stellar.plugins.marked = Object.assign("https://cdn.undf.top/js/marked.min.js");
   // optional plugins
-  if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
+  if ('false' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":false,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://cdn.undf.top/js/swiper-bundle.min.css","js":"https://cdn.undf.top/js/swiper-bundle.min.js"});

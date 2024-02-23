@@ -86,7 +86,7 @@
 
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/posts/7f43910f/"><span class="title">OMPL开源轨迹规划库</span></a><a class="item title" href="/posts/711bc132/"><span class="title">URDF 导出资料（ROS2）</span></a><a class="item title" href="/posts/5ecf4bea/"><span class="title">旭日x3PI的开发日常</span></a><a class="item title" href="/posts/ca763a9f/"><span class="title">QtCreator 一键打包你的APP</span></a><a class="item title" href="/posts/d444c6c7/"><span class="title">leetcode 刷题记录（倒序）</span></a><a class="item title" href="/posts/6306f887/"><span class="title">旭日 x3PI RealSense人体关键点识别</span></a><a class="item title" href="/posts/3ouvu5p/"><span class="title">MoneyProgress_win</span></a><a class="item title" href="/posts/2llqu4i/"><span class="title">ROS2自定义消息使用记录</span></a><a class="item title" href="/posts/1rvt88k/"><span class="title">FreeRTOS</span></a><a class="item title" href="/posts/6679f469/"><span class="title">2022照片故事分享</span></a></div></widget>
 </div>
-<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
 
@@ -111,21 +111,21 @@
   </div>
   </div><article class="md-text content"><h2 id="初"><a href="#初" class="headerlink" title="初"></a>初</h2><p>最近通过 Cloudreve 搭建了实验室网盘系统，但是在使用时遇到一个 bug：无法上传大于 1MB 的文件，下面来讲讲修复之路。</p>
 <h2 id="启"><a href="#启" class="headerlink" title="启"></a>启</h2><p>拿到问题当然要找找问题所在，方可对症下药，</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/others/2022-07-18-14-36-22.png"></p>
+<p><img src="/images/others/2022-07-18-14-36-22.png"></p>
 <p>如图所示，报错奇奇怪怪，也看不懂，拿去百度搜索也搜不到，起初是以为nginx的反向代理问题，所以去尝试修改nginx的配置文件。</p>
 <p>修改多次无果，我开始换nginx版本，从二进制版本换为编译版本，无果</p>
 <p>网上找了一些教程，发现可能是nginx重启不彻底，手动搜索进程进行重启，无果</p>
 <h2 id="潮"><a href="#潮" class="headerlink" title="潮"></a>潮</h2><p>问题没解决，我临时换了其他网盘去用，但是解决不了问题，心里始终不舒服，所以继续花时间找原因。</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/others/2022-07-18-14-43-56.png"></p>
+<p><img src="/images/others/2022-07-18-14-43-56.png"></p>
 <p>宝塔？？？</p>
 <p>前去找这个报错的来源</p>
 <p>找了半天找到了这个</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/others/2022-07-18-14-44-56.png"></p>
+<p><img src="/images/others/2022-07-18-14-44-56.png"></p>
 <p>看了下里面的日志，果然，就是他</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/others/2022-07-18-14-38-58.png"></p>
+<p><img src="/images/others/2022-07-18-14-38-58.png"></p>
 <h1 id="终"><a href="#终" class="headerlink" title="终"></a>终</h1><p><del>你问我什么结果，当然是删掉这个插件了</del></p>
 <p>修改了一下配置，毕竟网站安全也很重要</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/images/others/2022-07-18-14-49-36.png"></p>
+<p><img src="/images/others/2022-07-18-14-49-36.png"></p>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -138,13 +138,13 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://c.undf.top/posts/49u3l9/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/49u3l9/&title=cloudreve配置修复 - 沐印小站&pics=https://img.undf.top/cundf/others/2022-07-18-14-29-46.png&summary=初最近通过 Cloudreve 搭建了实验室网盘系统，但是在使用时遇到一个 bug：无法上传大于 1MB 的文件，下面来讲讲修复之路。
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/49u3l9/&title=cloudreve配置修复 - 沐印小站&pics=https://img.undf.top/cundf/others/2022-07-18-14-29-46.png&summary=初最近通过 Cloudreve 搭建了实验室网盘系统，但是在使用时遇到一个 bug：无法上传大于 1MB 的文件，下面来讲讲修复之路。
 启拿到问题当然要找找问题所在，方可对症下药，
 
-如图所示，报错奇奇怪怪，也看不懂，拿去百度搜索也搜..."><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=cloudreve配置修复 - 沐印小站&amp;body=https://c.undf.top/posts/49u3l9/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+如图所示，报错奇奇怪怪，也看不懂，拿去百度搜索也搜..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=cloudreve配置修复 - 沐印小站&amp;body=https://c.undf.top/posts/49u3l9/"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
-          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/49u3l9/"/>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/49u3l9/"/>
         </div>
         
       </div>
@@ -309,8 +309,8 @@
 
   stellar.plugins.marked = Object.assign("https://cdn.undf.top/js/marked.min.js");
   // optional plugins
-  if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
+  if ('false' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":false,"js":"https://cdn.undf.top/js/lazyload.min.js","transition":"blur"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://cdn.undf.top/js/swiper-bundle.min.css","js":"https://cdn.undf.top/js/swiper-bundle.min.js"});
