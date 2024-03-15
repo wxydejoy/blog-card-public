@@ -113,8 +113,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾ROS2" scheme="https://c.undf.top/tags/%F0%9F%A6%BEROS2/"/>
+    
+    <category term="ROS2" scheme="https://c.undf.top/tags/ROS2/"/>
     
   </entry>
   
@@ -136,8 +138,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾ROS2" scheme="https://c.undf.top/tags/%F0%9F%A6%BEROS2/"/>
+    
+    <category term="ROS2" scheme="https://c.undf.top/tags/ROS2/"/>
     
   </entry>
   
@@ -158,6 +162,8 @@
       
     
     
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
     <category term="X3PI" scheme="https://c.undf.top/tags/X3PI/"/>
@@ -214,6 +220,8 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
     
     <category term="😄leetcode" scheme="https://c.undf.top/tags/%F0%9F%98%84leetcode/"/>
     
@@ -242,6 +250,8 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
     
     <category term="X3PI" scheme="https://c.undf.top/tags/X3PI/"/>
     
@@ -268,6 +278,8 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
+    <category term="⏳C++" scheme="https://c.undf.top/tags/%E2%8F%B3C/"/>
+    
     <category term="⌨️Qt" scheme="https://c.undf.top/tags/%E2%8C%A8%EF%B8%8FQt/"/>
     
   </entry>
@@ -293,8 +305,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾ROS2" scheme="https://c.undf.top/tags/%F0%9F%A6%BEROS2/"/>
+    
+    <category term="ROS2" scheme="https://c.undf.top/tags/ROS2/"/>
     
   </entry>
   
@@ -319,8 +333,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾RTOS" scheme="https://c.undf.top/tags/%F0%9F%A6%BERTOS/"/>
+    
+    <category term="🕔RTOS" scheme="https://c.undf.top/tags/%F0%9F%95%94RTOS/"/>
     
   </entry>
   
@@ -345,6 +361,8 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
     
     <category term="Life" scheme="https://c.undf.top/tags/Life/"/>
     
@@ -368,10 +386,12 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="Lab" scheme="https://c.undf.top/tags/Lab/"/>
     
     <category term="STM32" scheme="https://c.undf.top/tags/STM32/"/>
+    
+    <category term="Lab" scheme="https://c.undf.top/tags/Lab/"/>
     
     <category term="串口" scheme="https://c.undf.top/tags/%E4%B8%B2%E5%8F%A3/"/>
     
@@ -394,6 +414,8 @@
       
     
     
+    
+    <category term="🎮Game" scheme="https://c.undf.top/categories/%F0%9F%8E%AEGame/"/>
     
     
     <category term="🎮Game" scheme="https://c.undf.top/tags/%F0%9F%8E%AEGame/"/>
@@ -419,8 +441,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾ROS" scheme="https://c.undf.top/tags/%F0%9F%A6%BEROS/"/>
+    
+    <category term="ROS" scheme="https://c.undf.top/tags/ROS/"/>
     
   </entry>
   
@@ -441,6 +465,8 @@
       
     
     
+    
+    <category term="🔖Life" scheme="https://c.undf.top/categories/%F0%9F%94%96Life/"/>
     
     
     <category term="🍚干饭日记" scheme="https://c.undf.top/tags/%F0%9F%8D%9A%E5%B9%B2%E9%A5%AD%E6%97%A5%E8%AE%B0/"/>
@@ -494,8 +520,10 @@
     
     
     
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
-    <category term="🦾PCB" scheme="https://c.undf.top/tags/%F0%9F%A6%BEPCB/"/>
+    
+    <category term="PCB" scheme="https://c.undf.top/tags/PCB/"/>
     
   </entry>
   
@@ -516,6 +544,8 @@
       
     
     
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
     <category term="Python" scheme="https://c.undf.top/tags/Python/"/>
