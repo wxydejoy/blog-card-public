@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2024-02-23T03:06:46.000Z</updated>
+  <updated>2024-03-15T07:20:55.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的博客</title>
+    <link href="https://c.undf.top/posts/50ee91a2/"/>
+    <id>https://c.undf.top/posts/50ee91a2/</id>
+    <published>2024-03-15T07:20:55.000Z</published>
+    <updated>2024-03-15T07:20:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://img.undf.top/ob/5a6e68e7ea68562b2499934f9f0402f4.png&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="💻Hexo" scheme="https://c.undf.top/tags/%F0%9F%92%BBHexo/"/>
+    
+  </entry>
   
   <entry>
     <title>生活随笔</title>
@@ -498,29 +523,6 @@
     
     
     <category term="⌨️Qt" scheme="https://c.undf.top/tags/%E2%8C%A8%EF%B8%8FQt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python_study</title>
-    <link href="https://c.undf.top/posts/3ahvaci/"/>
-    <id>https://c.undf.top/posts/3ahvaci/</id>
-    <published>2022-08-01T01:56:24.000Z</published>
-    <updated>2022-08-01T01:56:24.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;虽然之前学过不少 python 的知识，但是还是没有系统的学习过一些基础知识，补一下。&lt;br&gt;参考书 &lt;a href=&quot;https://baike.baidu.com/item/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89/49977580?fr=aladdin&quot;&gt;Python</summary>
-        
-      
-    
-    
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
     
   </entry>
   
