@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2024-03-17T13:20:55.000Z</updated>
+  <updated>2024-03-15T07:20:55.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>52破解开放注册</title>
-    <link href="https://c.undf.top/posts/54033a7b/"/>
-    <id>https://c.undf.top/posts/54033a7b/</id>
-    <published>2024-03-17T13:20:55.000Z</published>
-    <updated>2024-03-17T13:20:55.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;点击链接，前去注册&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.52pojie.cn/?fromuid=1189351&quot;&gt;吾爱破解</summary>
-        
-      
-    
-    
-    
-    <category term="💻Software" scheme="https://c.undf.top/categories/%F0%9F%92%BBSoftware/"/>
-    
-    
-    <category term="💻Software" scheme="https://c.undf.top/tags/%F0%9F%92%BBSoftware/"/>
-    
-  </entry>
   
   <entry>
     <title>我的博客</title>
@@ -550,6 +524,33 @@
     
     
     <category term="PCB" scheme="https://c.undf.top/tags/PCB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>invoice_ocr</title>
+    <link href="https://c.undf.top/posts/3ie04lo/"/>
+    <id>https://c.undf.top/posts/3ie04lo/</id>
+    <published>2022-10-01T08:39:46.000Z</published>
+    <updated>2022-10-01T08:39:46.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;因&quot;&gt;&lt;a href=&quot;#因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="Python" scheme="https://c.undf.top/tags/Python/"/>
+    
+    <category term="OCR" scheme="https://c.undf.top/tags/OCR/"/>
     
   </entry>
   
