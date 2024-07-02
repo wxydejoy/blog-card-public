@@ -1,0 +1,832 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0" theme-name="Stellar" theme-version="1.29.0">
+  
+  <meta name="generator" content="Hexo 7.2.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  
+  <title>FreeRTOS 参数配置 - 沐印小站</title>
+
+  
+    <meta name="description" content="注：大部分内容为 AI 回答，仅作整理汇总  CMSIS_V 1 vs CMSIS_V 2当然 V2 更好 宏定义MPU FPUENABLE_MPUENABLE_MPU 是一个宏定义，用于启用或禁用 ARM Cortex-M 处理器的内存保护单元（MPU）。MPU 是一种硬件机制，用于实现内存保护和访问控制，可以帮助确保系统的安全性和稳定性。 当 ENABLE_MPU 宏被定义时，意味着 MPU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FreeRTOS 参数配置">
+<meta property="og:url" content="https://c.undf.top/posts/a7f7097f/index.html">
+<meta property="og:site_name" content="沐印小站">
+<meta property="og:description" content="注：大部分内容为 AI 回答，仅作整理汇总  CMSIS_V 1 vs CMSIS_V 2当然 V2 更好 宏定义MPU FPUENABLE_MPUENABLE_MPU 是一个宏定义，用于启用或禁用 ARM Cortex-M 处理器的内存保护单元（MPU）。MPU 是一种硬件机制，用于实现内存保护和访问控制，可以帮助确保系统的安全性和稳定性。 当 ENABLE_MPU 宏被定义时，意味着 MPU">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-04-12T11:06:46.000Z">
+<meta property="article:modified_time" content="2024-04-12T11:06:46.000Z">
+<meta property="article:author" content="wxy">
+<meta property="article:tag" content="💻Code">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="💻Code">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="沐印小站" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.29.0">
+
+  
+    <link rel="shortcut icon" href="/icon/favicon-32x32.png">
+  
+
+  
+
+  <meta name="msapplication-TileColor" content="#2d89ef"><link rel="stylesheet" href="https://c.undf.top/css/my.css"><link rel="stylesheet" href="https://c.undf.top/css/font.css">
+</head>
+<body>
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container leftbar-blur">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.undf.top/placeholder/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.undf.top/image/_config/2022-01-28-13-35-03.jpg" onerror="javascript:this.classList.add('error');this.src='https://cdn.undf.top/placeholder/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">沐印小站</div><div class="sub normal cap">欢迎光临</div><div class="sub hover cap" style="opacity:0"> 最近好吗</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="服务" href="/self-host/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="社交" href="/friend/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a><a class="nav-item" title="探索" href="/more/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/posts/a7f7097f/"><span class="title">FreeRTOS 参数配置</span></a><a class="item title" href="/posts/ed992427/"><span class="title">自用软件分享</span></a><a class="item title" href="/posts/d90f63aa/"><span class="title">我的博客</span></a><a class="item title" href="/posts/988b45cc/"><span class="title">Python 爬虫之 DrissionPage</span></a><a class="item title" href="/posts/61eef7d7/"><span class="title">生活随笔</span></a><a class="item title" href="/posts/7f43910f/"><span class="title">OMPL开源轨迹规划库</span></a><a class="item title" href="/posts/711bc132/"><span class="title">URDF 导出资料（ROS2）</span></a><a class="item title" href="/posts/5ecf4bea/"><span class="title">旭日x3PI的开发日常</span></a><a class="item title" href="/posts/ca763a9f/"><span class="title">QtCreator 一键打包你的APP</span></a><a class="item title" href="/posts/d444c6c7/"><span class="title">leetcode 刷题记录（倒序）</span></a></div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/wxydejoy" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://cdn.undf.top/placeholder/social/08a41b181ce68.svg"/></a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%F0%9F%92%BBCode/">💻Code</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-12T11:06:46.000Z">2024-04-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-12T11:06:46.000Z">2024-04-12</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>FreeRTOS 参数配置</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><blockquote>
+<p>注：大部分内容为 AI 回答，仅作整理汇总</p>
+</blockquote>
+<h4 id="CMSIS-V-1-vs-CMSIS-V-2"><a href="#CMSIS-V-1-vs-CMSIS-V-2" class="headerlink" title="CMSIS_V 1 vs CMSIS_V 2"></a>CMSIS_V 1 vs CMSIS_V 2</h4><p>当然 V2 更好</p>
+<h2 id="宏定义"><a href="#宏定义" class="headerlink" title="宏定义"></a>宏定义</h2><h3 id="MPU-FPU"><a href="#MPU-FPU" class="headerlink" title="MPU FPU"></a>MPU FPU</h3><h4 id="ENABLE-MPU"><a href="#ENABLE-MPU" class="headerlink" title="ENABLE_MPU"></a><code>ENABLE_MPU</code></h4><p><code>ENABLE_MPU</code> 是一个宏定义，用于启用或禁用 ARM Cortex-M 处理器的内存保护单元（MPU）。MPU 是一种硬件机制，用于实现内存保护和访问控制，可以帮助确保系统的安全性和稳定性。</p>
+<p>当 <code>ENABLE_MPU</code> 宏被定义时，意味着 MPU 被启用，系统将使用 MPU 提供的内存保护和访问控制功能。这意味着您可以配置 MPU 来限制特定区域的内存访问权限，例如只读、只写、可执行等，从而增强系统的安全性。</p>
+<p>在一些 RTOS（实时操作系统）或者裸机应用中，启用 MPU 可以提供额外的内存保护，防止错误的内存访问导致系统崩溃或者数据损坏。然而，MPU 的配置需要仔细的设计和调试，因为不正确的配置可能会导致系统功能异常或者性能下降。</p>
+<p>因此，在启用 <code>ENABLE_MPU</code> 宏之前，需要确保对 MPU 的配置和使用有充分的理解，并根据系统的需求进行合适的配置。</p>
+<h4 id="ENABLE-FPU"><a href="#ENABLE-FPU" class="headerlink" title="ENABLE_FPU"></a><code>ENABLE_FPU</code></h4><p><code>ENABLE_FPU</code> 是一个宏定义，用于启用或禁用 ARM Cortex-M 处理器的浮点单元（FPU）。FPU 是一种硬件模块，用于执行浮点数运算，包括单精度和双精度浮点数的加减乘除等操作。</p>
+<p>启用 <code>ENABLE_FPU</code> 宏意味着您的处理器支持 FPU，并且编译器将会生成相应的浮点数运算指令。通常情况下，当您的应用需要进行大量的浮点数计算时，启用 FPU 可以提高运算速度和效率。</p>
+<p>在一些 RTOS（实时操作系统）或者裸机应用中，启用 FPU 可以使您的应用能够充分利用硬件浮点单元，从而提高性能。</p>
+<p>要通过代码启用 FPU，具体的步骤因芯片和开发环境而异，但一般情况下包括以下几个方面：</p>
+<ol>
+<li><p><strong>设置处理器中的 FPU：</strong><br>在一些芯片中，您需要在启动代码或初始化代码中设置处理器的 FPU。这通常涉及将相应的寄存器设置为启用 FPU。</p>
+</li>
+<li><p><strong>编译器选项：</strong><br>您需要确保编译器正确地配置为支持 FPU。这可能需要在编译器选项中设置一些标志，以告知编译器您的处理器支持 FPU，并启用相应的优化。</p>
+</li>
+<li><p><strong>启用 FPU 相关的 CMSIS 配置：</strong><br>如果您在使用 CMSIS（Cortex Microcontroller Software Interface Standard）的话，您可能需要确保 CMSIS 配置正确，以便使用 FPU 相关的功能和优化。</p>
+</li>
+</ol>
+<h3 id="内核设置"><a href="#内核设置" class="headerlink" title="内核设置"></a>内核设置</h3><h4 id="USE-PREEMPTION"><a href="#USE-PREEMPTION" class="headerlink" title="USE_PREEMPTION"></a><code>USE_PREEMPTION</code></h4><p><code>USE_PREEMPTION</code> 是一个宏定义，用于启用或禁用 RTOS 中的抢占式调度。在 RTOS 中，任务可以按照优先级抢占式地运行，这意味着当更高优先级的任务准备就绪时，它可以抢占当前正在执行的任务，从而立即执行。</p>
+<p>启用 <code>USE_PREEMPTION</code> 宏表示您希望 RTOS 支持抢占式调度。这使得更高优先级的任务能够在需要时立即执行，从而提高系统的响应性和实时性。通常情况下，对于需要实时性能的系统，启用抢占式调度是一个好的选择。</p>
+<p>在启用抢占式调度时，需要考虑以下几个方面：</p>
+<ol>
+<li><p><strong>任务优先级：</strong><br>确保您为任务分配了适当的优先级。较高优先级的任务将能够抢占较低优先级的任务。</p>
+</li>
+<li><p><strong>临界区保护：</strong><br>由于任务可以被抢占，因此在访问共享资源时需要使用适当的同步机制，如信号量、互斥量或者临界区保护。这可以防止在多任务环境下出现数据竞争和不一致性。</p>
+</li>
+<li><p><strong>任务设计：</strong><br>要注意任务的设计，确保它们的执行时间尽可能短，以便更容易被抢占。如果任务执行时间过长，可能会降低系统的响应性。</p>
+</li>
+<li><p><strong>调度策略：</strong><br>在使用抢占式调度时，RTOS 通常会根据任务的优先级来确定下一个要执行的任务。您可能需要了解 RTOS 的调度策略，并根据需要进行配置。</p>
+</li>
+</ol>
+<p>下面是一个简单的示例代码，演示了如何在 FreeRTOS 中启用抢占式调度：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;FreeRTOS.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;task.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义任务函数</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Task1</span><span class="params">(<span class="type">void</span> *pvParameters)</span> &#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">// 执行任务1的工作...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Task2</span><span class="params">(<span class="type">void</span> *pvParameters)</span> &#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">// 执行任务2的工作...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 启用抢占式调度</span></span><br><span class="line">    <span class="meta">#<span class="keyword">define</span> USE_PREEMPTION 1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建任务1</span></span><br><span class="line">    xTaskCreate(Task1, <span class="string">&quot;Task1&quot;</span>, configMINIMAL_STACK_SIZE, <span class="literal">NULL</span>, tskIDLE_PRIORITY + <span class="number">1</span>, <span class="literal">NULL</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建任务2</span></span><br><span class="line">    xTaskCreate(Task2, <span class="string">&quot;Task2&quot;</span>, configMINIMAL_STACK_SIZE, <span class="literal">NULL</span>, tskIDLE_PRIORITY + <span class="number">1</span>, <span class="literal">NULL</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 启动调度器</span></span><br><span class="line">    vTaskStartScheduler();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在上述示例中，我们在 FreeRTOS 中启用了抢占式调度，并创建了两个任务 <code>Task1</code> 和 <code>Task2</code>。由于它们具有相同的优先级，因此它们将以轮询的方式运行，RTOS 会根据任务的优先级来决定下一个要运行的任务。</p>
+<p>确保您的 RTOS 正确配置和编译，并遵循 RTOS 的使用规范，以确保您的应用能够正确地利用抢占式调度。</p>
+<h4 id="CPU-CLOCK-HZ"><a href="#CPU-CLOCK-HZ" class="headerlink" title="CPU_CLOCK_HZ"></a><code>CPU_CLOCK_HZ</code></h4><p><code>CPU_CLOCK_HZ</code> 是一个宏定义，用于指定 CPU 的时钟频率，通常以赫兹（Hz）为单位。在 RTOS 或其他嵌入式系统中，指定正确的 CPU 时钟频率对于确保系统正常运行至关重要。</p>
+<p>设置正确的 CPU 时钟频率可以确保任务的时间片（如果使用抢占式调度）和延迟函数（如果存在）的准确性。此外，许多外设和定时器也依赖于 CPU 时钟频率来计算其操作。</p>
+<p>通常情况下，<code>CPU_CLOCK_HZ</code> 的值应该与您的实际硬件平台的 CPU 时钟频率相匹配。这个值通常在启动代码或配置文件中设置。在一些 RTOS 中，您可能需要在操作系统配置文件中指定 CPU 时钟频率。</p>
+<h4 id="TICK-RATE-HZ"><a href="#TICK-RATE-HZ" class="headerlink" title="TICK_RATE_HZ"></a><code>TICK_RATE_HZ</code></h4><p><code>TICK_RATE_HZ</code> 是一个宏定义，用于指定 FreeRTOS 中的系统时钟节拍频率，通常以赫兹（Hz）为单位。它定义了系统中定时器中断的触发频率，决定了任务调度器的运行频率以及 FreeRTOS 中延时函数的精度。</p>
+<p>系统的节拍频率应该是一个能够满足系统实时性需求的合适值。通常情况下，它应该足够高，以便系统能够及时响应各种事件和任务，但又不能太高，以免消耗过多的处理器资源。</p>
+<p>典型的 <code>TICK_RATE_HZ</code> 值可以是几十赫兹（例如 100 Hz、200 Hz）到几百赫兹（例如 1 kHz、10 kHz）不等。具体的选择取决于系统的实际需求和硬件能力。</p>
+<p>较高的 <code>TICK_RATE_HZ</code> 值通常会提高系统的响应速度和实时性，但也会增加系统的负载和能耗。因此，在选择 <code>TICK_RATE_HZ</code> 的值时需要权衡这些因素。</p>
+<p>以下是一些常见的 <code>TICK_RATE_HZ</code> 值的示例：</p>
+<ul>
+<li>100 Hz：用于一般嵌入式应用，对实时性要求不是非常高的场景。</li>
+<li>200 Hz：用于具有中等实时性要求的应用，对实时性有一定的要求。</li>
+<li>1 kHz：用于对实时性要求较高的应用，如实时控制系统等。</li>
+<li>10 kHz：用于对实时性要求非常高的应用，如高性能控制系统等。</li>
+</ul>
+<p>您可以根据系统的实际需求和性能要求选择适当的 <code>TICK_RATE_HZ</code> 值。在设置 <code>TICK_RATE_HZ</code> 值时，还需要考虑系统的处理器速度和其他硬件限制，以确保系统的稳定性和性能。</p>
+<h4 id="MAX-PRIORITIES"><a href="#MAX-PRIORITIES" class="headerlink" title="MAX_PRIORITIES"></a><code>MAX_PRIORITIES</code></h4><p><code>MAX_PRIORITIES</code> 是一个宏定义，用于指定 FreeRTOS 中任务的最大优先级数目。在 FreeRTOS 中，任务的优先级通常从 0 开始，较小的数值表示较高的优先级，因此 <code>MAX_PRIORITIES</code> 定义了系统中可用的最大任务优先级数目。</p>
+<p>适当地选择 <code>MAX_PRIORITIES</code> 的值非常重要，因为它直接影响了系统的资源管理、任务调度和实时性能。选择过小的 <code>MAX_PRIORITIES</code> 可能会导致任务优先级不足以满足系统的需求，而选择过大的 <code>MAX_PRIORITIES</code> 则可能会浪费系统资源和降低系统性能。</p>
+<p>一般来说，您应该根据系统的实际需求来选择合适的 <code>MAX_PRIORITIES</code> 的值。以下是一些考虑因素：</p>
+<ol>
+<li><p><strong>任务的优先级需求：</strong> 您需要考虑系统中各个任务的优先级关系，并确保 <code>MAX_PRIORITIES</code> 的值足够大，以便为所有任务分配合适的优先级。通常情况下，系统中可能会有一些关键任务，它们需要较高的优先级，以确保它们能够及时响应各种事件。</p>
+</li>
+<li><p><strong>系统的复杂性：</strong> 如果系统比较复杂，可能需要更多的任务优先级来管理各种任务之间的依赖关系和执行顺序。较大的 <code>MAX_PRIORITIES</code> 值可以提供更灵活的任务调度策略，但也会增加系统的复杂性。</p>
+</li>
+<li><p><strong>系统资源限制：</strong> 考虑系统的内存和处理器资源限制，以及 FreeRTOS 对于任务管理的开销。选择过大的 <code>MAX_PRIORITIES</code> 值可能会消耗过多的系统资源，降低系统的性能。</p>
+</li>
+</ol>
+<p>通常情况下，<code>MAX_PRIORITIES</code> 的值可以选择为 4 到 32 之间的数值。这个范围通常能够满足大多数嵌入式系统的需求。在选择 <code>MAX_PRIORITIES</code> 的值时，建议先对系统进行一些简单的分析和设计，以确定任务优先级的需求，并根据需求来选择合适的值。</p>
+<h4 id="MINIMAL-STACK-SIZE"><a href="#MINIMAL-STACK-SIZE" class="headerlink" title="MINIMAL_STACK_SIZE"></a><code>MINIMAL_STACK_SIZE</code></h4><p><code>MINIMAL_STACK_SIZE</code> 是一个宏定义，用于指定 FreeRTOS 中任务的最小堆栈大小，通常以字节为单位。堆栈是用于存储任务执行期间局部变量、函数调用和中断处理的重要内存区域。适当设置堆栈大小对于确保任务的正常运行和系统的稳定性非常重要。</p>
+<p>在 FreeRTOS 中，每个任务都需要一个堆栈，堆栈的大小取决于任务执行期间所需的内存空间。<code>MINIMAL_STACK_SIZE</code> 定义了任务堆栈的最小大小，确保任务有足够的堆栈空间来执行其功能。</p>
+<p>通常情况下，您可以根据任务的功能和使用的变量数量来选择适当的 <code>MINIMAL_STACK_SIZE</code> 值。以下是一些考虑因素：</p>
+<ol>
+<li><p><strong>任务的功能和复杂性：</strong> 如果任务执行复杂的计算或涉及大量的函数调用、局部变量和参数传递，那么它可能需要更大的堆栈空间。</p>
+</li>
+<li><p><strong>中断处理：</strong> 如果任务需要处理频繁的中断，或者在中断处理函数中执行大量的操作，那么它可能需要更大的堆栈空间来存储中断处理的上下文。</p>
+</li>
+<li><p><strong>系统资源限制：</strong> 考虑系统的内存限制和任务数量，以及 FreeRTOS 对于堆栈管理的开销。选择合适的 <code>MINIMAL_STACK_SIZE</code> 值可以确保系统的稳定性和性能。</p>
+</li>
+</ol>
+<p>通常情况下，<code>MINIMAL_STACK_SIZE</code> 的值可以选择为几百字节到几千字节之间的数值。对于简单的任务，可能只需要几百字节的堆栈空间，而对于复杂的任务或处理大量数据的任务，则可能需要几千字节的堆栈空间。</p>
+<p>在选择 <code>MINIMAL_STACK_SIZE</code> 的值时，建议先对任务的功能和资源使用情况进行评估，然后根据评估结果来选择适当的值。确保为任务分配足够的堆栈空间，以避免堆栈溢出和系统崩溃。</p>
+<h4 id="MAX-TASK-NAME-LEN"><a href="#MAX-TASK-NAME-LEN" class="headerlink" title="MAX_TASK_NAME_LEN"></a><code>MAX_TASK_NAME_LEN</code></h4><p><code>MAX_TASK_NAME_LEN</code> 是一个宏定义，用于指定 FreeRTOS 中任务名称的最大长度。在 FreeRTOS 中，每个任务都可以有一个唯一的名称，用于标识和调试目的。<code>MAX_TASK_NAME_LEN</code> 定义了任务名称的最大长度，确保任务名称能够被正确地存储和管理。</p>
+<p>适当设置 <code>MAX_TASK_NAME_LEN</code> 对于确保任务名称能够满足系统的标识和调试需求非常重要。通常情况下，任务名称的长度应该足够长，以包含有意义的信息，并能够清晰地标识任务的功能或用途。</p>
+<p>以下是一些考虑因素：</p>
+<ol>
+<li><p><strong>任务名称的信息量：</strong> 任务名称应该能够清晰地表达任务的功能或用途，以便于系统的标识和调试。较长的任务名称可能包含更多的信息，但也可能会增加系统的开销和复杂性。</p>
+</li>
+<li><p><strong>系统资源限制：</strong> 考虑系统的内存限制和任务数量，以及 FreeRTOS 对于任务管理的开销。选择合适的 <code>MAX_TASK_NAME_LEN</code> 值可以确保系统的稳定性和性能。</p>
+</li>
+</ol>
+<p>通常情况下，<code>MAX_TASK_NAME_LEN</code> 的值可以选择为几十到几百之间的数值。对于大多数嵌入式系统，任务名称通常不会特别长，因此可以选择一个适度的值来满足系统的需求。</p>
+<p>在选择 <code>MAX_TASK_NAME_LEN</code> 的值时，建议先评估系统的标识和调试需求，并根据需求来选择合适的值。确保任务名称能够清晰地表达任务的功能或用途，同时又不会增加系统的开销和复杂性。</p>
+<h4 id="USE-16-BIT-TICKS"><a href="#USE-16-BIT-TICKS" class="headerlink" title="USE_16_BIT_TICKS"></a><code>USE_16_BIT_TICKS</code></h4><p>32 - 32 </p>
+<p><code>USE_16_BIT_TICKS</code> 是一个宏定义，用于指定 FreeRTOS 是否使用 16 位的节拍计数器。在 FreeRTOS 中，节拍计数器用于跟踪系统运行的时间，以及计算任务延时和超时等。如果启用了 <code>USE_16_BIT_TICKS</code> 宏，FreeRTOS 将使用 16 位的节拍计数器；否则，将使用较长的节拍计数器（通常是 32 位）。</p>
+<p>启用 <code>USE_16_BIT_TICKS</code> 可以节省内存空间，因为 16 位的计数器比较短，需要的内存更少。这在内存资源有限的嵌入式系统中尤其有用。</p>
+<p>然而，使用 16 位的计数器也会带来一些限制。由于计数器的长度较短，它们的溢出周期也会相应地变短。这意味着系统运行的时间可能会受到限制，而任务的延时和超时也会受到影响。因此，启用 <code>USE_16_BIT_TICKS</code> 时需要谨慎考虑系统的实时性需求。</p>
+<p>通常情况下，如果系统的实时性要求不是特别严格，而且内存资源有限，那么启用 <code>USE_16_BIT_TICKS</code> 可能是一个合适的选择。但如果系统的实时性要求比较高，或者需要较长的运行时间，那么可能需要禁用 <code>USE_16_BIT_TICKS</code>，以使用更长的计数器来确保系统的正确运行。</p>
+<p>在启用或禁用 <code>USE_16_BIT_TICKS</code> 时，建议根据系统的具体需求进行评估，并进行充分的测试和验证，以确保系统能够满足实时性和稳定性要求。</p>
+<h4 id="IDLE-SHOULD-YIELD"><a href="#IDLE-SHOULD-YIELD" class="headerlink" title="IDLE_SHOULD_YIELD"></a><code>IDLE_SHOULD_YIELD</code></h4><p><code>IDLE_SHOULD_YIELD</code> 是一个宏定义，用于指定 FreeRTOS 中空闲任务（Idle Task）是否应该在没有其他任务需要执行时主动让出 CPU。如果启用了 <code>IDLE_SHOULD_YIELD</code> 宏，空闲任务将在空闲时执行 <code>taskYIELD()</code> 函数，从而让出 CPU，允许其他更高优先级的任务运行。</p>
+<p>启用 <code>IDLE_SHOULD_YIELD</code> 可以提高系统的响应速度，因为空闲任务可以主动让出 CPU，让其他任务更快地执行。这对于实时性要求较高的系统尤其有用，可以确保任务能够及时地响应各种事件和输入。</p>
+<p>然而，需要注意的是，在某些情况下，让出 CPU 可能会带来一些额外的开销和性能损失。如果系统中存在大量的空闲时间，而且没有其他更高优先级的任务需要执行，那么频繁地让出 CPU 可能会降低系统的效率。</p>
+<p>因此，在启用 <code>IDLE_SHOULD_YIELD</code> 时需要谨慎考虑系统的实际情况和性能需求。如果系统的空闲时间较少，或者没有其他更高优先级的任务需要执行，那么可能不需要启用 <code>IDLE_SHOULD_YIELD</code>。</p>
+<p>在配置 FreeRTOS 时，可以根据系统的实际需求来决定是否启用 <code>IDLE_SHOULD_YIELD</code>。需要权衡系统的实时性、响应速度和性能等因素，以选择合适的配置选项。</p>
+<h4 id="USE-MUTEXES"><a href="#USE-MUTEXES" class="headerlink" title="USE_MUTEXES"></a><code>USE_MUTEXES</code></h4><p><code>USE_MUTEXES</code> 是一个宏定义，用于指定 FreeRTOS 是否支持互斥量（Mutexes）。互斥量是一种同步原语，用于在多任务系统中保护共享资源，以防止多个任务同时访问导致数据不一致或竞争条件的发生。</p>
+<p>启用 <code>USE_MUTEXES</code> 宏表示您希望在 FreeRTOS 中使用互斥量来保护共享资源。当任务需要访问共享资源时，它可以获取互斥量，这样其他任务就无法同时访问该资源，直到释放了互斥量为止。</p>
+<p>互斥量在许多多任务系统中都是非常常见和重要的同步机制，特别是在需要保护关键资源或临界区的情况下。通过使用互斥量，可以确保数据的完整性和一致性，避免竞争条件和数据访问冲突的发生。</p>
+<p>启用 <code>USE_MUTEXES</code> 可以提高系统的可靠性和稳定性，确保任务之间的合作和数据共享能够正常进行。但需要注意的是，互斥量的过度使用可能会导致死锁和性能下降，因此需要合理地设计和使用互斥量来避免这些问题的发生。</p>
+<p>在配置 FreeRTOS 时，可以根据系统的实际需求和资源限制来决定是否启用 <code>USE_MUTEXES</code>。如果系统中存在共享资源需要保护，那么启用互斥量是一个明智的选择。</p>
+<h4 id="USE-RECURSIVE-MUTEXES"><a href="#USE-RECURSIVE-MUTEXES" class="headerlink" title="USE_RECURSIVE_MUTEXES"></a><code>USE_RECURSIVE_MUTEXES</code></h4><p><code>USE_RECURSIVE_MUTEXES</code> 是一个宏定义，用于指定 FreeRTOS 是否支持递归互斥量（Recursive Mutexes）。递归互斥量是一种特殊类型的互斥量，允许同一个任务多次获取同一个互斥量，而不会导致死锁。</p>
+<p>在某些情况下，任务可能需要多次获取同一个互斥量，例如在递归调用的函数中，或者在多个层次的函数调用中需要保护共享资源。如果使用普通的互斥量，在任务多次获取同一个互斥量时会导致死锁，因为同一个任务已经持有了该互斥量，再次获取它时会一直等待直到被释放。</p>
+<p>启用 <code>USE_RECURSIVE_MUTEXES</code> 宏表示您希望在 FreeRTOS 中支持递归互斥量。这样，同一个任务可以多次获取同一个互斥量，而不会导致死锁。任务可以多次释放递归互斥量，直到与之匹配的获取次数为零，这时其他任务才能获取该互斥量。</p>
+<p>递归互斥量在某些情况下是非常有用的，特别是在需要保护共享资源的复杂递归调用或层次结构中。但需要注意的是，滥用递归互斥量可能会导致设计上的复杂性和性能下降，因此需要谨慎使用。</p>
+<p>在配置 FreeRTOS 时，可以根据系统的实际需求和资源限制来决定是否启用 <code>USE_RECURSIVE_MUTEXES</code>。如果系统中存在需要在同一个任务中多次获取同一个互斥量的情况，那么启用递归互斥量是一个合理的选择。</p>
+<h4 id="USE-COUNTING-SEMAPHORES"><a href="#USE-COUNTING-SEMAPHORES" class="headerlink" title="USE_COUNTING_SEMAPHORES"></a><code>USE_COUNTING_SEMAPHORES</code></h4><p><code>USE_COUNTING_SEMAPHORES</code> 是一个宏定义，用于指定 FreeRTOS 是否支持计数信号量（Counting Semaphores）。计数信号量是一种同步原语，用于在多任务系统中管理资源的访问和共享。</p>
+<p>启用 <code>USE_COUNTING_SEMAPHORES</code> 宏表示您希望在 FreeRTOS 中支持计数信号量。计数信号量允许多个任务同时访问同一个资源，而不会导致竞争条件或数据不一致的发生。计数信号量的值可以是任意非负整数，表示资源的可用数量。</p>
+<p>计数信号量通常用于管理有限资源的访问，例如共享内存池、缓冲区或设备。当任务需要访问资源时，它可以通过获取计数信号量来申请资源，当资源不可用时，任务会被阻塞，直到资源可用为止。任务使用完资源后，通过释放计数信号量来释放资源，以便其他任务可以继续使用。</p>
+<p>启用 <code>USE_COUNTING_SEMAPHORES</code> 可以提高系统的可靠性和稳定性，确保任务能够安全地访问和共享资源。但需要注意的是，过度使用计数信号量可能会导致竞争条件和性能下降，因此需要合理地设计和使用计数信号量来避免这些问题的发生。</p>
+<p>在配置 FreeRTOS 时，可以根据系统的实际需求和资源限制来决定是否启用 <code>USE_COUNTING_SEMAPHORES</code>。如果系统中存在需要管理有限资源的情况，那么启用计数信号量是一个合理的选择。</p>
+<h4 id="QUEUE-REGISTRY-SIZE"><a href="#QUEUE-REGISTRY-SIZE" class="headerlink" title="QUEUE_REGISTRY_SIZE"></a><code>QUEUE_REGISTRY_SIZE</code></h4><p><code>QUEUE_REGISTRY_SIZE</code> 是一个宏定义，用于指定 FreeRTOS 中队列注册表的大小。在 FreeRTOS 中，队列注册表用于跟踪和管理系统中所有创建的队列，以便于调试和跟踪队列的使用情况。</p>
+<p>队列注册表的大小决定了系统中可以注册的队列的最大数量。每个队列都会占用一定的注册表条目，因此 <code>QUEUE_REGISTRY_SIZE</code> 定义了系统中可以同时存在的队列的最大数量。</p>
+<p>适当设置 <code>QUEUE_REGISTRY_SIZE</code> 对于确保系统能够正常运行和调试是非常重要的。如果系统中同时存在的队列数量超过了队列注册表的大小，可能会导致一些队列无法被正确管理和跟踪，从而影响系统的稳定性和可靠性。</p>
+<p>一般来说，<code>QUEUE_REGISTRY_SIZE</code> 的值应该根据系统中实际使用的队列数量进行估计，并留有一定的余量以应对未来可能的扩展。如果系统中使用了大量的队列，那么 <code>QUEUE_REGISTRY_SIZE</code> 的值就需要设置得比较大；反之，如果系统中使用的队列数量较少，那么 <code>QUEUE_REGISTRY_SIZE</code> 的值可以设置得较小。</p>
+<p>在配置 FreeRTOS 时，可以根据系统的实际需求和队列数量来确定 <code>QUEUE_REGISTRY_SIZE</code> 的值。通常建议设置一个合适的默认值，并根据系统的运行情况进行调整和优化。</p>
+<h4 id="USE-APPLICATION-TASK-TAG"><a href="#USE-APPLICATION-TASK-TAG" class="headerlink" title="USE_APPLICATION_TASK_TAG"></a><code>USE_APPLICATION_TASK_TAG</code></h4><p><code>USE_APPLICATION_TASK_TAG</code> 是一个宏定义，用于指定 FreeRTOS 是否启用任务标记功能（Task Tagging）。任务标记功能允许开发人员为每个任务附加一个标记，以便在调试和分析中识别和跟踪任务。</p>
+<p>启用 <code>USE_APPLICATION_TASK_TAG</code> 宏表示您希望在 FreeRTOS 中启用任务标记功能。一旦启用，您可以为每个任务设置一个标记，以便在系统运行时跟踪任务的信息。任务标记可以是任何您认为有用的信息，例如任务的名称、任务的功能、任务的状态等。</p>
+<p>任务标记功能在调试和分析大型 FreeRTOS 应用程序时非常有用。通过任务标记，您可以更容易地识别和跟踪任务，了解它们的运行状况和行为，从而更快地定位和解决问题。</p>
+<p>在配置 FreeRTOS 时，您可以根据系统的实际需求和调试要求来决定是否启用 <code>USE_APPLICATION_TASK_TAG</code>。如果您需要在运行时跟踪任务，并且任务的信息对于调试和分析非常重要，那么启用任务标记功能可能是一个明智的选择。</p>
+<p>需要注意的是，启用任务标记功能可能会增加系统的内存消耗和运行时开销，因此在资源有限的环境中需要权衡使用该功能的成本和收益。</p>
+<h4 id="ENABLE-BACKWARD-COMPATIBILITY"><a href="#ENABLE-BACKWARD-COMPATIBILITY" class="headerlink" title="ENABLE_BACKWARD_COMPATIBILITY"></a><code>ENABLE_BACKWARD_COMPATIBILITY</code></h4><p><code>ENABLE_BACKWARD_COMPATIBILITY</code> 是一个宏定义，用于指定是否启用 FreeRTOS 的向后兼容性功能。向后兼容性是指新版本的 FreeRTOS 是否能够与旧版本的 FreeRTOS 兼容，以便在升级到新版本时，现有的应用程序可以继续正常运行。</p>
+<p>启用 <code>ENABLE_BACKWARD_COMPATIBILITY</code> 宏表示您希望在新版本的 FreeRTOS 中启用向后兼容性功能。这意味着新版本的 FreeRTOS 将尽可能地保持与旧版本的接口和行为一致，以确保现有的应用程序可以平稳地升级到新版本，而不需要进行太多的修改和调整。</p>
+<p>向后兼容性是非常重要的，特别是对于长期维护的嵌入式系统来说。通过保持向后兼容性，可以降低系统升级的成本和风险，减少因升级导致的问题和不稳定性。</p>
+<p>在配置 FreeRTOS 时，您可以根据实际需求和应用程序的情况来决定是否启用 <code>ENABLE_BACKWARD_COMPATIBILITY</code>。如果您的应用程序依赖于旧版本的 FreeRTOS，并且需要平滑地升级到新版本，那么启用向后兼容性功能可能是一个明智的选择。</p>
+<p>需要注意的是，启用向后兼容性功能可能会增加新版本 FreeRTOS 的体积和复杂性，因此在资源有限的环境中需要权衡使用该功能的成本和收益。</p>
+<h4 id="USE-PORT-OPTIMISED-TASK-SELECTION"><a href="#USE-PORT-OPTIMISED-TASK-SELECTION" class="headerlink" title="USE_PORT_OPTIMISED_TASK_SELECTION"></a><code>USE_PORT_OPTIMISED_TASK_SELECTION</code></h4><p><code>USE_PORT_OPTIMISED_TASK_SELECTION</code> 是一个宏定义，用于指定 FreeRTOS 是否启用端口优化的任务选择功能。任务选择是指在多任务系统中选择下一个要执行的任务的过程。启用此宏将使用端口特定的优化来实现任务选择，以提高系统的性能和效率。</p>
+<p>当启用 <code>USE_PORT_OPTIMISED_TASK_SELECTION</code> 宏时，FreeRTOS 将使用特定于硬件平台的任务选择实现，以提高任务切换的速度和效率。这种优化可能会利用硬件的特性或者对任务状态的特定存储方式，从而加速任务的切换过程。</p>
+<p>启用端口优化的任务选择功能可以提高系统的性能和效率，特别是在高负载和高实时性要求的系统中。通过减少任务切换的开销，系统可以更快地响应各种事件和任务，提高系统的响应速度和实时性。</p>
+<p>在配置 FreeRTOS 时，您可以根据实际硬件平台和性能需求来决定是否启用 <code>USE_PORT_OPTIMISED_TASK_SELECTION</code>。如果您的系统需要更高的性能和效率，并且硬件平台支持端口优化的任务选择功能，那么启用此宏可能是一个合适的选择。</p>
+<p>需要注意的是，启用端口优化的任务选择功能可能会增加 FreeRTOS 的复杂性，并且可能会限制其在其他硬件平台上的移植性。因此，在权衡使用此功能时需要考虑这些因素。</p>
+<h4 id="USE-TICKLESS-IDLE"><a href="#USE-TICKLESS-IDLE" class="headerlink" title="USE_TICKLESS_IDLE"></a><code>USE_TICKLESS_IDLE</code></h4><p><code>USE_TICKLESS_IDLE</code> 是一个宏定义，用于指定 FreeRTOS 是否启用 Tickless Idle 模式。Tickless Idle 模式是一种省电功能，可在系统空闲时让 CPU 进入低功耗模式，以节省能源并延长电池寿命。</p>
+<p>当启用 <code>USE_TICKLESS_IDLE</code> 宏时，FreeRTOS 将启用 Tickless Idle 模式。在 Tickless Idle 模式下，系统会动态调整系统定时器的间隔，在任务无需处理时尽可能地延迟系统的时钟中断，以减少 CPU 的唤醒次数，并将 CPU 保持在低功耗模式下。</p>
+<p>启用 Tickless Idle 模式可以显著降低系统的功耗，特别是在长时间空闲或低负载情况下。这对于依赖电池供电的嵌入式系统尤其重要，可以延长电池寿命，并减少充电次数。</p>
+<p>在配置 FreeRTOS 时，您可以根据系统的实际需求和功耗优化的要求来决定是否启用 <code>USE_TICKLESS_IDLE</code>。如果您的系统依赖电池供电，并且需要最大限度地降低功耗以延长电池寿命，那么启用 Tickless Idle 模式可能是一个明智的选择。</p>
+<p>需要注意的是，启用 Tickless Idle 模式可能会增加 FreeRTOS 的复杂性，并且可能会影响系统的实时性能。在启用 Tickless Idle 模式时，需要仔细测试和验证系统的实时性能，以确保满足系统的实时性要求。</p>
+<h4 id="USE-TASK-NOTIFICATIONS"><a href="#USE-TASK-NOTIFICATIONS" class="headerlink" title="USE_TASK_NOTIFICATIONS"></a><code>USE_TASK_NOTIFICATIONS</code></h4><p><code>USE_TASK_NOTIFICATIONS</code> 是一个宏定义，用于指定 FreeRTOS 是否启用任务通知功能。任务通知是一种轻量级的通信机制，允许任务之间进行同步和通信，而无需使用信号量或消息队列等更重量级的同步原语。</p>
+<p>启用 <code>USE_TASK_NOTIFICATIONS</code> 宏表示您希望在 FreeRTOS 中启用任务通知功能。一旦启用，您可以使用任务通知来实现任务之间的同步、事件通知和等待等功能。任务通知可以用于替代信号量、事件组和消息队列等同步原语，从而提高系统的性能和效率。</p>
+<p>任务通知是一种非常灵活和高效的通信机制，特别适用于需要高实时性和低延迟的系统。与传统的同步原语相比，任务通知具有更低的内存消耗和更快的响应时间，可以更好地满足实时性要求。</p>
+<p>在配置 FreeRTOS 时，您可以根据系统的实际需求和性能要求来决定是否启用 <code>USE_TASK_NOTIFICATIONS</code>。如果您需要在任务之间进行高效的通信和同步，并且希望提高系统的性能和效率，那么启用任务通知功能可能是一个合适的选择。</p>
+<p>需要注意的是，任务通知功能可能会增加 FreeRTOS 的复杂性，并且可能需要一些额外的学习和理解来正确地使用。在使用任务通知时，需要注意避免死锁和竞争条件等问题，以确保系统的稳定性和可靠性。<br>post&#x2F;code&#x2F;embedded&#x2F;</p>
+<p>FreeRTOS 参数配置</p>
+<p>Selection deleted</p>
+<p>FreeRTOS 参数配置</p>
+<p>文档属性</p>
+<p>FreeRTOS 参数配置</p>
+<p>{“headline”:”FreeRTOS 参数配置”,”color”:” #00ffff “}</p>
+<p>2024-04-12 19:06:46</p>
+<p>Lab</p>
+<p>STM32</p>
+<p>💻Code</p>
+<p>添加文档属性</p>
+<h4 id="RECORD-STACK-HIGH-ADDRESS"><a href="#RECORD-STACK-HIGH-ADDRESS" class="headerlink" title="RECORD_STACK_HIGH_ADDRESS"></a><code>RECORD_STACK_HIGH_ADDRESS</code></h4><p><code>RECORD_STACK_HIGH_ADDRESS</code> 是一个宏定义，用于指定 FreeRTOS 是否记录任务堆栈的高地址。当启用 <code>RECORD_STACK_HIGH_ADDRESS</code> 宏时，FreeRTOS 将在任务创建时记录任务堆栈的高地址。</p>
+<p>任务堆栈的高地址记录可以帮助识别任务的堆栈使用情况，特别是在调试和优化任务堆栈大小时非常有用。通过记录堆栈的高地址，您可以了解任务实际使用的堆栈大小，从而更好地优化任务堆栈大小，避免堆栈溢出问题。</p>
+<p>在启用 <code>RECORD_STACK_HIGH_ADDRESS</code> 宏后，您可以通过调用 <code>uxTaskGetStackHighWaterMark()</code> 函数来获取任务堆栈的高地址记录。这个函数会返回任务堆栈的高地址记录与任务堆栈的当前使用情况之间的差值，这就是任务堆栈的最大使用量。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UBaseType_t uxHighWaterMark;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取任务堆栈的最大使用量</span></span><br><span class="line">uxHighWaterMark = uxTaskGetStackHighWaterMark(<span class="literal">NULL</span>);</span><br></pre></td></tr></table></figure>
+
+<p>通过分析任务堆栈的最大使用量，您可以更好地了解任务的堆栈使用情况，并相应地调整任务堆栈的大小，以确保系统的稳定性和可靠性。</p>
+<h3 id="存储相关"><a href="#存储相关" class="headerlink" title="存储相关"></a>存储相关</h3><h4 id="TOTAL-HEAP-SIZE"><a href="#TOTAL-HEAP-SIZE" class="headerlink" title="TOTAL_HEAP_SIZE"></a><code>TOTAL_HEAP_SIZE</code></h4><p><code>TOTAL_HEAP_SIZE</code> 是一个宏定义，用于指定 FreeRTOS 中用于动态内存分配的堆的总大小。在 FreeRTOS 中，堆用于分配任务、队列、信号量等对象所需的内存空间。</p>
+<p>通过设置 <code>TOTAL_HEAP_SIZE</code>，您可以指定 FreeRTOS 可用的总内存量。FreeRTOS 将会从这个总内存池中动态分配内存，用于创建任务、队列、信号量等对象。在运行时，FreeRTOS 会根据需要从堆中分配内存，并在对象不再需要时释放内存，以便其他对象可以重复利用。</p>
+<p>在设置 <code>TOTAL_HEAP_SIZE</code> 时，需要根据系统的实际需求和资源限制来确定堆的大小。如果堆的大小设置得太小，可能会导致内存分配失败或者系统性能下降；如果设置得太大，可能会浪费宝贵的内存资源。</p>
+<p>通常情况下，可以根据系统的任务数量、队列大小、信号量数量等因素来估算堆的大小。另外，还需要考虑系统的其他内存需求，如栈空间、静态内存分配等。</p>
+<p>在设置 <code>TOTAL_HEAP_SIZE</code> 时，建议留有一定的余量，以应对系统在运行时可能出现的内存需求增加的情况。同时，也可以通过监视系统的内存使用情况，根据实际情况调整堆的大小，以达到最佳的性能和稳定性。</p>
+<p>以下是一个设置 <code>TOTAL_HEAP_SIZE</code> 的示例：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> TOTAL_HEAP_SIZE (20 * 1024) <span class="comment">// 设置堆的总大小为20KB</span></span></span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，堆的总大小被设置为 20 KB。您可以根据实际需求修改这个值，并确保系统的稳定性和性能。</p>
+<h4 id="Memory-Management-scheme"><a href="#Memory-Management-scheme" class="headerlink" title="Memory Management scheme"></a>Memory Management scheme</h4><p>默认 heap_4</p>
+<p>在 FreeRTOS 中，内存管理方案取决于您选择的内存分配器。FreeRTOS 提供了几种内存分配器，可以根据您的需求和平台选择合适的内存管理方案。</p>
+<ol>
+<li><p><strong>Heap_1:</strong> <code>Heap_1</code> 是 FreeRTOS 提供的最简单的内存分配器，它使用静态数组作为堆。静态数组的大小由 <code>configTOTAL_HEAP_SIZE</code> 宏定义确定，数组的大小在编译时就被确定。这种分配器非常适合于资源有限的嵌入式系统，它简单、轻量，并且不需要额外的外部依赖。</p>
+</li>
+<li><p><strong>Heap_2:</strong> <code>Heap_2</code> 是另一种简单的内存分配器，它也使用静态数组作为堆，但允许您通过 <code>configAPPLICATION_ALLOCATED_HEAP</code> 宏自定义堆的起始地址和大小。这种分配器允许您将堆放置在特定的内存区域，例如特定的 RAM 区域或者特殊的存储器设备。</p>
+</li>
+<li><p><strong>Heap_3:</strong> <code>Heap_3</code> 是 FreeRTOS 提供的动态内存分配器，它使用标准的 <code>malloc()</code> 和 <code>free()</code> 函数来分配和释放内存。这种分配器非常适合于具有标准 C 库支持的系统，它可以充分利用标准库提供的内存管理功能，并且能够适应不同大小的内存需求。</p>
+</li>
+<li><p><strong>Heap_4:</strong> <code>Heap_4</code> 是一种更高级的内存分配器，它使用先进的分配算法来提高内存分配和释放的效率。它是一种适用于大型系统和高性能系统的内存分配方案，可以有效地管理大量的动态内存，并且具有较低的内存碎片化和内存浪费。</p>
+</li>
+</ol>
+<p>在选择内存管理方案时，需要考虑系统的资源限制、性能要求和实现的复杂度等因素。不同的内存分配器适用于不同的场景，您可以根据您的具体需求选择最合适的内存管理方案。</p>
+<h3 id="hook-function-related-definitions"><a href="#hook-function-related-definitions" class="headerlink" title="hook function related definitions"></a>hook function related definitions</h3><p>在 FreeRTOS 中，钩子函数（hook functions）是一组特殊的函数，允许用户在 FreeRTOS 内核执行关键操作时插入自定义的代码。这些钩子函数可以用于监视系统状态、调试应用程序、实现定制功能等。以下是一些与钩子函数相关的定义：</p>
+<ol>
+<li><strong>vApplicationMallocFailedHook:</strong> 当 FreeRTOS 内核尝试分配内存失败时，将调用此钩子函数。用户可以在此函数中实现自定义的处理逻辑，例如记录错误、采取措施或者进行其他处理。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationMallocFailedHook</span><span class="params">( <span class="type">void</span> )</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>vApplicationStackOverflowHook:</strong> 当任务堆栈溢出时，将调用此钩子函数。用户可以在此函数中实现自定义的堆栈溢出处理逻辑，例如记录错误、重启系统或者进行其他处理。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationStackOverflowHook</span><span class="params">( TaskHandle_t xTask, <span class="type">char</span> *pcTaskName )</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>vApplicationIdleHook:</strong> 当系统处于空闲状态时，将调用此钩子函数。用户可以在此函数中实现自定义的空闲处理逻辑，例如休眠处理器、执行低优先级任务等。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationIdleHook</span><span class="params">( <span class="type">void</span> )</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>vApplicationTickHook:</strong> 每次 FreeRTOS 定时器节拍时，将调用此钩子函数。用户可以在此函数中实现自定义的定时处理逻辑，例如记录系统时间、执行周期性任务等。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationTickHook</span><span class="params">( <span class="type">void</span> )</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><strong>vApplicationDaemonTaskStartupHook:</strong> FreeRTOS 守护任务启动时，将调用此钩子函数。用户可以在此函数中实现自定义的守护任务启动处理逻辑。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationDaemonTaskStartupHook</span><span class="params">( <span class="type">void</span> )</span>;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li><strong>vApplicationDaemonTaskStartupHook:</strong> FreeRTOS 守护任务启动时，将调用此钩子函数。用户可以在此函数中实现自定义的守护任务启动处理逻辑。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">vApplicationDaemonTaskStartupHook</span><span class="params">( <span class="type">void</span> )</span>;</span><br></pre></td></tr></table></figure>
+
+<p>通过实现这些钩子函数，用户可以在 FreeRTOS 内核执行关键操作时插入自定义的处理逻辑，从而更好地监视、调试和优化系统。需要根据实际需求选择合适的钩子函数，并实现相应的处理逻辑。</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://c.undf.top/posts/a7f7097f/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://c.undf.top/posts/a7f7097f/&title=FreeRTOS 参数配置 - 沐印小站&summary=
+注：大部分内容为 AI 回答，仅作整理汇总
+
+CMSIS_V 1 vs CMSIS_V 2当然 V2 更好
+宏定义MPU FPUENABLE_MPUENABLE_MPU 是一个宏定义，用于启用或禁用 ARM Cortex-M 处理器..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=FreeRTOS 参数配置 - 沐印小站&amp;body=https://c.undf.top/posts/a7f7097f/"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://c.undf.top/posts/a7f7097f/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/posts/ed992427/">自用软件分享</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/posts/49u3l9/" title="cloudreve配置修复"><span class="title">cloudreve配置修复</span></a><a class="item" href="/posts/79e22e25/" title="HEXO & Fontmin"><span class="title">HEXO & Fontmin</span></a><a class="item" href="/posts/8730864/" title="从零开始个人主页"><span class="title">从零开始个人主页</span></a><a class="item" href="/posts/fa1d/" title="建站的"心路历程""><span class="title">建站的"心路历程"</span></a><a class="item" href="/posts/cd88/" title="AKKO3068说明书"><span class="title">AKKO3068说明书</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来聊5毛的吧！</p>
+
+    </section>
+    <section class='body cmt-body twikoo'>
+      
+
+<div id="twikoo_container"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">wxy</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0">Stellar 1.29.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#CMSIS-V-1-vs-CMSIS-V-2"><span class="toc-text">CMSIS_V 1 vs CMSIS_V 2</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8F%E5%AE%9A%E4%B9%89"><span class="toc-text">宏定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MPU-FPU"><span class="toc-text">MPU FPU</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ENABLE-MPU"><span class="toc-text">ENABLE_MPU</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ENABLE-FPU"><span class="toc-text">ENABLE_FPU</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%AE%BE%E7%BD%AE"><span class="toc-text">内核设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-PREEMPTION"><span class="toc-text">USE_PREEMPTION</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU-CLOCK-HZ"><span class="toc-text">CPU_CLOCK_HZ</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TICK-RATE-HZ"><span class="toc-text">TICK_RATE_HZ</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MAX-PRIORITIES"><span class="toc-text">MAX_PRIORITIES</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MINIMAL-STACK-SIZE"><span class="toc-text">MINIMAL_STACK_SIZE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MAX-TASK-NAME-LEN"><span class="toc-text">MAX_TASK_NAME_LEN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-16-BIT-TICKS"><span class="toc-text">USE_16_BIT_TICKS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IDLE-SHOULD-YIELD"><span class="toc-text">IDLE_SHOULD_YIELD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-MUTEXES"><span class="toc-text">USE_MUTEXES</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-RECURSIVE-MUTEXES"><span class="toc-text">USE_RECURSIVE_MUTEXES</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-COUNTING-SEMAPHORES"><span class="toc-text">USE_COUNTING_SEMAPHORES</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QUEUE-REGISTRY-SIZE"><span class="toc-text">QUEUE_REGISTRY_SIZE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-APPLICATION-TASK-TAG"><span class="toc-text">USE_APPLICATION_TASK_TAG</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ENABLE-BACKWARD-COMPATIBILITY"><span class="toc-text">ENABLE_BACKWARD_COMPATIBILITY</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-PORT-OPTIMISED-TASK-SELECTION"><span class="toc-text">USE_PORT_OPTIMISED_TASK_SELECTION</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-TICKLESS-IDLE"><span class="toc-text">USE_TICKLESS_IDLE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USE-TASK-NOTIFICATIONS"><span class="toc-text">USE_TASK_NOTIFICATIONS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RECORD-STACK-HIGH-ADDRESS"><span class="toc-text">RECORD_STACK_HIGH_ADDRESS</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%9B%B8%E5%85%B3"><span class="toc-text">存储相关</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#TOTAL-HEAP-SIZE"><span class="toc-text">TOTAL_HEAP_SIZE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Memory-Management-scheme"><span class="toc-text">Memory Management scheme</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hook-function-related-definitions"><span class="toc-text">hook function related definitions</span></a></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://cdn.undf.top/placeholder/avatar/round/3442075.svg`,
+    cover: `https://cdn.undf.top/placeholder/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.undf.top/js/jquery.min.js`,
+    marked: `https://cdn.undf.top/js/marked.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+
+<!-- required -->
+<script src="/js/main.js?v=1.29.0" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    }
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.getElementById('twikoo_container');
+  util.viewportLazyload(el, load_twikoo, false);
+
+  function load_twikoo() {
+    if (!el) return;
+    utils.js('https://cdn.undf.top/js/twikoo.min.js', {defer: true}).then(function () {
+      const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
+      twikoo.init(Object.assign({"js":"https://cdn.undf.top/js/twikoo.min.js","envId":"https://twikoo.undf.top"}, {
+        el: '#twikoo_container',
+        path: path,
+      }));
+    });
+  }
+</script>
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.undf.top/js/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.undf.top/js/fancybox.css`,
+    js: `https://cdn.undf.top/js/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://cdn.undf.top/js/swiper-bundle.min.css`);
+      utils.js(`https://cdn.undf.top/js/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+<script src="https://c.undf.top/cdn/haoke/haoke.min.js"></script>
+</div></body></html>
