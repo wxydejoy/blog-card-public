@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2024-03-15T07:20:55.000Z</updated>
+  <updated>2024-03-17T13:20:55.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自用软件分享</title>
+    <link href="https://c.undf.top/posts/ed992427/"/>
+    <id>https://c.undf.top/posts/ed992427/</id>
+    <published>2024-03-17T13:20:55.000Z</published>
+    <updated>2024-03-17T13:20:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;废话不多说，直接开始&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本站不提供任何下载，只做介绍，资源请自行寻找&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;h2 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="💻Software" scheme="https://c.undf.top/categories/%F0%9F%92%BBSoftware/"/>
+    
+    
+    <category term="💻Software" scheme="https://c.undf.top/tags/%F0%9F%92%BBSoftware/"/>
+    
+  </entry>
   
   <entry>
     <title>我的博客</title>
@@ -168,6 +197,8 @@
     
     <category term="X3PI" scheme="https://c.undf.top/tags/X3PI/"/>
     
+    <category term="开发日常" scheme="https://c.undf.top/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%B8%B8/"/>
+    
   </entry>
   
   <entry>
@@ -194,7 +225,9 @@
     
     
     
-    <category term="😄QT" scheme="https://c.undf.top/tags/%F0%9F%98%84QT/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+    <category term="📦QT" scheme="https://c.undf.top/tags/%F0%9F%93%A6QT/"/>
     
   </entry>
   
@@ -211,10 +244,12 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;大部分为抄答案，看解析，希望能学到点东西&lt;/p&gt;
+&lt;p&gt;大部分为抄答案，看解析，且跳过困难的题目，希望能学到点东西&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/jump-game/&quot;&gt;55. 跳跃游戏&lt;/a&gt;（想耍小聪明降低运算时间，但是各种漏洞）&lt;/p&gt;
-&lt;h2 id=&quot;121-买卖股票的最佳时机（做了，耗时，脑子不够灵活）&quot;&gt;&lt;a</summary>
+&lt;ol start=&quot;21&quot;&gt;
+&lt;li&gt;合并两个有序链表&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
     
@@ -223,7 +258,9 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
-    <category term="😄leetcode" scheme="https://c.undf.top/tags/%F0%9F%98%84leetcode/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+    <category term="🙂Leetcode" scheme="https://c.undf.top/tags/%F0%9F%99%82Leetcode/"/>
     
   </entry>
   
@@ -253,7 +290,11 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
+    <category term="ROS2" scheme="https://c.undf.top/tags/ROS2/"/>
+    
     <category term="X3PI" scheme="https://c.undf.top/tags/X3PI/"/>
+    
+    <category term="RealSense" scheme="https://c.undf.top/tags/RealSense/"/>
     
   </entry>
   
@@ -278,9 +319,11 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
-    <category term="⏳C++" scheme="https://c.undf.top/tags/%E2%8F%B3C/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
     
-    <category term="⌨️Qt" scheme="https://c.undf.top/tags/%E2%8C%A8%EF%B8%8FQt/"/>
+    <category term="📃Study" scheme="https://c.undf.top/tags/%F0%9F%93%83Study/"/>
+    
+    <category term="📦QT" scheme="https://c.undf.top/tags/%F0%9F%93%A6QT/"/>
     
   </entry>
   
@@ -336,7 +379,11 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
-    <category term="🕔RTOS" scheme="https://c.undf.top/tags/%F0%9F%95%94RTOS/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+    <category term="📃Study" scheme="https://c.undf.top/tags/%F0%9F%93%83Study/"/>
+    
+    <category term="💻RTOS" scheme="https://c.undf.top/tags/%F0%9F%92%BBRTOS/"/>
     
   </entry>
   
@@ -389,11 +436,11 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
-    <category term="STM32" scheme="https://c.undf.top/tags/STM32/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
     
-    <category term="Lab" scheme="https://c.undf.top/tags/Lab/"/>
+    <category term="📃Study" scheme="https://c.undf.top/tags/%F0%9F%93%83Study/"/>
     
-    <category term="串口" scheme="https://c.undf.top/tags/%E4%B8%B2%E5%8F%A3/"/>
+    <category term="📦STM32" scheme="https://c.undf.top/tags/%F0%9F%93%A6STM32/"/>
     
   </entry>
   
@@ -497,7 +544,7 @@
     <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
     
     
-    <category term="Embeded" scheme="https://c.undf.top/tags/Embeded/"/>
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
     
   </entry>
   
@@ -524,33 +571,6 @@
     
     
     <category term="PCB" scheme="https://c.undf.top/tags/PCB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>invoice_ocr</title>
-    <link href="https://c.undf.top/posts/3ie04lo/"/>
-    <id>https://c.undf.top/posts/3ie04lo/</id>
-    <published>2022-10-01T08:39:46.000Z</published>
-    <updated>2022-10-01T08:39:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;因&quot;&gt;&lt;a href=&quot;#因&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
-    
-    
-    <category term="Python" scheme="https://c.undf.top/tags/Python/"/>
-    
-    <category term="OCR" scheme="https://c.undf.top/tags/OCR/"/>
     
   </entry>
   
