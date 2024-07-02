@@ -6,7 +6,7 @@
   <link href="https://c.undf.top/atom.xml" rel="self"/>
   
   <link href="https://c.undf.top/"/>
-  <updated>2024-04-12T11:06:46.000Z</updated>
+  <updated>2024-03-15T07:20:55.000Z</updated>
   <id>https://c.undf.top/</id>
   
   <author>
@@ -15,63 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>FreeRTOS 参数配置</title>
-    <link href="https://c.undf.top/posts/a7f7097f/"/>
-    <id>https://c.undf.top/posts/a7f7097f/</id>
-    <published>2024-04-12T11:06:46.000Z</published>
-    <updated>2024-04-12T11:06:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;注：大部分内容为 AI 回答，仅作整理汇总&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;CMSIS-V-1-vs-CMSIS-V-2&quot;&gt;&lt;a href=&quot;#CMSIS-V-1-vs-CMSIS-V-2&quot; class=&quot;headerlink&quot; title=&quot;CMSIS_V 1 vs CMSIS_V 2&quot;&gt;&lt;/a&gt;CMSIS_V 1 vs CMSIS_V</summary>
-        
-      
-    
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
-    
-    
-    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自用软件分享</title>
-    <link href="https://c.undf.top/posts/ed992427/"/>
-    <id>https://c.undf.top/posts/ed992427/</id>
-    <published>2024-03-17T13:20:55.000Z</published>
-    <updated>2024-03-17T13:20:55.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;废话不多说，直接开始&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本站不提供任何下载，只做介绍，资源请自行寻找&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;h2 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="💻Software" scheme="https://c.undf.top/categories/%F0%9F%92%BBSoftware/"/>
-    
-    
-    <category term="💻Software" scheme="https://c.undf.top/tags/%F0%9F%92%BBSoftware/"/>
-    
-  </entry>
   
   <entry>
     <title>我的博客</title>
@@ -329,6 +272,34 @@
   </entry>
   
   <entry>
+    <title>FreeRTOS 参数配置</title>
+    <link href="https://c.undf.top/posts/a7f7097f/"/>
+    <id>https://c.undf.top/posts/a7f7097f/</id>
+    <published>2023-04-12T11:06:46.000Z</published>
+    <updated>2023-04-12T11:06:46.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;注：大部分内容为 AI 回答，仅作整理汇总&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;CMSIS-V-1-vs-CMSIS-V-2&quot;&gt;&lt;a href=&quot;#CMSIS-V-1-vs-CMSIS-V-2&quot; class=&quot;headerlink&quot; title=&quot;CMSIS_V 1 vs CMSIS_V 2&quot;&gt;&lt;/a&gt;CMSIS_V 1 vs CMSIS_V</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MoneyProgress_win</title>
     <link href="https://c.undf.top/posts/3ouvu5p/"/>
     <id>https://c.undf.top/posts/3ouvu5p/</id>
@@ -386,34 +357,31 @@
   </entry>
   
   <entry>
-    <title>FreeRTOS</title>
-    <link href="https://c.undf.top/posts/1rvt88k/"/>
-    <id>https://c.undf.top/posts/1rvt88k/</id>
-    <published>2023-01-18T12:50:28.000Z</published>
-    <updated>2023-01-18T12:50:28.000Z</updated>
+    <title>自用软件分享</title>
+    <link href="https://c.undf.top/posts/ed992427/"/>
+    <id>https://c.undf.top/posts/ed992427/</id>
+    <published>2023-03-17T13:20:55.000Z</published>
+    <updated>2023-03-17T13:20:55.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;大部分内容都为摘抄&lt;br&gt;其实已经看过很多遍，但一直没用过。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;废话不多说，直接开始&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本站不提供任何下载，只做介绍，资源请自行寻找&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;内存管理&quot;&gt;&lt;a href=&quot;#内存管理&quot; class=&quot;headerlink&quot; title=&quot;内存管理&quot;&gt;&lt;/a&gt;内存管理&lt;/h2&gt;&lt;p&gt;task、queue、semaphores和event</summary>
+&lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;h2 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot;</summary>
         
       
     
     
     
-    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    <category term="💻Software" scheme="https://c.undf.top/categories/%F0%9F%92%BBSoftware/"/>
     
     
-    <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
-    
-    <category term="📃Study" scheme="https://c.undf.top/tags/%F0%9F%93%83Study/"/>
-    
-    <category term="💻RTOS" scheme="https://c.undf.top/tags/%F0%9F%92%BBRTOS/"/>
+    <category term="💻Software" scheme="https://c.undf.top/tags/%F0%9F%92%BBSoftware/"/>
     
   </entry>
   
@@ -575,6 +543,32 @@
     
     
     <category term="💻Code" scheme="https://c.undf.top/tags/%F0%9F%92%BBCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pcb_6</title>
+    <link href="https://c.undf.top/posts/2nqj13j/"/>
+    <id>https://c.undf.top/posts/2nqj13j/</id>
+    <published>2022-10-18T11:58:28.000Z</published>
+    <updated>2022-10-18T11:58:28.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;记录第一次画6层板的过程&quot;&gt;&lt;a href=&quot;#记录第一次画6层板的过程&quot; class=&quot;headerlink&quot; title=&quot;记录第一次画6层板的过程&quot;&gt;&lt;/a&gt;记录第一次画6层板的过程&lt;/h1&gt;&lt;p&gt;为防止意外,添加了水印&lt;/p&gt;
+&lt;h2 id=&quot;设计目标&quot;&gt;&lt;a href=&quot;#设计目标&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="💻Code" scheme="https://c.undf.top/categories/%F0%9F%92%BBCode/"/>
+    
+    
+    <category term="PCB" scheme="https://c.undf.top/tags/PCB/"/>
     
   </entry>
   
